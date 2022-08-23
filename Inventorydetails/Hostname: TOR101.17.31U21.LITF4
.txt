@@ -1,0 +1,2951 @@
+Physical interface: gr-0/0/0, Enabled, Physical link is Up
+  Interface index: 693, SNMP ifIndex: 502
+  Type: GRE, Link-level type: GRE, MTU: Unlimited, Speed: 800mbps
+  Device flags   : Present Running
+  Interface flags: Point-To-Point SNMP-Traps
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+Physical interface: pfe-0/0/0, Enabled, Physical link is Up
+  Interface index: 697, SNMP ifIndex: 508
+  Speed: 800mbps
+  Device flags   : Present Running
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+  Logical interface pfe-0/0/0.16383 (Index 601) (SNMP ifIndex 510)
+    Flags: Up SNMP-Traps Encapsulation: ENET2
+    Bandwidth: 0
+    Input packets : 0
+    Output packets: 0
+    Protocol inet, MTU: Unlimited
+    Max nh cache: 0, New hold nh limit: 0, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: None
+    Protocol inet6, MTU: Unlimited
+    Max nh cache: 0, New hold nh limit: 0, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Is-Primary
+
+Physical interface: pfh-0/0/0, Enabled, Physical link is Up
+  Interface index: 696, SNMP ifIndex: 509
+  Speed: 800mbps
+  Device flags   : Present Running
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+  Logical interface pfh-0/0/0.16383 (Index 602) (SNMP ifIndex 511)
+    Flags: Up SNMP-Traps Encapsulation: ENET2
+    Bandwidth: 0
+    Input packets : 0
+    Output packets: 0
+    Protocol inet, MTU: Unlimited
+    Max nh cache: 0, New hold nh limit: 0, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: None
+
+  Logical interface pfh-0/0/0.16384 (Index 603) (SNMP ifIndex 710)
+    Flags: Up SNMP-Traps Encapsulation: ENET2
+    Bandwidth: 0
+    Input packets : 0
+    Output packets: 0
+    Protocol inet, MTU: Unlimited
+    Max nh cache: 0, New hold nh limit: 0, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Is-Primary
+
+Physical interface: xe-0/0/0, Enabled, Physical link is Up
+  Interface index: 698, SNMP ifIndex: 513
+  Description: To-COM001.17.30U02.LITF4-port:em50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:f0, Hardware address: f4:cc:55:fc:cb:03
+  Last flapped   : 2022-01-07 10:03:52 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/0.0 (Index 604) (SNMP ifIndex 514)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 710465
+    Protocol aenet, AE bundle: ae0.0
+
+Physical interface: xe-0/0/1, Enabled, Physical link is Up
+  Interface index: 699, SNMP ifIndex: 512
+  Description: To-COM002.17.30U05.LITF4-port:em50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:f1, Hardware address: f4:cc:55:fc:cb:04
+  Last flapped   : 2022-01-07 10:05:48 MST (32w4d 04:30 ago)
+  Input rate     : 164912 bps (157 pps)
+  Output rate    : 167376 bps (152 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/1.0 (Index 605) (SNMP ifIndex 517)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710437
+    Protocol aenet, AE bundle: ae1.0
+
+Physical interface: xe-0/0/2, Enabled, Physical link is Up
+  Interface index: 700, SNMP ifIndex: 515
+  Description: To-COM003.17.30U08.LITF4-port:em50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:f2, Hardware address: f4:cc:55:fc:cb:05
+  Last flapped   : 2022-01-07 10:05:56 MST (32w4d 04:30 ago)
+  Input rate     : 156528 bps (144 pps)
+  Output rate    : 171408 bps (158 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/2.0 (Index 606) (SNMP ifIndex 522)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710465
+    Protocol aenet, AE bundle: ae2.0
+
+Physical interface: xe-0/0/3, Enabled, Physical link is Up
+  Interface index: 701, SNMP ifIndex: 516
+  Description: To-COM004.17.30U11.LITF4-port:em50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:f3, Hardware address: f4:cc:55:fc:cb:06
+  Last flapped   : 2022-01-07 10:06:00 MST (32w4d 04:30 ago)
+  Input rate     : 5032 bps (7 pps)
+  Output rate    : 8264 bps (13 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/3.0 (Index 607) (SNMP ifIndex 533)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710408
+    Protocol aenet, AE bundle: ae3.0
+
+Physical interface: xe-0/0/4, Enabled, Physical link is Up
+  Interface index: 702, SNMP ifIndex: 518
+  Description: To-COM005.17.30U14.LITF4-port:em50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:f4, Hardware address: f4:cc:55:fc:cb:07
+  Last flapped   : 2022-01-07 10:05:58 MST (32w4d 04:30 ago)
+  Input rate     : 4344 bps (6 pps)
+  Output rate    : 7728 bps (13 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/4.0 (Index 608) (SNMP ifIndex 534)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710422
+    Protocol aenet, AE bundle: ae4.0
+
+Physical interface: xe-0/0/5, Enabled, Physical link is Up
+  Interface index: 703, SNMP ifIndex: 519
+  Description: To-COM006.17.30U17.LITF4-port:em50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:f5, Hardware address: f4:cc:55:fc:cb:08
+  Last flapped   : 2022-01-07 10:05:54 MST (32w4d 04:30 ago)
+  Input rate     : 4192 bps (6 pps)
+  Output rate    : 6792 bps (11 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/5.0 (Index 609) (SNMP ifIndex 564)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710410
+    Protocol aenet, AE bundle: ae5.0
+
+Physical interface: xe-0/0/6, Enabled, Physical link is Up
+  Interface index: 704, SNMP ifIndex: 520
+  Description: To-COM007.17.30U26.LITF4-port:em50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:f6, Hardware address: f4:cc:55:fc:cb:09
+  Last flapped   : 2022-01-07 10:06:04 MST (32w4d 04:30 ago)
+  Input rate     : 40088 bps (60 pps)
+  Output rate    : 34864 bps (65 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/6.0 (Index 610) (SNMP ifIndex 565)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710448
+    Protocol aenet, AE bundle: ae6.0
+
+Physical interface: xe-0/0/7, Enabled, Physical link is Up
+  Interface index: 705, SNMP ifIndex: 521
+  Description: To-COM008.17.30U29.LITF4-port:em50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:f7, Hardware address: f4:cc:55:fc:cb:0a
+  Last flapped   : 2022-01-07 10:06:18 MST (32w4d 04:29 ago)
+  Input rate     : 3480 bps (4 pps)
+  Output rate    : 7616 bps (10 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/7.0 (Index 611) (SNMP ifIndex 566)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710408
+    Protocol aenet, AE bundle: ae7.0
+
+Physical interface: xe-0/0/8, Enabled, Physical link is Up
+  Interface index: 706, SNMP ifIndex: 523
+  Description: To-COM009.17.30U32.LITF4-port:em50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:f8, Hardware address: f4:cc:55:fc:cb:0b
+  Last flapped   : 2022-01-07 10:05:58 MST (32w4d 04:30 ago)
+  Input rate     : 3392 bps (4 pps)
+  Output rate    : 6144 bps (9 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/8.0 (Index 612) (SNMP ifIndex 567)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710445
+    Protocol aenet, AE bundle: ae8.0
+
+Physical interface: xe-0/0/9, Enabled, Physical link is Up
+  Interface index: 707, SNMP ifIndex: 524
+  Description: To-COM010.17.30U35.LITF4-port:em50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:f9, Hardware address: f4:cc:55:fc:cb:0c
+  Last flapped   : 2022-01-07 10:05:38 MST (32w4d 04:30 ago)
+  Input rate     : 2184 bps (3 pps)
+  Output rate    : 4600 bps (6 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/9.0 (Index 613) (SNMP ifIndex 568)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710484
+    Protocol aenet, AE bundle: ae9.0
+
+Physical interface: xe-0/0/10, Enabled, Physical link is Down
+  Interface index: 708, SNMP ifIndex: 525
+  Description: To-COM001.17.30U02.LITF4-port:p1p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:fa, Hardware address: f4:cc:55:fc:cb:0d
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/10.0 (Index 614) (SNMP ifIndex 569)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 0
+    Protocol aenet, AE bundle: ae10.0
+
+Physical interface: xe-0/0/11, Enabled, Physical link is Up
+  Interface index: 709, SNMP ifIndex: 526
+  Description: To-COM002.17.30U05.LITF4-port:p1p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:fb, Hardware address: f4:cc:55:fc:cb:0e
+  Last flapped   : 2022-01-07 10:05:22 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/11.0 (Index 615) (SNMP ifIndex 570)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 710481
+    Protocol aenet, AE bundle: ae11.0
+
+Physical interface: xe-0/0/12, Enabled, Physical link is Up
+  Interface index: 710, SNMP ifIndex: 527
+  Description: To-COM003.17.30U08.LITF4-port:p1p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:fc, Hardware address: f4:cc:55:fc:cb:0f
+  Last flapped   : 2022-01-07 10:05:34 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/12.0 (Index 616) (SNMP ifIndex 571)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 710436
+    Protocol aenet, AE bundle: ae12.0
+
+Physical interface: xe-0/0/13, Enabled, Physical link is Up
+  Interface index: 711, SNMP ifIndex: 528
+  Description: To-COM004.17.30U11.LITF4-port:p1p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:fd, Hardware address: f4:cc:55:fc:cb:10
+  Last flapped   : 2022-01-07 10:05:38 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 992 bps (0 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/13.0 (Index 617) (SNMP ifIndex 572)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 710440
+    Protocol aenet, AE bundle: ae13.0
+
+Physical interface: xe-0/0/14, Enabled, Physical link is Up
+  Interface index: 712, SNMP ifIndex: 529
+  Description: To-COM005.17.30U14.LITF4-port:p1p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:fe, Hardware address: f4:cc:55:fc:cb:11
+  Last flapped   : 2022-01-07 10:05:36 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 1832 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/14.0 (Index 618) (SNMP ifIndex 573)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 710404
+    Protocol aenet, AE bundle: ae14.0
+
+Physical interface: xe-0/0/16, Enabled, Physical link is Up
+  Interface index: 713, SNMP ifIndex: 530
+  Description: To-COM007.17.30U26.LITF4-port:p1p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:00, Hardware address: f4:cc:55:fc:cb:13
+  Last flapped   : 2022-01-07 10:05:42 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 992 bps (0 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/16.0 (Index 619) (SNMP ifIndex 574)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 710453
+    Protocol aenet, AE bundle: ae16.0
+
+Physical interface: xe-0/0/17, Enabled, Physical link is Up
+  Interface index: 714, SNMP ifIndex: 531
+  Description: To-COM008.17.30U29.LITF4-port:p1p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:01, Hardware address: f4:cc:55:fc:cb:14
+  Last flapped   : 2022-01-07 10:05:56 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 992 bps (0 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/17.0 (Index 620) (SNMP ifIndex 575)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 710454
+    Protocol aenet, AE bundle: ae17.0
+
+Physical interface: xe-0/0/18, Enabled, Physical link is Up
+  Interface index: 715, SNMP ifIndex: 532
+  Description: To-COM009.17.30U32.LITF4-port:p1p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:02, Hardware address: f4:cc:55:fc:cb:15
+  Last flapped   : 2022-01-07 10:05:36 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 992 bps (0 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/18.0 (Index 621) (SNMP ifIndex 576)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 710400
+    Protocol aenet, AE bundle: ae18.0
+
+Physical interface: xe-0/0/19, Enabled, Physical link is Up
+  Interface index: 716, SNMP ifIndex: 535
+  Description: To-COM010.17.30U35.LITF4-port:p1p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:03, Hardware address: f4:cc:55:fc:cb:16
+  Last flapped   : 2022-01-07 10:05:16 MST (32w4d 04:31 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 992 bps (0 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/19.0 (Index 622) (SNMP ifIndex 577)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 710431
+    Protocol aenet, AE bundle: ae19.0
+
+Physical interface: xe-0/0/20, Enabled, Physical link is Down
+  Interface index: 717, SNMP ifIndex: 536
+  Description: To-COM001.17.30U02.LITF4-port:p5p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:05, Hardware address: f4:cc:55:fc:cb:17
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/20.0 (Index 623) (SNMP ifIndex 578)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 0
+    Protocol aenet, AE bundle: ae20.0
+
+Physical interface: xe-0/0/21, Enabled, Physical link is Up
+  Interface index: 718, SNMP ifIndex: 537
+  Description: To-COM002.17.30U05.LITF4-port:p5p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:06, Hardware address: f4:cc:55:fc:cb:18
+  Last flapped   : 2022-01-07 10:05:51 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/21.0 (Index 624) (SNMP ifIndex 579)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710385
+    Protocol aenet, AE bundle: ae21.0
+
+Physical interface: xe-0/0/22, Enabled, Physical link is Up
+  Interface index: 719, SNMP ifIndex: 538
+  Description: To-COM003.17.30U08.LITF4-port:p5p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:07, Hardware address: f4:cc:55:fc:cb:19
+  Last flapped   : 2022-01-07 10:05:58 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1368 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/22.0 (Index 625) (SNMP ifIndex 580)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710504
+    Protocol aenet, AE bundle: ae22.0
+
+Physical interface: xe-0/0/23, Enabled, Physical link is Up
+  Interface index: 720, SNMP ifIndex: 539
+  Description: To-COM004.17.30U11.LITF4-port:p5p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:08, Hardware address: f4:cc:55:fc:cb:1a
+  Last flapped   : 2022-01-07 10:06:04 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1944 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/23.0 (Index 626) (SNMP ifIndex 581)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710409
+    Protocol aenet, AE bundle: ae23.0
+
+Physical interface: xe-0/0/24, Enabled, Physical link is Up
+  Interface index: 721, SNMP ifIndex: 540
+  Description: To-COM005.17.30U14.LITF4-port:p5p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:09, Hardware address: f4:cc:55:fc:cb:1b
+  Last flapped   : 2022-01-07 10:06:02 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1368 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/24.0 (Index 627) (SNMP ifIndex 582)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710488
+    Protocol aenet, AE bundle: ae24.0
+
+Physical interface: xe-0/0/25, Enabled, Physical link is Up
+  Interface index: 722, SNMP ifIndex: 541
+  Description: To-COM006.17.30U17.LITF4-port:p5p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:0a, Hardware address: f4:cc:55:fc:cb:1c
+  Last flapped   : 2022-01-07 10:05:58 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/25.0 (Index 628) (SNMP ifIndex 583)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710472
+    Protocol aenet, AE bundle: ae25.0
+
+Physical interface: xe-0/0/26, Enabled, Physical link is Up
+  Interface index: 723, SNMP ifIndex: 542
+  Description: To-COM007.17.30U26.LITF4-port:p5p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:0b, Hardware address: f4:cc:55:fc:cb:1d
+  Last flapped   : 2022-01-07 10:06:06 MST (32w4d 04:30 ago)
+  Input rate     : 744 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/26.0 (Index 629) (SNMP ifIndex 584)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710477
+    Protocol aenet, AE bundle: ae26.0
+
+Physical interface: xe-0/0/27, Enabled, Physical link is Up
+  Interface index: 724, SNMP ifIndex: 543
+  Description: To-COM008.17.30U29.LITF4-port:p5p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:0c, Hardware address: f4:cc:55:fc:cb:1e
+  Last flapped   : 2022-01-07 10:06:22 MST (32w4d 04:29 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/27.0 (Index 630) (SNMP ifIndex 585)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710463
+    Protocol aenet, AE bundle: ae27.0
+
+Physical interface: xe-0/0/28, Enabled, Physical link is Up
+  Interface index: 725, SNMP ifIndex: 544
+  Description: To-COM009.17.30U32.LITF4-port:p5p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:0d, Hardware address: f4:cc:55:fc:cb:1f
+  Last flapped   : 2022-01-07 10:06:02 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/28.0 (Index 631) (SNMP ifIndex 586)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710413
+    Protocol aenet, AE bundle: ae28.0
+
+Physical interface: xe-0/0/29, Enabled, Physical link is Up
+  Interface index: 726, SNMP ifIndex: 545
+  Description: To-COM010.17.30U35.LITF4-port:p5p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:0e, Hardware address: f4:cc:55:fc:cb:20
+  Last flapped   : 2022-01-07 10:05:40 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1944 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/29.0 (Index 632) (SNMP ifIndex 587)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710420
+    Protocol aenet, AE bundle: ae29.0
+
+Physical interface: xe-0/0/30, Enabled, Physical link is Down
+  Interface index: 727, SNMP ifIndex: 546
+  Description: To-COM001.17.30U02.LITF4-port:p6p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:0f, Hardware address: f4:cc:55:fc:cb:21
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/30.0 (Index 633) (SNMP ifIndex 588)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 0
+    Protocol aenet, AE bundle: ae30.0
+
+Physical interface: xe-0/0/31, Enabled, Physical link is Up
+  Interface index: 728, SNMP ifIndex: 547
+  Description: To-COM002.17.30U05.LITF4-port:p6p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:10, Hardware address: f4:cc:55:fc:cb:22
+  Last flapped   : 2022-01-07 10:05:56 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1944 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/31.0 (Index 634) (SNMP ifIndex 589)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710403
+    Protocol aenet, AE bundle: ae31.0
+
+Physical interface: xe-0/0/32, Enabled, Physical link is Up
+  Interface index: 729, SNMP ifIndex: 548
+  Description: To-COM003.17.30U08.LITF4-port:p6p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:11, Hardware address: f4:cc:55:fc:cb:23
+  Last flapped   : 2022-01-07 10:06:04 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/32.0 (Index 635) (SNMP ifIndex 590)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710490
+    Protocol aenet, AE bundle: ae32.0
+
+Physical interface: xe-0/0/33, Enabled, Physical link is Up
+  Interface index: 730, SNMP ifIndex: 549
+  Description: To-COM004.17.30U11.LITF4-port:p6p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:12, Hardware address: f4:cc:55:fc:cb:24
+  Last flapped   : 2022-01-07 10:06:10 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/33.0 (Index 636) (SNMP ifIndex 591)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 3
+    Output packets: 710454
+    Protocol aenet, AE bundle: ae33.0
+
+Physical interface: xe-0/0/34, Enabled, Physical link is Up
+  Interface index: 731, SNMP ifIndex: 550
+  Description: To-COM005.17.30U14.LITF4-port:p6p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:13, Hardware address: f4:cc:55:fc:cb:25
+  Last flapped   : 2022-01-07 10:06:08 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1368 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/34.0 (Index 637) (SNMP ifIndex 592)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 3
+    Output packets: 710467
+    Protocol aenet, AE bundle: ae34.0
+
+Physical interface: xe-0/0/35, Enabled, Physical link is Up
+  Interface index: 732, SNMP ifIndex: 551
+  Description: To-COM006.17.30U17.LITF4-port:p6p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:14, Hardware address: f4:cc:55:fc:cb:26
+  Last flapped   : 2022-01-07 10:06:04 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/35.0 (Index 638) (SNMP ifIndex 593)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 3
+    Output packets: 710453
+    Protocol aenet, AE bundle: ae35.0
+
+Physical interface: xe-0/0/36, Enabled, Physical link is Up
+  Interface index: 733, SNMP ifIndex: 552
+  Description: To-COM007.17.30U26.LITF4-port:p6p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:15, Hardware address: f4:cc:55:fc:cb:27
+  Last flapped   : 2022-01-07 10:06:12 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/36.0 (Index 639) (SNMP ifIndex 594)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 4
+    Output packets: 710367
+    Protocol aenet, AE bundle: ae36.0
+
+Physical interface: xe-0/0/37, Enabled, Physical link is Up
+  Interface index: 734, SNMP ifIndex: 553
+  Description: To-COM008.17.30U29.LITF4-port:p6p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:16, Hardware address: f4:cc:55:fc:cb:28
+  Last flapped   : 2022-01-07 10:06:28 MST (32w4d 04:29 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 248 bps (0 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/37.0 (Index 640) (SNMP ifIndex 595)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 631905
+    Output packets: 710399
+    Protocol aenet, AE bundle: ae37.0
+
+Physical interface: xe-0/0/38, Enabled, Physical link is Up
+  Interface index: 735, SNMP ifIndex: 554
+  Description: To-COM009.17.30U32.LITF4-port:p6p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:17, Hardware address: f4:cc:55:fc:cb:29
+  Last flapped   : 2022-01-07 10:06:08 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 248 bps (0 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/38.0 (Index 641) (SNMP ifIndex 596)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 631906
+    Output packets: 710436
+    Protocol aenet, AE bundle: ae38.0
+
+Physical interface: xe-0/0/39, Enabled, Physical link is Up
+  Interface index: 736, SNMP ifIndex: 555
+  Description: To-COM010.17.30U35.LITF4-port:p6p2
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:18, Hardware address: f4:cc:55:fc:cb:2a
+  Last flapped   : 2022-01-07 10:05:46 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 248 bps (0 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/39.0 (Index 642) (SNMP ifIndex 597)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 631909
+    Output packets: 710380
+    Protocol aenet, AE bundle: ae39.0
+
+Physical interface: ge-0/0/40, Enabled, Physical link is Down
+  Interface index: 739, SNMP ifIndex: 557
+  Link-level type: Ethernet, MTU: 1514, LAN-PHY mode, Link-mode: Full-duplex, Speed: 1000mbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:2b, Hardware address: f4:cc:55:fc:cb:2b
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface ge-0/0/40.16386 (Index 645) (SNMP ifIndex 507)
+    Flags: Device-Down 0x4004000 Encapsulation: ENET2
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: ge-0/0/41, Enabled, Physical link is Down
+  Interface index: 740, SNMP ifIndex: 558
+  Link-level type: Ethernet, MTU: 1514, LAN-PHY mode, Link-mode: Full-duplex, Speed: 1000mbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:2c, Hardware address: f4:cc:55:fc:cb:2c
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface ge-0/0/41.16386 (Index 646) (SNMP ifIndex 599)
+    Flags: Device-Down 0x4004000 Encapsulation: ENET2
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: ge-0/0/42, Enabled, Physical link is Down
+  Interface index: 741, SNMP ifIndex: 559
+  Link-level type: Ethernet, MTU: 1514, LAN-PHY mode, Link-mode: Full-duplex, Speed: 1000mbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:2d, Hardware address: f4:cc:55:fc:cb:2d
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface ge-0/0/42.16386 (Index 647) (SNMP ifIndex 600)
+    Flags: Device-Down 0x4004000 Encapsulation: ENET2
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: ge-0/0/43, Enabled, Physical link is Down
+  Interface index: 742, SNMP ifIndex: 560
+  Link-level type: Ethernet, MTU: 1514, LAN-PHY mode, Link-mode: Full-duplex, Speed: 1000mbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:2e, Hardware address: f4:cc:55:fc:cb:2e
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface ge-0/0/43.16386 (Index 648) (SNMP ifIndex 601)
+    Flags: Device-Down 0x4004000 Encapsulation: ENET2
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: ge-0/0/44, Enabled, Physical link is Down
+  Interface index: 743, SNMP ifIndex: 561
+  Link-level type: Ethernet, MTU: 1514, LAN-PHY mode, Link-mode: Full-duplex, Speed: 1000mbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:2f, Hardware address: f4:cc:55:fc:cb:2f
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface ge-0/0/44.16386 (Index 649) (SNMP ifIndex 602)
+    Flags: Device-Down 0x4004000 Encapsulation: ENET2
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: xe-0/0/45, Enabled, Physical link is Down
+  Interface index: 737, SNMP ifIndex: 556
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:1e, Hardware address: f4:cc:55:fc:cb:30
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/45.0 (Index 643) (SNMP ifIndex 598)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 0
+    Protocol aenet, AE bundle: ae45.0
+
+Physical interface: xe-0/0/46, Enabled, Physical link is Down
+  Interface index: 738, SNMP ifIndex: 603
+  Link-level type: Ethernet, MTU: 1514, LAN-PHY mode, Speed: 10Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cb:31, Hardware address: f4:cc:55:fc:cb:31
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface xe-0/0/46.16386 (Index 644) (SNMP ifIndex 711)
+    Flags: Device-Down 0x4004000 Encapsulation: ENET2
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: et-0/0/48, Administratively down, Physical link is Down
+  Interface index: 744, SNMP ifIndex: 562
+  Description: TO PCOR103.17.28U25.LITF4:port:et-0/0/20
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 40Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:1f, Hardware address: f4:cc:55:fc:cb:33
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface et-0/0/48.0 (Index 650) (SNMP ifIndex 604)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 0
+    Protocol aenet, AE bundle: ae96.0
+
+Physical interface: et-0/0/49, Administratively down, Physical link is Down
+  Interface index: 745, SNMP ifIndex: 563
+  Description: TO PCOR203.17.28U28.LITF4:port:et-0/0/20
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 40Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running Down
+  Interface flags: Hardware-Down Down SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:1f, Hardware address: f4:cc:55:fc:cb:37
+  Last flapped   : 2022-01-07 10:03:51 MST (32w4d 04:32 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+  Active alarms  : LINK
+  Active defects : LINK, LOCAL-FAULT
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface et-0/0/49.0 (Index 651) (SNMP ifIndex 605)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 0
+    Output packets: 0
+    Protocol aenet, AE bundle: ae96.0
+
+Physical interface: et-0/0/50, Enabled, Physical link is Up
+  Interface index: 746, SNMP ifIndex: 720
+  Description: TO TOR201.17.31U23.LITF4:port:et-0/0/50
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 40Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:04, Hardware address: f4:cc:55:fc:cb:3b
+  Last flapped   : 2022-01-07 10:03:52 MST (32w4d 04:32 ago)
+  Input rate     : 4200 bps (5 pps)
+  Output rate    : 5992 bps (9 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface et-0/0/50.0 (Index 652) (SNMP ifIndex 721)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 710465
+    Output packets: 75289056
+    Protocol aenet, AE bundle: ae95.0
+
+Physical interface: et-0/0/51, Enabled, Physical link is Up
+  Interface index: 747, SNMP ifIndex: 722
+  Description: TO TOR201.17.31U23.LITF4:port:et-0/0/51
+  Link-level type: Ethernet, MTU: 9216, LAN-PHY mode, Speed: 40Gbps, BPDU Error: None, Loop Detect PDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Media type: Fiber
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Link flags     : None
+  CoS queues     : 12 supported, 12 maximum usable queues
+  Current address: f4:cc:55:fc:cc:04, Hardware address: f4:cc:55:fc:cb:3f
+  Last flapped   : 2022-01-07 10:03:52 MST (32w4d 04:32 ago)
+  Input rate     : 1512 bps (1 pps)
+  Output rate    : 2392 bps (2 pps)
+  Active alarms  : None
+  Active defects : None
+  PCS statistics                      Seconds
+    Bit errors                             0
+    Errored blocks                         0
+  Ethernet FEC statistics              Errors
+    FEC Corrected Errors                    0
+    FEC Uncorrected Errors                  0
+    FEC Corrected Errors Rate               0
+    FEC Uncorrected Errors Rate             0
+  Interface transmit statistics: Disabled
+
+  Logical interface et-0/0/51.0 (Index 653) (SNMP ifIndex 723)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Input packets : 710487
+    Output packets: 710456
+    Protocol aenet, AE bundle: ae95.0
+
+Physical interface: ae0 (MC-AE-1, active), Enabled, Physical link is Down
+  Interface index: 640, SNMP ifIndex: 622
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:f0, Hardware address: f4:cc:55:fc:cb:f0
+  Last flapped   : 2022-01-07 10:02:07 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae0.0 (Index 600) (SNMP ifIndex 717)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae1 (MC-AE-2, active), Enabled, Physical link is Up
+  Interface index: 641, SNMP ifIndex: 623
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:f1, Hardware address: f4:cc:55:fc:cb:f1
+  Last flapped   : 2022-01-07 10:05:50 MST (32w4d 04:30 ago)
+  Input rate     : 164912 bps (157 pps)
+  Output rate    : 167376 bps (152 pps)
+
+  Logical interface ae1.0 (Index 599) (SNMP ifIndex 724)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae2 (MC-AE-3, active), Enabled, Physical link is Up
+  Interface index: 642, SNMP ifIndex: 606
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:f2, Hardware address: f4:cc:55:fc:cb:f2
+  Last flapped   : 2022-01-07 10:05:58 MST (32w4d 04:30 ago)
+  Input rate     : 156528 bps (144 pps)
+  Output rate    : 171408 bps (158 pps)
+
+  Logical interface ae2.0 (Index 598) (SNMP ifIndex 725)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae3 (MC-AE-4, active), Enabled, Physical link is Up
+  Interface index: 643, SNMP ifIndex: 607
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:f3, Hardware address: f4:cc:55:fc:cb:f3
+  Last flapped   : 2022-01-07 10:06:02 MST (32w4d 04:30 ago)
+  Input rate     : 5032 bps (7 pps)
+  Output rate    : 8264 bps (13 pps)
+
+  Logical interface ae3.0 (Index 597) (SNMP ifIndex 726)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae4 (MC-AE-5, active), Enabled, Physical link is Up
+  Interface index: 644, SNMP ifIndex: 608
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:f4, Hardware address: f4:cc:55:fc:cb:f4
+  Last flapped   : 2022-01-07 10:06:00 MST (32w4d 04:30 ago)
+  Input rate     : 4344 bps (6 pps)
+  Output rate    : 7728 bps (13 pps)
+
+  Logical interface ae4.0 (Index 596) (SNMP ifIndex 727)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae5 (MC-AE-6, active), Enabled, Physical link is Up
+  Interface index: 645, SNMP ifIndex: 609
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:f5, Hardware address: f4:cc:55:fc:cb:f5
+  Last flapped   : 2022-01-07 10:05:56 MST (32w4d 04:30 ago)
+  Input rate     : 4192 bps (6 pps)
+  Output rate    : 6792 bps (11 pps)
+
+  Logical interface ae5.0 (Index 595) (SNMP ifIndex 728)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae6 (MC-AE-7, active), Enabled, Physical link is Up
+  Interface index: 646, SNMP ifIndex: 610
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:f6, Hardware address: f4:cc:55:fc:cb:f6
+  Last flapped   : 2022-01-07 10:06:06 MST (32w4d 04:30 ago)
+  Input rate     : 40088 bps (60 pps)
+  Output rate    : 34864 bps (65 pps)
+
+  Logical interface ae6.0 (Index 594) (SNMP ifIndex 729)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae7 (MC-AE-8, active), Enabled, Physical link is Up
+  Interface index: 647, SNMP ifIndex: 611
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:f7, Hardware address: f4:cc:55:fc:cb:f7
+  Last flapped   : 2022-01-07 10:06:20 MST (32w4d 04:29 ago)
+  Input rate     : 3480 bps (4 pps)
+  Output rate    : 7616 bps (10 pps)
+
+  Logical interface ae7.0 (Index 593) (SNMP ifIndex 730)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae8 (MC-AE-9, active), Enabled, Physical link is Up
+  Interface index: 648, SNMP ifIndex: 612
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:f8, Hardware address: f4:cc:55:fc:cb:f8
+  Last flapped   : 2022-01-07 10:06:00 MST (32w4d 04:30 ago)
+  Input rate     : 3392 bps (4 pps)
+  Output rate    : 6144 bps (9 pps)
+
+  Logical interface ae8.0 (Index 592) (SNMP ifIndex 731)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae9 (MC-AE-10, active), Enabled, Physical link is Up
+  Interface index: 649, SNMP ifIndex: 613
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:f9, Hardware address: f4:cc:55:fc:cb:f9
+  Last flapped   : 2022-01-07 10:05:40 MST (32w4d 04:30 ago)
+  Input rate     : 2184 bps (3 pps)
+  Output rate    : 4600 bps (6 pps)
+
+  Logical interface ae9.0 (Index 591) (SNMP ifIndex 732)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae10 (MC-AE-11, active), Enabled, Physical link is Down
+  Interface index: 650, SNMP ifIndex: 614
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:fa, Hardware address: f4:cc:55:fc:cb:fa
+  Last flapped   : 2022-01-07 10:02:07 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae10.0 (Index 590) (SNMP ifIndex 733)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae11 (MC-AE-12, active), Enabled, Physical link is Down
+  Interface index: 651, SNMP ifIndex: 615
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:fb, Hardware address: f4:cc:55:fc:cb:fb
+  Last flapped   : 2022-01-07 10:02:07 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae11.0 (Index 589) (SNMP ifIndex 734)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae12 (MC-AE-13, active), Enabled, Physical link is Down
+  Interface index: 652, SNMP ifIndex: 616
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:fc, Hardware address: f4:cc:55:fc:cb:fc
+  Last flapped   : 2022-01-07 10:02:07 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae12.0 (Index 588) (SNMP ifIndex 735)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae13 (MC-AE-14, active), Enabled, Physical link is Down
+  Interface index: 653, SNMP ifIndex: 617
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:fd, Hardware address: f4:cc:55:fc:cb:fd
+  Last flapped   : 2022-01-07 10:02:07 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae13.0 (Index 587) (SNMP ifIndex 736)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae14 (MC-AE-15, active), Enabled, Physical link is Down
+  Interface index: 654, SNMP ifIndex: 618
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:fe, Hardware address: f4:cc:55:fc:cb:fe
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae14.0 (Index 586) (SNMP ifIndex 737)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae15 (MC-AE-16, active), Enabled, Physical link is Down
+  Interface index: 655, SNMP ifIndex: 619
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cb:ff, Hardware address: f4:cc:55:fc:cb:ff
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae15.0 (Index 585) (SNMP ifIndex 738)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae16 (MC-AE-17, active), Enabled, Physical link is Down
+  Interface index: 656, SNMP ifIndex: 620
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:00, Hardware address: f4:cc:55:fc:cc:00
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae16.0 (Index 584) (SNMP ifIndex 739)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae17 (MC-AE-18, active), Enabled, Physical link is Down
+  Interface index: 657, SNMP ifIndex: 621
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:01, Hardware address: f4:cc:55:fc:cc:01
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae17.0 (Index 583) (SNMP ifIndex 740)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae18 (MC-AE-19, active), Enabled, Physical link is Down
+  Interface index: 658, SNMP ifIndex: 624
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:02, Hardware address: f4:cc:55:fc:cc:02
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae18.0 (Index 582) (SNMP ifIndex 741)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae19 (MC-AE-20, active), Enabled, Physical link is Down
+  Interface index: 659, SNMP ifIndex: 625
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:03, Hardware address: f4:cc:55:fc:cc:03
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae19.0 (Index 581) (SNMP ifIndex 742)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae20 (MC-AE-21, active), Enabled, Physical link is Down
+  Interface index: 660, SNMP ifIndex: 626
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:05, Hardware address: f4:cc:55:fc:cc:05
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae20.0 (Index 580) (SNMP ifIndex 712)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae21 (MC-AE-22, active), Enabled, Physical link is Up
+  Interface index: 661, SNMP ifIndex: 627
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:06, Hardware address: f4:cc:55:fc:cc:06
+  Last flapped   : 2022-01-07 10:05:53 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+
+  Logical interface ae21.0 (Index 579) (SNMP ifIndex 713)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae22 (MC-AE-23, active), Enabled, Physical link is Up
+  Interface index: 662, SNMP ifIndex: 628
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:07, Hardware address: f4:cc:55:fc:cc:07
+  Last flapped   : 2022-01-07 10:06:00 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1368 bps (1 pps)
+
+  Logical interface ae22.0 (Index 578) (SNMP ifIndex 780)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae23 (MC-AE-24, active), Enabled, Physical link is Up
+  Interface index: 663, SNMP ifIndex: 629
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:08, Hardware address: f4:cc:55:fc:cc:08
+  Last flapped   : 2022-01-07 10:06:06 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1944 bps (1 pps)
+
+  Logical interface ae23.0 (Index 577) (SNMP ifIndex 781)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae24 (MC-AE-25, active), Enabled, Physical link is Up
+  Interface index: 664, SNMP ifIndex: 630
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:09, Hardware address: f4:cc:55:fc:cc:09
+  Last flapped   : 2022-01-07 10:06:04 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1368 bps (1 pps)
+
+  Logical interface ae24.0 (Index 576) (SNMP ifIndex 782)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae25 (MC-AE-26, active), Enabled, Physical link is Up
+  Interface index: 665, SNMP ifIndex: 631
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:0a, Hardware address: f4:cc:55:fc:cc:0a
+  Last flapped   : 2022-01-07 10:06:00 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+
+  Logical interface ae25.0 (Index 575) (SNMP ifIndex 783)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae26 (MC-AE-27, active), Enabled, Physical link is Up
+  Interface index: 666, SNMP ifIndex: 632
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:0b, Hardware address: f4:cc:55:fc:cc:0b
+  Last flapped   : 2022-01-07 10:06:08 MST (32w4d 04:30 ago)
+  Input rate     : 744 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+
+  Logical interface ae26.0 (Index 574) (SNMP ifIndex 784)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae27 (MC-AE-28, active), Enabled, Physical link is Up
+  Interface index: 667, SNMP ifIndex: 633
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:0c, Hardware address: f4:cc:55:fc:cc:0c
+  Last flapped   : 2022-01-07 10:06:24 MST (32w4d 04:29 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+
+  Logical interface ae27.0 (Index 573) (SNMP ifIndex 785)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae28 (MC-AE-29, active), Enabled, Physical link is Up
+  Interface index: 668, SNMP ifIndex: 634
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:0d, Hardware address: f4:cc:55:fc:cc:0d
+  Last flapped   : 2022-01-07 10:06:04 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+
+  Logical interface ae28.0 (Index 572) (SNMP ifIndex 786)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae29 (MC-AE-30, active), Enabled, Physical link is Up
+  Interface index: 669, SNMP ifIndex: 635
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:0e, Hardware address: f4:cc:55:fc:cc:0e
+  Last flapped   : 2022-01-07 10:05:42 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1944 bps (1 pps)
+
+  Logical interface ae29.0 (Index 571) (SNMP ifIndex 787)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae30 (MC-AE-31, active), Enabled, Physical link is Down
+  Interface index: 670, SNMP ifIndex: 636
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:0f, Hardware address: f4:cc:55:fc:cc:0f
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae30.0 (Index 570) (SNMP ifIndex 788)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae31 (MC-AE-32, active), Enabled, Physical link is Up
+  Interface index: 671, SNMP ifIndex: 637
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:10, Hardware address: f4:cc:55:fc:cc:10
+  Last flapped   : 2022-01-07 10:05:58 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1944 bps (1 pps)
+
+  Logical interface ae31.0 (Index 569) (SNMP ifIndex 789)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae32 (MC-AE-33, active), Enabled, Physical link is Up
+  Interface index: 672, SNMP ifIndex: 638
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:11, Hardware address: f4:cc:55:fc:cc:11
+  Last flapped   : 2022-01-07 10:06:06 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+
+  Logical interface ae32.0 (Index 568) (SNMP ifIndex 790)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae33 (MC-AE-34, active), Enabled, Physical link is Up
+  Interface index: 673, SNMP ifIndex: 639
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:12, Hardware address: f4:cc:55:fc:cc:12
+  Last flapped   : 2022-01-07 10:06:12 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+
+  Logical interface ae33.0 (Index 567) (SNMP ifIndex 791)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae34 (MC-AE-35, active), Enabled, Physical link is Up
+  Interface index: 674, SNMP ifIndex: 640
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:13, Hardware address: f4:cc:55:fc:cc:13
+  Last flapped   : 2022-01-07 10:06:10 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1368 bps (1 pps)
+
+  Logical interface ae34.0 (Index 566) (SNMP ifIndex 792)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae35 (MC-AE-36, active), Enabled, Physical link is Up
+  Interface index: 675, SNMP ifIndex: 641
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:14, Hardware address: f4:cc:55:fc:cc:14
+  Last flapped   : 2022-01-07 10:06:06 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+
+  Logical interface ae35.0 (Index 565) (SNMP ifIndex 793)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae36 (MC-AE-37, active), Enabled, Physical link is Up
+  Interface index: 676, SNMP ifIndex: 642
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:15, Hardware address: f4:cc:55:fc:cc:15
+  Last flapped   : 2022-01-07 10:06:14 MST (32w4d 04:30 ago)
+  Input rate     : 992 bps (0 pps)
+  Output rate    : 1240 bps (1 pps)
+
+  Logical interface ae36.0 (Index 564) (SNMP ifIndex 794)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae37, Enabled, Physical link is Up
+  Interface index: 677, SNMP ifIndex: 643
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:16, Hardware address: f4:cc:55:fc:cc:16
+  Last flapped   : 2022-01-07 10:06:28 MST (32w4d 04:29 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 248 bps (0 pps)
+
+  Logical interface ae37.0 (Index 563) (SNMP ifIndex 795)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+
+Physical interface: ae38, Enabled, Physical link is Up
+  Interface index: 678, SNMP ifIndex: 644
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:17, Hardware address: f4:cc:55:fc:cc:17
+  Last flapped   : 2022-01-07 10:06:08 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 248 bps (0 pps)
+
+  Logical interface ae38.0 (Index 562) (SNMP ifIndex 796)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+
+Physical interface: ae39, Enabled, Physical link is Up
+  Interface index: 679, SNMP ifIndex: 645
+  Link-level type: Ethernet, MTU: 9216, Speed: 10Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:18, Hardware address: f4:cc:55:fc:cc:18
+  Last flapped   : 2022-01-07 10:05:46 MST (32w4d 04:30 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 248 bps (0 pps)
+
+  Logical interface ae39.0 (Index 561) (SNMP ifIndex 797)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+
+Physical interface: ae40, Enabled, Physical link is Down
+  Interface index: 680, SNMP ifIndex: 646
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:19, Hardware address: f4:cc:55:fc:cc:19
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae40.0 (Index 560) (SNMP ifIndex 798)
+    Flags: Hardware-Down Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+
+Physical interface: ae41, Enabled, Physical link is Down
+  Interface index: 681, SNMP ifIndex: 647
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:1a, Hardware address: f4:cc:55:fc:cc:1a
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae41.0 (Index 559) (SNMP ifIndex 799)
+    Flags: Hardware-Down Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+
+Physical interface: ae42, Enabled, Physical link is Down
+  Interface index: 682, SNMP ifIndex: 648
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:1b, Hardware address: f4:cc:55:fc:cc:1b
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae42.0 (Index 558) (SNMP ifIndex 800)
+    Flags: Hardware-Down Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+
+Physical interface: ae43, Enabled, Physical link is Down
+  Interface index: 683, SNMP ifIndex: 649
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:1c, Hardware address: f4:cc:55:fc:cc:1c
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae43.0 (Index 557) (SNMP ifIndex 801)
+    Flags: Hardware-Down Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+
+Physical interface: ae44, Enabled, Physical link is Down
+  Interface index: 684, SNMP ifIndex: 650
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:1d, Hardware address: f4:cc:55:fc:cc:1d
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae44.0 (Index 556) (SNMP ifIndex 802)
+    Flags: Hardware-Down Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+
+Physical interface: ae45, Enabled, Physical link is Down
+  Interface index: 685, SNMP ifIndex: 651
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:1e, Hardware address: f4:cc:55:fc:cc:1e
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae45.0 (Index 555) (SNMP ifIndex 803)
+    Flags: Hardware-Down Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+
+Physical interface: ae95, Enabled, Physical link is Up
+  Interface index: 686, SNMP ifIndex: 701
+  Description: TO TOR201.17.31U23.LITF4:port:ae95
+  Link-level type: Ethernet, MTU: 9216, Speed: 80Gbps, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:04, Hardware address: f4:cc:55:fc:cc:04
+  Last flapped   : 2022-01-07 10:03:54 MST (32w4d 04:32 ago)
+  Input rate     : 5712 bps (6 pps)
+  Output rate    : 8384 bps (11 pps)
+
+  Logical interface ae95.0 (Index 554) (SNMP ifIndex 718)
+    Flags: Up SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:      74578591          0    5220046918            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Trunk-Mode
+
+Physical interface: ae96 (MC-AE-97, active), Administratively down, Physical link is Down
+  Interface index: 687, SNMP ifIndex: 702
+  Description: TO PCOR103.17.28U25.LITF4:port:ae20
+  Link-level type: Ethernet, MTU: 9216, Speed: Unspecified, BPDU Error: None, Ethernet-Switching Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled, Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
+  Device flags   : Present Running
+  Interface flags: Hardware-Down Down SNMP-Traps Internal: 0x4000
+  Current address: f4:cc:55:fc:cc:1f, Hardware address: f4:cc:55:fc:cc:1f
+  Last flapped   : 2022-01-07 10:02:08 MST (32w4d 04:34 ago)
+  Input rate     : 0 bps (0 pps)
+  Output rate    : 0 bps (0 pps)
+
+  Logical interface ae96.0 (Index 553) (SNMP ifIndex 804)
+    Flags: Device-Down SNMP-Traps 0x24024000 Encapsulation: Ethernet-Bridge
+    Statistics        Packets        pps         Bytes          bps
+    Bundle:
+        Input :             0          0             0            0
+        Output:             0          0             0            0
+    Adaptive Statistics:
+        Adaptive Adjusts:          0
+        Adaptive Scans  :          0
+        Adaptive Updates:          0
+    Protocol eth-switch, MTU: 9216
+      Flags: Is-Primary, Trunk-Mode
+
+Physical interface: bme0, Enabled, Physical link is Up
+  Interface index: 64, SNMP ifIndex: 37
+  Type: Ethernet, Link-level type: Ethernet, MTU: 9512
+  Device flags   : Present Running
+  Link flags     : None
+  Current address: 02:00:00:00:00:0a, Hardware address: 02:00:00:00:00:0a
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 101575290
+
+  Logical interface bme0.0 (Index 4) (SNMP ifIndex 220)
+    Flags: Up 0x4000000 Encapsulation: ENET2
+    Input packets : 97607211
+    Output packets: 4
+    Protocol inet, MTU: 9498
+    Max nh cache: 75000, New hold nh limit: 75000, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Is-Primary
+      Addresses, Flags: Primary Is-Default Is-Preferred Is-Primary
+        Destination: 128/2, Local: 128.0.0.1, Broadcast: 191.255.255.255
+      Addresses, Flags: Primary
+        Destination: 128/2, Local: 128.0.0.4, Broadcast: 191.255.255.255
+      Addresses, Flags: Primary
+        Destination: 128/2, Local: 128.0.0.16, Broadcast: 191.255.255.255
+      Addresses, Flags: Primary
+        Destination: 128/2, Local: 128.0.0.63, Broadcast: 191.255.255.255
+
+Physical interface: bme1, Enabled, Physical link is Up
+  Interface index: 66, SNMP ifIndex: 109
+  Type: Ethernet, Link-level type: Ethernet, MTU: 9512, Speed: 1000mbps
+  Device flags   : Present Running
+  Link type      : Full-Duplex
+  Link flags     : None
+  Current address: f4:cc:55:fc:cf:f1, Hardware address: f4:cc:55:fc:cf:f1
+  Last flapped   : 2022-01-07 10:02:06 MST (32w4d 04:34 ago)
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: cbp0, Enabled, Physical link is Up
+  Interface index: 691, SNMP ifIndex: 706
+  Type: Ethernet, Link-level type: Ethernet, MTU: 9192
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Current address: 00:00:00:00:00:14, Hardware address: 00:00:00:00:00:14
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: dsc, Enabled, Physical link is Up
+  Interface index: 5, SNMP ifIndex: 5
+  Type: Software-Pseudo, MTU: Unlimited
+  Device flags   : Present Running
+  Interface flags: Point-To-Point SNMP-Traps
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: em0, Enabled, Physical link is Up
+  Interface index: 8, SNMP ifIndex: 17
+  Type: Ethernet, Link-level type: Ethernet, MTU: 1514, Speed: 1000mbps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Current address: f4:cc:55:fc:cb:01, Hardware address: f4:cc:55:fc:cf:f8
+  Last flapped   : 2022-01-07 10:03:39 MST (32w4d 04:32 ago)
+    Input packets : 2185695
+    Output packets: 2369214
+
+  Logical interface em0.0 (Index 5) (SNMP ifIndex 18)
+    Flags: Up SNMP-Traps 0x24000000 Encapsulation: Ethernet-Bridge
+    Bandwidth: 0
+    Input packets : 2185695
+    Output packets: 2369214
+    Protocol eth-switch, MTU: 1514
+      Flags: Is-Primary
+
+Physical interface: em1, Enabled, Physical link is Down
+  Interface index: 9, SNMP ifIndex: 23
+  Type: Ethernet, Link-level type: Ethernet, MTU: 1514
+  Device flags   : Present Running No-Carrier
+  Interface flags: Hardware-Down SNMP-Traps
+  Link flags     : None
+  Current address: f4:cc:55:fc:cf:f9, Hardware address: f4:cc:55:fc:cf:f9
+  Last flapped   : 2022-01-07 10:02:18 MST (32w4d 04:33 ago)
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: em2, Enabled, Physical link is Up
+  Interface index: 67, SNMP ifIndex: 116
+  Type: Ethernet, Link-level type: Ethernet, MTU: 1514, Speed: 1000mbps
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Current address: f4:cc:55:fc:cf:f0, Hardware address: f4:cc:55:fc:cf:f0
+  Last flapped   : 2022-01-07 10:02:20 MST (32w4d 04:33 ago)
+    Input packets : 6451364
+    Output packets: 5308030
+
+  Logical interface em2.32768 (Index 3) (SNMP ifIndex 118)
+    Flags: Up SNMP-Traps Encapsulation: ENET2
+    Input packets : 6451275
+    Output packets: 5308030
+    Protocol inet, MTU: 1500
+    Max nh cache: 75000, New hold nh limit: 75000, Curr nh cnt: 1, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Is-Primary
+      Addresses, Flags: Primary Preferred Is-Default Is-Preferred Is-Primary
+        Destination: 192.168.1/24, Local: 192.168.1.2, Broadcast: 192.168.1.255
+
+Physical interface: esi, Enabled, Physical link is Up
+  Interface index: 690, SNMP ifIndex: 501
+  Type: Software-Pseudo, Link-level type: VxLAN-Tunnel-Endpoint, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: fti0, Enabled, Physical link is Up
+  Interface index: 694, SNMP ifIndex: 707
+  Type: FTI, Link-level type: Flexible-tunnel-Interface, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: gre, Enabled, Physical link is Up
+  Interface index: 10, SNMP ifIndex: 8
+  Type: GRE, Link-level type: GRE, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: Point-To-Point SNMP-Traps
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: ipip, Enabled, Physical link is Up
+  Interface index: 11, SNMP ifIndex: 9
+  Type: IPIP, Link-level type: IP-over-IP, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: irb, Enabled, Physical link is Up
+  Interface index: 688, SNMP ifIndex: 503
+  Type: Ethernet, Link-level type: Ethernet, MTU: 1514
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Current address: f4:cc:55:fc:cb:00, Hardware address: f4:cc:55:fc:cb:00
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+  Logical interface irb.95 (Index 550) (SNMP ifIndex 719)
+    Flags: Up SNMP-Traps 0x4004000 Encapsulation: ENET2
+    Bandwidth: 1Gbps
+    Routing Instance: default-switch Bridging Domain: TOR_INTERLINK
+    Input packets : 149117529
+    Output packets: 74578591
+    Protocol inet, MTU: 9202
+    Max nh cache: 75000, New hold nh limit: 75000, Curr nh cnt: 1, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Sendbcast-pkt-to-re
+      Addresses, Flags: Is-Preferred Is-Primary
+        Destination: 192.168.81.22/31, Local: 192.168.81.22
+    Protocol inet6, MTU: 9202
+    Max nh cache: 75000, New hold nh limit: 75000, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Is-Primary
+      Addresses, Flags: Is-Default Is-Preferred Is-Primary
+        Destination: fd81::22/127, Local: fd81::22
+      Addresses, Flags: Is-Preferred
+        Destination: fe80::/64, Local: fe80::f6cc:5500:5ffc:cb00
+
+Physical interface: jsrv, Enabled, Physical link is Up
+  Interface index: 695, SNMP ifIndex: 504
+  Type: Ethernet, Link-level type: Ethernet, MTU: 1514
+  Device flags   : Present Running
+  Link type      : Full-Duplex
+  Link flags     : None
+  Current address: f4:cc:55:fc:cb:00, Hardware address: f4:cc:55:fc:cb:00
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+  Logical interface jsrv.1 (Index 545) (SNMP ifIndex 505)
+    Flags: Up 0x24004000 Encapsulation: unknown
+    Bandwidth: 1Gbps
+    Routing Instance: None Bridging Domain: None
+    Input packets : 0
+    Output packets: 0
+    Protocol inet, MTU: 1514
+    Max nh cache: 75000, New hold nh limit: 75000, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Is-Primary
+      Addresses, Flags: Primary Is-Default Is-Preferred Is-Primary
+        Destination: 128/2, Local: 128.0.0.127, Broadcast: 191.255.255.255
+
+Physical interface: lo0, Enabled, Physical link is Up
+  Interface index: 6, SNMP ifIndex: 6
+  Type: Loopback, MTU: Unlimited
+  Device flags   : Present Running Loopback
+  Interface flags: SNMP-Traps
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 868290197
+    Output packets: 868290197
+
+  Logical interface lo0.0 (Index 552) (SNMP ifIndex 16)
+    Flags: SNMP-Traps Encapsulation: Unspecified
+    Input packets : 0
+    Output packets: 0
+
+  Logical interface lo0.16385 (Index 551) (SNMP ifIndex 22)
+    Flags: SNMP-Traps Encapsulation: Unspecified
+    Input packets : 868289808
+    Output packets: 868289808
+    Protocol inet, MTU: Unlimited
+    Max nh cache: 0, New hold nh limit: 0, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: None
+
+Physical interface: lsi, Enabled, Physical link is Up
+  Interface index: 4, SNMP ifIndex: 4
+  Type: Software-Pseudo, Link-level type: LSI, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: mtun, Enabled, Physical link is Up
+  Interface index: 65, SNMP ifIndex: 12
+  Type: Multicast-GRE, Link-level type: GRE, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: pimd, Enabled, Physical link is Up
+  Interface index: 26, SNMP ifIndex: 11
+  Type: PIMD, Link-level type: PIM-Decapsulator, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: pime, Enabled, Physical link is Up
+  Interface index: 25, SNMP ifIndex: 10
+  Type: PIME, Link-level type: PIM-Encapsulator, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: pip0, Enabled, Physical link is Up
+  Interface index: 692, SNMP ifIndex: 709
+  Type: Ethernet, Link-level type: Ethernet, MTU: 9192
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Link flags     : None
+  Current address: f4:cc:55:fc:cb:e0, Hardware address: f4:cc:55:fc:cb:e0
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: tap, Enabled, Physical link is Up
+  Interface index: 12, SNMP ifIndex: 7
+  Type: Software-Pseudo, Link-level type: Interface-Specific, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
+
+Physical interface: vme, Enabled, Physical link is Up
+  Interface index: 68, SNMP ifIndex: 35
+  Type: Mgmt-VLAN, Link-level type: Mgmt-VLAN, MTU: 1514
+  Device flags   : Present Running
+  Interface flags: SNMP-Traps
+  Link type      : Full-Duplex
+  Current address: f4:cc:55:fc:cb:01, Hardware address: f4:cc:55:fc:cb:01
+  Last flapped   : Never
+    Input packets : 1475288
+    Output packets: 1658797
+
+  Logical interface vme.0 (Index 6) (SNMP ifIndex 36)
+    Flags: Up SNMP-Traps 0x4004000 Encapsulation: ENET2
+    Bandwidth: 1Gbps
+    Routing Instance: __juniper_private1__ Bridging Domain: mgmt
+    Input packets : 1475288
+    Output packets: 1658797
+    Protocol inet, MTU: 1500
+    Max nh cache: 0, New hold nh limit: 0, Curr nh cnt: 0, Curr new hold cnt: 0, NH drop cnt: 0
+      Flags: Sendbcast-pkt-to-re, Is-Primary
+      Addresses, Flags: Is-Default Is-Preferred Is-Primary
+        Destination: 10.189.85.152/29, Local: 10.189.85.154, Broadcast: 10.189.85.159
+
+Physical interface: vtep, Enabled, Physical link is Up
+  Interface index: 689, SNMP ifIndex: 506
+  Type: Software-Pseudo, Link-level type: VxLAN-Tunnel-Endpoint, MTU: Unlimited, Speed: Unlimited
+  Device flags   : Present Running
+  Link type      : Full-Duplex
+  Link flags     : None
+  Last flapped   : Never
+    Input packets : 0
+    Output packets: 0
