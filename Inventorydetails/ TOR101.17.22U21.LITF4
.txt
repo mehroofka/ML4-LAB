@@ -1,0 +1,1161 @@
+set version 18.1R3-S9.1
+set groups MTU interfaces <ae*> mtu 9216
+set apply-groups MTU
+set system host-name TOR101.17.22U21.LITF4
+set system time-zone America/Denver
+set system arp aging-timer 5
+set system authentication-order radius
+set system authentication-order password
+set system ports console log-out-on-disconnect
+set system root-authentication encrypted-password "$1$JO2ipsZK$phgFZYkxsIYTgXpQKBYol."
+set system name-server 10.189.136.37
+set system name-server 10.189.136.165
+set system radius-server 10.189.136.39 secret "$9$wU2gJk.PTQndbs4JZjik.P569O1RSlK1INdsYoaDik.mTQFn"
+set system radius-server 10.189.136.39 source-address 10.189.85.82
+set system radius-server 10.189.136.167 secret "$9$/tygAtOSreMWx369pOBEhSrev7-24aUik4oz39Cu0RhSrlMWLx"
+set system radius-server 10.189.136.167 source-address 10.189.85.82
+set system radius-options attributes nas-ip-address 10.189.85.82
+set system accounting events login
+set system accounting events change-log
+set system accounting events interactive-commands
+set system accounting destination radius server 10.189.136.39 secret "$9$jakqf69Au0IGDi.f5F369ApRhKM87dbMWJGiHmPz369Cu0BI"
+set system accounting destination radius server 10.189.136.167 secret "$9$FjXK6/tRhSleWTz39tpB1RhSr8Xbs2aGDsYfT3nCAO1RhclevW"
+set system login message "\n***************************************************************************\n*           >>>   W A R N I N G   Authorized access only!   <<<           *\n*                                                                         *\n* Unauthorized access is prohibited and is subject to legal prosecution.  *\n* Management reserves the right to monitor traffic through this system in *\n* order to better safeguard the assets of the company.                    *\n*                                                                         *\n* Individuals using this system without authority, or in excess of their  *\n* authority, are subject to having all of their activities on this system *\n* monitored and recorded by system personnel.                             *\n*                                                                         *\n* Anyone using this system expressly consents to such monitoring and is   *\n***********************************************************\n\n"
+set system login class LOCAL_ADMIN idle-timeout 10
+set system login class LOCAL_ADMIN permissions all
+set system login class REMOTE idle-timeout 15
+set system login class collector permissions view
+set system login class collector permissions view-configuration
+set system login class collector allow-commands "(ping .*)|(traceroute .*)"
+set system login user ansible uid 2001
+set system login user ansible class LOCAL_ADMIN
+set system login user ansible authentication encrypted-password "$1$k3BXd68g$ZSZjd.E3vXwD/mIpe/KMB0"
+set system login user asghar uid 2007
+set system login user asghar class super-user
+set system login user asghar authentication encrypted-password "$1$HIdVvLv2$iKN9WlWCtYn2X4k2VwQth."
+set system login user collector uid 2002
+set system login user collector class super-user
+set system login user collector authentication encrypted-password "$6$H3NjUVDy$Q/H9PdDVRBiZJKH2zhBxk/G2mGxK9EUfrVPoNILcVG/KVYzg.JESorivy25s7IcuNwwwEarQBzW8LIO7oJxvl."
+set system login user jshah uid 2003
+set system login user jshah class super-user
+set system login user jshah authentication encrypted-password "$6$Hx0kmlCQ$L2bsRfFyfiHmixLWQKgirV2F9p81h/8WvIvouBozcvpq5yx4l71UECdRLS14QJf.J4whlIx0sBP4Qc1eFJd.71"
+set system login user mehroof uid 2011
+set system login user mehroof class super-user
+set system login user mehroof authentication encrypted-password "$1$SkeH6wBj$KbqcAOqk5EhcAOU4hr4J/."
+set system login user mhadapsa uid 2009
+set system login user mhadapsa class super-user
+set system login user mhadapsa authentication encrypted-password "$6$1Y2SB4KE$9Dscv2d47cNkM53YtWHDo0ngwI0Gu2DzFCRzbhJcLqfJkWJOV3wWVe8fM.kaNb9EtfdYOmosHyv7ouoDNyB5o1"
+set system login user prabhjot uid 2004
+set system login user prabhjot class super-user
+set system login user prabhjot authentication encrypted-password "$1$KCDvXxUP$DahbjOb5KPnhp/7L8sBkI1"
+set system login user remote uid 2005
+set system login user remote class LOCAL_ADMIN
+set system login user super uid 2006
+set system login user super class LOCAL_ADMIN
+set system login user zubin uid 2008
+set system login user zubin class super-user
+set system login user zubin authentication encrypted-password "$1$cjNKqppL$ZNCqpmrqdOZtx4eOtqUhD."
+set system services ssh root-login deny
+set system services ssh protocol-version v2
+set system services ssh ciphers aes256-ctr
+set system services ssh ciphers aes128-ctr
+set system services ssh ciphers aes192-cbc
+set system services ssh ciphers aes192-ctr
+set system services ssh ciphers aes256-cbc
+set system services ssh ciphers aes128-cbc
+set system services netconf ssh
+set system syslog user * any emergency
+set system syslog host 10.189.136.15 any warning
+set system syslog host 10.189.136.15 port 5544
+set system syslog host 10.189.136.143 any warning
+set system syslog host 10.189.136.143 port 5544
+set system syslog file messages any notice
+set system syslog file messages authorization info
+set system syslog file interactive-commands interactive-commands any
+set system archival configuration transfer-on-commit
+set system archival configuration archive-sites "ftp://juniper-backup@10.189.136.48:/files/TOR101.17.22U21.LITF4" password "$9$-bdYgmPQ69pn/KML7bw5QF6A0BIEhyKOBxdws4oGDi"
+set system ntp boot-server 10.189.136.38
+set system ntp server 10.189.136.38
+set system ntp server 10.189.136.167
+set chassis aggregated-devices ethernet device-count 1000
+set chassis forwarding-options l3-profile
+set interfaces xe-0/0/0 description To-COM001.17.23U02.LITF4-port:n1/p1
+set interfaces xe-0/0/0 ether-options 802.3ad ae3
+set interfaces xe-0/0/1 description To-COM002.17.23U02.LITF4-port:n2/p1
+set interfaces xe-0/0/1 ether-options 802.3ad ae0
+set interfaces xe-0/0/2 description To-COM003.17.23U02.LITF4-port:n3/p1
+set interfaces xe-0/0/2 ether-options 802.3ad ae2
+set interfaces xe-0/0/3 description To-COM004.17.23U02.LITF4-port:n4/p1
+set interfaces xe-0/0/3 ether-options 802.3ad ae1
+set interfaces xe-0/0/4 description To-COM005.17.23U05.LITF4-port:n1/p1
+set interfaces xe-0/0/4 ether-options 802.3ad ae7
+set interfaces xe-0/0/5 description To-COM006.17.23U05.LITF4-port:n2/p1
+set interfaces xe-0/0/5 ether-options 802.3ad ae4
+set interfaces xe-0/0/6 description To-COM007.17.23U05.LITF4-port:n3/p1
+set interfaces xe-0/0/6 ether-options 802.3ad ae6
+set interfaces xe-0/0/7 description To-COM008.17.23U05.LITF4-port:n4/p1
+set interfaces xe-0/0/7 ether-options 802.3ad ae5
+set interfaces xe-0/0/8 description To-COM009.17.23U08.LITF4-port:n1/p1
+set interfaces xe-0/0/8 ether-options 802.3ad ae8
+set interfaces xe-0/0/9 description To-COM010.17.23U08.LITF4-port:n2/p1
+set interfaces xe-0/0/9 ether-options 802.3ad ae9
+set interfaces xe-0/0/10 description To-COM011.17.23U08.LITF4-port:n3/p1
+set interfaces xe-0/0/10 ether-options 802.3ad ae10
+set interfaces xe-0/0/11 description To-COM012.17.23U08.LITF4-port:n4/p1
+set interfaces xe-0/0/11 ether-options 802.3ad ae11
+set interfaces xe-0/0/12 description To-COM013.17.23U11.LITF4-port:n1/p1
+set interfaces xe-0/0/12 ether-options 802.3ad ae12
+set interfaces xe-0/0/13 description To-COM014.17.23U11.LITF4-port:n2/p1
+set interfaces xe-0/0/13 ether-options 802.3ad ae13
+set interfaces xe-0/0/14 description To-COM015.17.23U11.LITF4-port:n3/p1
+set interfaces xe-0/0/14 ether-options 802.3ad ae14
+set interfaces xe-0/0/15 description To-COM016.17.23U11.LITF4-port:n4/p1
+set interfaces xe-0/0/15 ether-options 802.3ad ae15
+set interfaces xe-0/0/16 description To-COM017.17.23U14.LITF4-port:n1/p1
+set interfaces xe-0/0/16 ether-options 802.3ad ae16
+set interfaces xe-0/0/17 description To-COM018.17.23U14.LITF4-port:n2/p1
+set interfaces xe-0/0/17 ether-options 802.3ad ae17
+set interfaces xe-0/0/18 description To-COM019.17.23U14.LITF4-port:n3/p1
+set interfaces xe-0/0/18 ether-options 802.3ad ae18
+set interfaces xe-0/0/19 description To-COM020.17.23U14.LITF4-port:n4/p1
+set interfaces xe-0/0/19 ether-options 802.3ad ae19
+set interfaces xe-0/0/20 description To-PECHI101.14.25U01.LITF4-port-1/1/7
+set interfaces xe-0/0/22 ether-options 802.3ad ae200
+set interfaces xe-0/0/24 description To-COM001.17.23U02.LITF4-port:n1/p3
+set interfaces xe-0/0/24 ether-options 802.3ad ae3
+set interfaces xe-0/0/25 description To-COM002.17.23U02.LITF4-port:n2/p3
+set interfaces xe-0/0/25 ether-options 802.3ad ae1
+set interfaces xe-0/0/26 description To-COM003.17.23U02.LITF4-port:n3/p3
+set interfaces xe-0/0/26 ether-options 802.3ad ae2
+set interfaces xe-0/0/27 description To-COM004.17.23U02.LITF4-port:n4/p3
+set interfaces xe-0/0/27 ether-options 802.3ad ae0
+set interfaces xe-0/0/28 description To-COM005.17.23U05.LITF4-port:n1/p3
+set interfaces xe-0/0/28 ether-options 802.3ad ae30
+set interfaces xe-0/0/29 description To-COM006.17.23U05.LITF4-port:n2/p3
+set interfaces xe-0/0/29 ether-options 802.3ad ae28
+set interfaces xe-0/0/30 description To-COM007.17.23U05.LITF4-port:n3/p3
+set interfaces xe-0/0/30 ether-options 802.3ad ae31
+set interfaces xe-0/0/31 description To-COM008.17.23U05.LITF4-port:n4/p3
+set interfaces xe-0/0/31 ether-options 802.3ad ae29
+set interfaces xe-0/0/32 description To-COM009.17.23U08.LITF4-port:n1/p3
+set interfaces xe-0/0/32 ether-options 802.3ad ae32
+set interfaces xe-0/0/33 description To-COM010.17.23U08.LITF4-port:n2/p3
+set interfaces xe-0/0/33 ether-options 802.3ad ae33
+set interfaces xe-0/0/34 description To-COM011.17.23U08.LITF4-port:n3/p3
+set interfaces xe-0/0/34 ether-options 802.3ad ae34
+set interfaces xe-0/0/35 description To-COM012.17.23U08.LITF4-port:n4/p3
+set interfaces xe-0/0/35 ether-options 802.3ad ae35
+set interfaces xe-0/0/36 description To-COM013.17.23U11.LITF4-port:n1/p3
+set interfaces xe-0/0/36 ether-options 802.3ad ae36
+set interfaces xe-0/0/37 description To-COM014.17.23U11.LITF4-port:n2/p3
+set interfaces xe-0/0/37 ether-options 802.3ad ae37
+set interfaces xe-0/0/38 ether-options 802.3ad ae38
+set interfaces xe-0/0/39 description To-COM016.17.23U11.LITF4-port:n4/p3
+set interfaces xe-0/0/39 ether-options 802.3ad ae39
+set interfaces xe-0/0/40 description To-COM017.17.23U14.LITF4-port:n1/p3
+set interfaces xe-0/0/40 ether-options 802.3ad ae40
+set interfaces xe-0/0/41 description To-COM018.17.23U14.LITF4-port:n2/p3
+set interfaces xe-0/0/41 ether-options 802.3ad ae41
+set interfaces xe-0/0/42 description To-COM019.17.23U14.LITF4-port:n3/p3
+set interfaces xe-0/0/42 ether-options 802.3ad ae42
+set interfaces xe-0/0/43 description To-COM020.17.23U14.LITF4-port:n4/p3
+set interfaces xe-0/0/43 ether-options 802.3ad ae43
+set interfaces xe-0/0/48 description To-COM001.17.23U02.LITF4-port:n1/p3
+set interfaces xe-0/0/48 ether-options 802.3ad ae48
+set interfaces xe-0/0/49 description To-COM002.17.23U02.LITF4-port:n2/p3
+set interfaces xe-0/0/49 ether-options 802.3ad ae49
+set interfaces xe-0/0/50 description To-COM003.17.23U02.LITF4-port:n3/p3
+set interfaces xe-0/0/50 ether-options 802.3ad ae50
+set interfaces xe-0/0/51 description To-COM004.17.23U02.LITF4-port:n4/p3
+set interfaces xe-0/0/51 ether-options 802.3ad ae51
+set interfaces xe-0/0/52 description To-COM005.17.23U05.LITF4-port:n1/p3
+set interfaces xe-0/0/52 ether-options 802.3ad ae52
+set interfaces xe-0/0/53 description To-COM006.17.23U05.LITF4-port:n2/p3
+set interfaces xe-0/0/53 ether-options 802.3ad ae53
+set interfaces xe-0/0/54 description To-COM007.17.23U05.LITF4-port:n3/p3
+set interfaces xe-0/0/54 ether-options 802.3ad ae54
+set interfaces xe-0/0/55 description To-COM008.17.23U05.LITF4-port:n4/p3
+set interfaces xe-0/0/55 ether-options 802.3ad ae55
+set interfaces xe-0/0/56 description To-COM009.17.23U08.LITF4-port:n1/p3
+set interfaces xe-0/0/56 ether-options 802.3ad ae56
+set interfaces xe-0/0/57 description To-COM010.17.23U08.LITF4-port:n2/p3
+set interfaces xe-0/0/57 ether-options 802.3ad ae57
+set interfaces xe-0/0/58 description To-COM011.17.23U08.LITF4-port:n3/p3
+set interfaces xe-0/0/58 ether-options 802.3ad ae58
+set interfaces xe-0/0/59 description To-COM012.17.23U08.LITF4-port:n4/p3
+set interfaces xe-0/0/59 ether-options 802.3ad ae59
+set interfaces xe-0/0/60 description To-COM013.17.23U11.LITF4-port:n1/p3
+set interfaces xe-0/0/60 ether-options 802.3ad ae60
+set interfaces xe-0/0/61 description To-COM014.17.23U11.LITF4-port:n2/p3
+set interfaces xe-0/0/61 ether-options 802.3ad ae61
+set interfaces xe-0/0/62 description To-COM015.17.23U11.LITF4-port:n3/p3
+set interfaces xe-0/0/62 ether-options 802.3ad ae62
+set interfaces xe-0/0/63 description To-COM016.17.23U11.LITF4-port:n4/p3
+set interfaces xe-0/0/63 ether-options 802.3ad ae63
+set interfaces xe-0/0/64 description To-COM017.17.23U14.LITF4-port:n1/p3
+set interfaces xe-0/0/64 ether-options 802.3ad ae64
+set interfaces xe-0/0/65 description To-COM018.17.23U14.LITF4-port:n2/p3
+set interfaces xe-0/0/65 ether-options 802.3ad ae65
+set interfaces xe-0/0/66 description To-COM019.17.23U14.LITF4-port:n3/p3
+set interfaces xe-0/0/66 ether-options 802.3ad ae66
+set interfaces xe-0/0/67 description To-COM020.17.23U14.LITF4-port:n4/p3
+set interfaces xe-0/0/67 ether-options 802.3ad ae67
+set interfaces et-0/0/96 description "TO PCOR103.17.28U25.LITF4:port:et-0/0/5"
+set interfaces et-0/0/96 ether-options 802.3ad ae96
+set interfaces et-0/0/97 description "TO PCOR203.17.28U28.LITF4:port:et-0/0/5"
+set interfaces et-0/0/97 ether-options 802.3ad ae96
+set interfaces et-0/0/98 description "TO TOR101.17.23U21.LITF4:port:et-0/0/98"
+set interfaces et-0/0/98 ether-options 802.3ad ae95
+set interfaces et-0/0/99 description "TO TOR101.17.23U21.LITF4:port:et-0/0/98"
+set interfaces et-0/0/99 ether-options 802.3ad ae95
+set interfaces ae0 aggregated-ether-options lacp active
+set interfaces ae0 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae0 aggregated-ether-options lacp admin-key 0
+set interfaces ae0 aggregated-ether-options mc-ae mc-ae-id 1
+set interfaces ae0 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae0 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae0 aggregated-ether-options mc-ae mode active-active
+set interfaces ae0 aggregated-ether-options mc-ae status-control standby
+set interfaces ae0 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae0 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_CENTRAL_TENANT
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_CEPH_BACKEND
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_CEPH_FRONTEND
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_EXT_FLOATING
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_INTERNAL_API
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_IPVPN_EXT_PROV
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_MIAGRATION_NET
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_PROVISIONER
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_PUBLIC_API
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLN_EXT_PUB
+set interfaces ae1 aggregated-ether-options lacp active
+set interfaces ae1 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae1 aggregated-ether-options lacp admin-key 1
+set interfaces ae1 aggregated-ether-options mc-ae mc-ae-id 2
+set interfaces ae1 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae1 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae1 aggregated-ether-options mc-ae mode active-active
+set interfaces ae1 aggregated-ether-options mc-ae status-control active
+set interfaces ae1 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae1 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_CENTRAL_TENANT
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_CEPH_BACKEND
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_CEPH_FRONTEND
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_EXT_FLOATING
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_INTERNAL_API
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_IPVPN_EXT_PROV
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_MIAGRATION_NET
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_PROVISIONER
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_PUBLIC_API
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLN_EXT_PUB
+set interfaces ae2 aggregated-ether-options lacp active
+set interfaces ae2 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae2 aggregated-ether-options lacp admin-key 2
+set interfaces ae2 aggregated-ether-options mc-ae mc-ae-id 3
+set interfaces ae2 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae2 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae2 aggregated-ether-options mc-ae mode active-active
+set interfaces ae2 aggregated-ether-options mc-ae status-control standby
+set interfaces ae2 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae2 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_CENTRAL_TENANT
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_CEPH_BACKEND
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_CEPH_FRONTEND
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_EXT_FLOATING
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_INTERNAL_API
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_IPVPN_EXT_PROV
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_MIAGRATION_NET
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_PROVISIONER
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_PUBLIC_API
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLN_EXT_PUB
+set interfaces ae3 aggregated-ether-options lacp active
+set interfaces ae3 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae3 aggregated-ether-options lacp admin-key 3
+set interfaces ae3 aggregated-ether-options mc-ae mc-ae-id 4
+set interfaces ae3 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae3 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae3 aggregated-ether-options mc-ae mode active-active
+set interfaces ae3 aggregated-ether-options mc-ae status-control standby
+set interfaces ae3 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae3 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_CENTRAL_TENANT
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_CEPH_BACKEND
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_CEPH_FRONTEND
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_EXT_FLOATING
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_INTERNAL_API
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_IPVPN_EXT_PROV
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_MIAGRATION_NET
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_PROVISIONER
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_PUBLIC_API
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLN_EXT_PUB
+set interfaces ae4 flexible-vlan-tagging
+set interfaces ae4 native-vlan-id 1224
+set interfaces ae4 aggregated-ether-options lacp active
+set interfaces ae4 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae4 aggregated-ether-options lacp admin-key 4
+set interfaces ae4 aggregated-ether-options mc-ae mc-ae-id 5
+set interfaces ae4 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae4 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae4 aggregated-ether-options mc-ae mode active-active
+set interfaces ae4 aggregated-ether-options mc-ae status-control active
+set interfaces ae4 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae4 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae4 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae4 unit 0 family ethernet-switching vlan members VLAN_INTERNAL_API
+set interfaces ae4 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae4 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae4 unit 0 family ethernet-switching vlan members VLAN_PROVISIONER
+set interfaces ae4 unit 0 family ethernet-switching vlan members VLAN_CEPH_FRONTEND
+set interfaces ae4 unit 0 family ethernet-switching vlan members VLAN_CEPH_BACKEND
+set interfaces ae4 unit 0 family ethernet-switching vlan members VLAN_MIAGRATION_NET
+set interfaces ae4 unit 0 family ethernet-switching vlan members VLAN_PUBLIC_API
+set interfaces ae5 flexible-vlan-tagging
+set interfaces ae5 native-vlan-id 1224
+set interfaces ae5 aggregated-ether-options lacp active
+set interfaces ae5 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae5 aggregated-ether-options lacp admin-key 5
+set interfaces ae5 aggregated-ether-options mc-ae mc-ae-id 6
+set interfaces ae5 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae5 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae5 aggregated-ether-options mc-ae mode active-active
+set interfaces ae5 aggregated-ether-options mc-ae status-control active
+set interfaces ae5 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae5 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae5 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae5 unit 0 family ethernet-switching vlan members VLAN_INTERNAL_API
+set interfaces ae5 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae5 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae5 unit 0 family ethernet-switching vlan members VLAN_PROVISIONER
+set interfaces ae5 unit 0 family ethernet-switching vlan members VLAN_CEPH_FRONTEND
+set interfaces ae5 unit 0 family ethernet-switching vlan members VLAN_CEPH_BACKEND
+set interfaces ae5 unit 0 family ethernet-switching vlan members VLAN_MIAGRATION_NET
+set interfaces ae5 unit 0 family ethernet-switching vlan members VLAN_PUBLIC_API
+set interfaces ae6 flexible-vlan-tagging
+set interfaces ae6 native-vlan-id 1224
+set interfaces ae6 aggregated-ether-options lacp active
+set interfaces ae6 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae6 aggregated-ether-options lacp admin-key 6
+set interfaces ae6 aggregated-ether-options mc-ae mc-ae-id 7
+set interfaces ae6 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae6 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae6 aggregated-ether-options mc-ae mode active-active
+set interfaces ae6 aggregated-ether-options mc-ae status-control active
+set interfaces ae6 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae6 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae6 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae6 unit 0 family ethernet-switching vlan members VLAN_INTERNAL_API
+set interfaces ae6 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae6 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae6 unit 0 family ethernet-switching vlan members VLAN_PROVISIONER
+set interfaces ae6 unit 0 family ethernet-switching vlan members VLAN_CEPH_FRONTEND
+set interfaces ae6 unit 0 family ethernet-switching vlan members VLAN_CEPH_BACKEND
+set interfaces ae6 unit 0 family ethernet-switching vlan members VLAN_MIAGRATION_NET
+set interfaces ae6 unit 0 family ethernet-switching vlan members VLAN_PUBLIC_API
+set interfaces ae7 flexible-vlan-tagging
+set interfaces ae7 native-vlan-id 1224
+set interfaces ae7 aggregated-ether-options lacp active
+set interfaces ae7 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae7 aggregated-ether-options lacp admin-key 7
+set interfaces ae7 aggregated-ether-options mc-ae mc-ae-id 8
+set interfaces ae7 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae7 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae7 aggregated-ether-options mc-ae mode active-active
+set interfaces ae7 aggregated-ether-options mc-ae status-control active
+set interfaces ae7 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae7 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae7 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae7 unit 0 family ethernet-switching vlan members VLAN_INTERNAL_API
+set interfaces ae7 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae7 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae7 unit 0 family ethernet-switching vlan members VLAN_PROVISIONER
+set interfaces ae7 unit 0 family ethernet-switching vlan members VLAN_CEPH_FRONTEND
+set interfaces ae7 unit 0 family ethernet-switching vlan members VLAN_CEPH_BACKEND
+set interfaces ae7 unit 0 family ethernet-switching vlan members VLAN_MIAGRATION_NET
+set interfaces ae7 unit 0 family ethernet-switching vlan members VLAN_PUBLIC_API
+set interfaces ae8 aggregated-ether-options lacp active
+set interfaces ae8 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae8 aggregated-ether-options lacp admin-key 8
+set interfaces ae8 aggregated-ether-options mc-ae mc-ae-id 9
+set interfaces ae8 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae8 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae8 aggregated-ether-options mc-ae mode active-active
+set interfaces ae8 aggregated-ether-options mc-ae status-control active
+set interfaces ae8 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae8 unit 0 family ethernet-switching interface-mode access
+set interfaces ae8 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae9 aggregated-ether-options lacp active
+set interfaces ae9 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae9 aggregated-ether-options lacp admin-key 9
+set interfaces ae9 aggregated-ether-options mc-ae mc-ae-id 10
+set interfaces ae9 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae9 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae9 aggregated-ether-options mc-ae mode active-active
+set interfaces ae9 aggregated-ether-options mc-ae status-control active
+set interfaces ae9 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae9 unit 0 family ethernet-switching interface-mode access
+set interfaces ae9 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae10 aggregated-ether-options lacp active
+set interfaces ae10 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae10 aggregated-ether-options lacp admin-key 10
+set interfaces ae10 aggregated-ether-options mc-ae mc-ae-id 11
+set interfaces ae10 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae10 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae10 aggregated-ether-options mc-ae mode active-active
+set interfaces ae10 aggregated-ether-options mc-ae status-control active
+set interfaces ae10 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae10 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae10 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae11 aggregated-ether-options lacp active
+set interfaces ae11 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae11 aggregated-ether-options lacp admin-key 11
+set interfaces ae11 aggregated-ether-options mc-ae mc-ae-id 12
+set interfaces ae11 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae11 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae11 aggregated-ether-options mc-ae mode active-active
+set interfaces ae11 aggregated-ether-options mc-ae status-control active
+set interfaces ae11 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae11 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae11 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae12 aggregated-ether-options lacp active
+set interfaces ae12 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae12 aggregated-ether-options lacp admin-key 12
+set interfaces ae12 aggregated-ether-options mc-ae mc-ae-id 13
+set interfaces ae12 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae12 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae12 aggregated-ether-options mc-ae mode active-active
+set interfaces ae12 aggregated-ether-options mc-ae status-control active
+set interfaces ae12 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae12 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae12 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae13 aggregated-ether-options lacp active
+set interfaces ae13 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae13 aggregated-ether-options lacp admin-key 13
+set interfaces ae13 aggregated-ether-options mc-ae mc-ae-id 14
+set interfaces ae13 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae13 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae13 aggregated-ether-options mc-ae mode active-active
+set interfaces ae13 aggregated-ether-options mc-ae status-control active
+set interfaces ae13 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae13 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae13 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae14 aggregated-ether-options lacp active
+set interfaces ae14 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae14 aggregated-ether-options lacp admin-key 14
+set interfaces ae14 aggregated-ether-options mc-ae mc-ae-id 15
+set interfaces ae14 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae14 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae14 aggregated-ether-options mc-ae mode active-active
+set interfaces ae14 aggregated-ether-options mc-ae status-control active
+set interfaces ae14 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae14 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae14 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae15 aggregated-ether-options lacp active
+set interfaces ae15 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae15 aggregated-ether-options lacp admin-key 15
+set interfaces ae15 aggregated-ether-options mc-ae mc-ae-id 16
+set interfaces ae15 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae15 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae15 aggregated-ether-options mc-ae mode active-active
+set interfaces ae15 aggregated-ether-options mc-ae status-control active
+set interfaces ae15 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae15 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae15 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae16 aggregated-ether-options lacp active
+set interfaces ae16 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae16 aggregated-ether-options lacp admin-key 16
+set interfaces ae16 aggregated-ether-options mc-ae mc-ae-id 17
+set interfaces ae16 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae16 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae16 aggregated-ether-options mc-ae mode active-active
+set interfaces ae16 aggregated-ether-options mc-ae status-control active
+set interfaces ae16 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae16 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae16 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae17 aggregated-ether-options lacp active
+set interfaces ae17 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae17 aggregated-ether-options lacp admin-key 17
+set interfaces ae17 aggregated-ether-options mc-ae mc-ae-id 18
+set interfaces ae17 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae17 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae17 aggregated-ether-options mc-ae mode active-active
+set interfaces ae17 aggregated-ether-options mc-ae status-control active
+set interfaces ae17 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae17 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae17 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae18 aggregated-ether-options lacp active
+set interfaces ae18 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae18 aggregated-ether-options lacp admin-key 18
+set interfaces ae18 aggregated-ether-options mc-ae mc-ae-id 19
+set interfaces ae18 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae18 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae18 aggregated-ether-options mc-ae mode active-active
+set interfaces ae18 aggregated-ether-options mc-ae status-control active
+set interfaces ae18 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae18 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae18 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae19 aggregated-ether-options lacp active
+set interfaces ae19 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae19 aggregated-ether-options lacp admin-key 19
+set interfaces ae19 aggregated-ether-options mc-ae mc-ae-id 20
+set interfaces ae19 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae19 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae19 aggregated-ether-options mc-ae mode active-active
+set interfaces ae19 aggregated-ether-options mc-ae status-control active
+set interfaces ae19 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae19 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae19 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae200 aggregated-ether-options lacp active
+set interfaces ae200 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLAN_PROVISIONER
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLAN_CENTRAL_TENANT
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLAN_CEPH_BACKEND
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLAN_CEPH_FRONTEND
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLAN_EXT_FLOATING
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLAN_INTERNAL_API
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLAN_IPVPN_EXT_PROV
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLAN_MIAGRATION_NET
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLAN_PUBLIC_API
+set interfaces ae200 unit 0 family ethernet-switching vlan members VLN_EXT_PUB
+set interfaces ae24 aggregated-ether-options lacp active
+set interfaces ae24 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae24 aggregated-ether-options lacp admin-key 24
+set interfaces ae24 aggregated-ether-options mc-ae mc-ae-id 25
+set interfaces ae24 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae24 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae24 aggregated-ether-options mc-ae mode active-active
+set interfaces ae24 aggregated-ether-options mc-ae status-control active
+set interfaces ae24 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae24 unit 0 family ethernet-switching interface-mode access
+set interfaces ae24 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae25 aggregated-ether-options lacp active
+set interfaces ae25 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae25 aggregated-ether-options lacp admin-key 25
+set interfaces ae25 aggregated-ether-options mc-ae mc-ae-id 26
+set interfaces ae25 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae25 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae25 aggregated-ether-options mc-ae mode active-active
+set interfaces ae25 aggregated-ether-options mc-ae status-control active
+set interfaces ae25 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae25 unit 0 family ethernet-switching interface-mode access
+set interfaces ae25 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae26 aggregated-ether-options lacp active
+set interfaces ae26 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae26 aggregated-ether-options lacp admin-key 26
+set interfaces ae26 aggregated-ether-options mc-ae mc-ae-id 27
+set interfaces ae26 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae26 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae26 aggregated-ether-options mc-ae mode active-active
+set interfaces ae26 aggregated-ether-options mc-ae status-control active
+set interfaces ae26 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae26 unit 0 family ethernet-switching interface-mode access
+set interfaces ae26 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae27 aggregated-ether-options lacp active
+set interfaces ae27 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae27 aggregated-ether-options lacp admin-key 27
+set interfaces ae27 aggregated-ether-options mc-ae mc-ae-id 28
+set interfaces ae27 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae27 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae27 aggregated-ether-options mc-ae mode active-active
+set interfaces ae27 aggregated-ether-options mc-ae status-control active
+set interfaces ae27 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae27 unit 0 family ethernet-switching interface-mode access
+set interfaces ae27 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae28 aggregated-ether-options lacp active
+set interfaces ae28 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae28 aggregated-ether-options lacp admin-key 28
+set interfaces ae28 aggregated-ether-options mc-ae mc-ae-id 29
+set interfaces ae28 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae28 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae28 aggregated-ether-options mc-ae mode active-active
+set interfaces ae28 aggregated-ether-options mc-ae status-control active
+set interfaces ae28 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae28 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae28 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae28 unit 0 family ethernet-switching vlan members VLAN_CENTRAL_TENANT
+set interfaces ae28 unit 0 family ethernet-switching vlan members VLAN_EXT_FLOATING
+set interfaces ae28 unit 0 family ethernet-switching vlan members VLAN_IPVPN_EXT_PROV
+set interfaces ae29 aggregated-ether-options lacp active
+set interfaces ae29 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae29 aggregated-ether-options lacp admin-key 29
+set interfaces ae29 aggregated-ether-options mc-ae mc-ae-id 30
+set interfaces ae29 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae29 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae29 aggregated-ether-options mc-ae mode active-active
+set interfaces ae29 aggregated-ether-options mc-ae status-control active
+set interfaces ae29 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae29 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae29 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae29 unit 0 family ethernet-switching vlan members VLAN_CENTRAL_TENANT
+set interfaces ae29 unit 0 family ethernet-switching vlan members VLAN_EXT_FLOATING
+set interfaces ae29 unit 0 family ethernet-switching vlan members VLAN_IPVPN_EXT_PROV
+set interfaces ae30 aggregated-ether-options lacp active
+set interfaces ae30 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae30 aggregated-ether-options lacp admin-key 30
+set interfaces ae30 aggregated-ether-options mc-ae mc-ae-id 31
+set interfaces ae30 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae30 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae30 aggregated-ether-options mc-ae mode active-active
+set interfaces ae30 aggregated-ether-options mc-ae status-control active
+set interfaces ae30 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae30 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae30 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae30 unit 0 family ethernet-switching vlan members VLAN_CENTRAL_TENANT
+set interfaces ae30 unit 0 family ethernet-switching vlan members VLAN_EXT_FLOATING
+set interfaces ae30 unit 0 family ethernet-switching vlan members VLAN_IPVPN_EXT_PROV
+set interfaces ae31 aggregated-ether-options lacp active
+set interfaces ae31 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae31 aggregated-ether-options lacp admin-key 31
+set interfaces ae31 aggregated-ether-options mc-ae mc-ae-id 32
+set interfaces ae31 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae31 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae31 aggregated-ether-options mc-ae mode active-active
+set interfaces ae31 aggregated-ether-options mc-ae status-control active
+set interfaces ae31 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae31 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae31 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae31 unit 0 family ethernet-switching vlan members VLAN_CENTRAL_TENANT
+set interfaces ae31 unit 0 family ethernet-switching vlan members VLAN_EXT_FLOATING
+set interfaces ae31 unit 0 family ethernet-switching vlan members VLAN_IPVPN_EXT_PROV
+set interfaces ae32 aggregated-ether-options lacp active
+set interfaces ae32 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae32 aggregated-ether-options lacp admin-key 32
+set interfaces ae32 aggregated-ether-options mc-ae mc-ae-id 33
+set interfaces ae32 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae32 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae32 aggregated-ether-options mc-ae mode active-active
+set interfaces ae32 aggregated-ether-options mc-ae status-control active
+set interfaces ae32 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae32 unit 0 family ethernet-switching interface-mode access
+set interfaces ae32 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae33 aggregated-ether-options lacp active
+set interfaces ae33 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae33 aggregated-ether-options lacp admin-key 33
+set interfaces ae33 aggregated-ether-options mc-ae mc-ae-id 34
+set interfaces ae33 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae33 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae33 aggregated-ether-options mc-ae mode active-active
+set interfaces ae33 aggregated-ether-options mc-ae status-control active
+set interfaces ae33 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae33 unit 0 family ethernet-switching interface-mode access
+set interfaces ae33 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae34 aggregated-ether-options lacp active
+set interfaces ae34 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae34 aggregated-ether-options lacp admin-key 34
+set interfaces ae34 aggregated-ether-options mc-ae mc-ae-id 35
+set interfaces ae34 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae34 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae34 aggregated-ether-options mc-ae mode active-active
+set interfaces ae34 aggregated-ether-options mc-ae status-control active
+set interfaces ae34 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae34 unit 0 family ethernet-switching interface-mode access
+set interfaces ae34 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae35 aggregated-ether-options lacp active
+set interfaces ae35 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae35 aggregated-ether-options lacp admin-key 35
+set interfaces ae35 aggregated-ether-options mc-ae mc-ae-id 36
+set interfaces ae35 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae35 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae35 aggregated-ether-options mc-ae mode active-active
+set interfaces ae35 aggregated-ether-options mc-ae status-control active
+set interfaces ae35 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae35 unit 0 family ethernet-switching interface-mode access
+set interfaces ae35 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae36 aggregated-ether-options lacp active
+set interfaces ae36 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae36 aggregated-ether-options lacp admin-key 36
+set interfaces ae36 aggregated-ether-options mc-ae mc-ae-id 37
+set interfaces ae36 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae36 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae36 aggregated-ether-options mc-ae mode active-active
+set interfaces ae36 aggregated-ether-options mc-ae status-control active
+set interfaces ae36 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae36 unit 0 family ethernet-switching interface-mode access
+set interfaces ae36 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae37 aggregated-ether-options lacp active
+set interfaces ae37 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae37 aggregated-ether-options lacp admin-key 37
+set interfaces ae37 aggregated-ether-options mc-ae mc-ae-id 38
+set interfaces ae37 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae37 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae37 aggregated-ether-options mc-ae mode active-active
+set interfaces ae37 aggregated-ether-options mc-ae status-control active
+set interfaces ae37 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae37 unit 0 family ethernet-switching interface-mode access
+set interfaces ae37 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae38 aggregated-ether-options lacp active
+set interfaces ae38 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae38 aggregated-ether-options lacp admin-key 38
+set interfaces ae38 aggregated-ether-options mc-ae mc-ae-id 39
+set interfaces ae38 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae38 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae38 aggregated-ether-options mc-ae mode active-active
+set interfaces ae38 aggregated-ether-options mc-ae status-control active
+set interfaces ae38 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae38 unit 0 family ethernet-switching interface-mode access
+set interfaces ae38 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae39 aggregated-ether-options lacp active
+set interfaces ae39 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae39 aggregated-ether-options lacp admin-key 39
+set interfaces ae39 aggregated-ether-options mc-ae mc-ae-id 40
+set interfaces ae39 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae39 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae39 aggregated-ether-options mc-ae mode active-active
+set interfaces ae39 aggregated-ether-options mc-ae status-control active
+set interfaces ae39 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae39 unit 0 family ethernet-switching interface-mode access
+set interfaces ae39 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae40 aggregated-ether-options lacp active
+set interfaces ae40 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae40 aggregated-ether-options lacp admin-key 40
+set interfaces ae40 aggregated-ether-options mc-ae mc-ae-id 41
+set interfaces ae40 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae40 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae40 aggregated-ether-options mc-ae mode active-active
+set interfaces ae40 aggregated-ether-options mc-ae status-control active
+set interfaces ae40 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae40 unit 0 family ethernet-switching interface-mode access
+set interfaces ae40 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae41 aggregated-ether-options lacp active
+set interfaces ae41 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae41 aggregated-ether-options lacp admin-key 41
+set interfaces ae41 aggregated-ether-options mc-ae mc-ae-id 42
+set interfaces ae41 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae41 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae41 aggregated-ether-options mc-ae mode active-active
+set interfaces ae41 aggregated-ether-options mc-ae status-control active
+set interfaces ae41 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae41 unit 0 family ethernet-switching interface-mode access
+set interfaces ae41 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae42 aggregated-ether-options lacp active
+set interfaces ae42 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae42 aggregated-ether-options lacp admin-key 42
+set interfaces ae42 aggregated-ether-options mc-ae mc-ae-id 43
+set interfaces ae42 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae42 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae42 aggregated-ether-options mc-ae mode active-active
+set interfaces ae42 aggregated-ether-options mc-ae status-control active
+set interfaces ae42 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae42 unit 0 family ethernet-switching interface-mode access
+set interfaces ae42 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae43 aggregated-ether-options lacp active
+set interfaces ae43 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae43 aggregated-ether-options lacp admin-key 43
+set interfaces ae43 aggregated-ether-options mc-ae mc-ae-id 44
+set interfaces ae43 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae43 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae43 aggregated-ether-options mc-ae mode active-active
+set interfaces ae43 aggregated-ether-options mc-ae status-control active
+set interfaces ae43 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae43 unit 0 family ethernet-switching interface-mode access
+set interfaces ae43 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae48 aggregated-ether-options lacp active
+set interfaces ae48 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae48 aggregated-ether-options lacp admin-key 48
+set interfaces ae48 aggregated-ether-options mc-ae mc-ae-id 49
+set interfaces ae48 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae48 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae48 aggregated-ether-options mc-ae mode active-active
+set interfaces ae48 aggregated-ether-options mc-ae status-control active
+set interfaces ae48 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae48 unit 0 family ethernet-switching interface-mode access
+set interfaces ae48 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae49 aggregated-ether-options lacp active
+set interfaces ae49 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae49 aggregated-ether-options lacp admin-key 49
+set interfaces ae49 aggregated-ether-options mc-ae mc-ae-id 50
+set interfaces ae49 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae49 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae49 aggregated-ether-options mc-ae mode active-active
+set interfaces ae49 aggregated-ether-options mc-ae status-control active
+set interfaces ae49 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae49 unit 0 family ethernet-switching interface-mode access
+set interfaces ae49 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae50 aggregated-ether-options lacp active
+set interfaces ae50 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae50 aggregated-ether-options lacp admin-key 50
+set interfaces ae50 aggregated-ether-options mc-ae mc-ae-id 51
+set interfaces ae50 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae50 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae50 aggregated-ether-options mc-ae mode active-active
+set interfaces ae50 aggregated-ether-options mc-ae status-control active
+set interfaces ae50 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae50 unit 0 family ethernet-switching interface-mode access
+set interfaces ae50 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae51 aggregated-ether-options lacp active
+set interfaces ae51 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae51 aggregated-ether-options lacp admin-key 51
+set interfaces ae51 aggregated-ether-options mc-ae mc-ae-id 52
+set interfaces ae51 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae51 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae51 aggregated-ether-options mc-ae mode active-active
+set interfaces ae51 aggregated-ether-options mc-ae status-control active
+set interfaces ae51 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae51 unit 0 family ethernet-switching interface-mode access
+set interfaces ae51 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae52 aggregated-ether-options lacp active
+set interfaces ae52 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae52 aggregated-ether-options lacp admin-key 52
+set interfaces ae52 aggregated-ether-options mc-ae mc-ae-id 53
+set interfaces ae52 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae52 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae52 aggregated-ether-options mc-ae mode active-active
+set interfaces ae52 aggregated-ether-options mc-ae status-control active
+set interfaces ae52 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae52 unit 0 family ethernet-switching interface-mode access
+set interfaces ae52 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae53 aggregated-ether-options lacp active
+set interfaces ae53 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae53 aggregated-ether-options lacp admin-key 53
+set interfaces ae53 aggregated-ether-options mc-ae mc-ae-id 54
+set interfaces ae53 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae53 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae53 aggregated-ether-options mc-ae mode active-active
+set interfaces ae53 aggregated-ether-options mc-ae status-control active
+set interfaces ae53 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae53 unit 0 family ethernet-switching interface-mode access
+set interfaces ae53 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae54 aggregated-ether-options lacp active
+set interfaces ae54 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae54 aggregated-ether-options lacp admin-key 54
+set interfaces ae54 aggregated-ether-options mc-ae mc-ae-id 55
+set interfaces ae54 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae54 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae54 aggregated-ether-options mc-ae mode active-active
+set interfaces ae54 aggregated-ether-options mc-ae status-control active
+set interfaces ae54 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae54 unit 0 family ethernet-switching interface-mode access
+set interfaces ae54 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae55 aggregated-ether-options lacp active
+set interfaces ae55 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae55 aggregated-ether-options lacp admin-key 55
+set interfaces ae55 aggregated-ether-options mc-ae mc-ae-id 56
+set interfaces ae55 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae55 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae55 aggregated-ether-options mc-ae mode active-active
+set interfaces ae55 aggregated-ether-options mc-ae status-control active
+set interfaces ae55 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae55 unit 0 family ethernet-switching interface-mode access
+set interfaces ae55 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae56 aggregated-ether-options lacp active
+set interfaces ae56 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae56 aggregated-ether-options lacp admin-key 56
+set interfaces ae56 aggregated-ether-options mc-ae mc-ae-id 57
+set interfaces ae56 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae56 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae56 aggregated-ether-options mc-ae mode active-active
+set interfaces ae56 aggregated-ether-options mc-ae status-control active
+set interfaces ae56 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae56 unit 0 family ethernet-switching interface-mode access
+set interfaces ae56 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae57 aggregated-ether-options lacp active
+set interfaces ae57 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae57 aggregated-ether-options lacp admin-key 57
+set interfaces ae57 aggregated-ether-options mc-ae mc-ae-id 58
+set interfaces ae57 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae57 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae57 aggregated-ether-options mc-ae mode active-active
+set interfaces ae57 aggregated-ether-options mc-ae status-control active
+set interfaces ae57 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae57 unit 0 family ethernet-switching interface-mode access
+set interfaces ae57 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae58 aggregated-ether-options lacp active
+set interfaces ae58 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae58 aggregated-ether-options lacp admin-key 58
+set interfaces ae58 aggregated-ether-options mc-ae mc-ae-id 59
+set interfaces ae58 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae58 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae58 aggregated-ether-options mc-ae mode active-active
+set interfaces ae58 aggregated-ether-options mc-ae status-control active
+set interfaces ae58 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae58 unit 0 family ethernet-switching interface-mode access
+set interfaces ae58 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae59 aggregated-ether-options lacp active
+set interfaces ae59 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae59 aggregated-ether-options lacp admin-key 59
+set interfaces ae59 aggregated-ether-options mc-ae mc-ae-id 60
+set interfaces ae59 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae59 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae59 aggregated-ether-options mc-ae mode active-active
+set interfaces ae59 aggregated-ether-options mc-ae status-control active
+set interfaces ae59 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae59 unit 0 family ethernet-switching interface-mode access
+set interfaces ae59 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae60 aggregated-ether-options lacp active
+set interfaces ae60 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae60 aggregated-ether-options lacp admin-key 60
+set interfaces ae60 aggregated-ether-options mc-ae mc-ae-id 61
+set interfaces ae60 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae60 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae60 aggregated-ether-options mc-ae mode active-active
+set interfaces ae60 aggregated-ether-options mc-ae status-control active
+set interfaces ae60 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae60 unit 0 family ethernet-switching interface-mode access
+set interfaces ae60 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae61 aggregated-ether-options lacp active
+set interfaces ae61 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae61 aggregated-ether-options lacp admin-key 61
+set interfaces ae61 aggregated-ether-options mc-ae mc-ae-id 62
+set interfaces ae61 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae61 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae61 aggregated-ether-options mc-ae mode active-active
+set interfaces ae61 aggregated-ether-options mc-ae status-control active
+set interfaces ae61 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae61 unit 0 family ethernet-switching interface-mode access
+set interfaces ae61 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae62 aggregated-ether-options lacp active
+set interfaces ae62 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae62 aggregated-ether-options lacp admin-key 62
+set interfaces ae62 aggregated-ether-options mc-ae mc-ae-id 63
+set interfaces ae62 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae62 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae62 aggregated-ether-options mc-ae mode active-active
+set interfaces ae62 aggregated-ether-options mc-ae status-control active
+set interfaces ae62 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae62 unit 0 family ethernet-switching interface-mode access
+set interfaces ae62 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae63 aggregated-ether-options lacp active
+set interfaces ae63 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae63 aggregated-ether-options lacp admin-key 63
+set interfaces ae63 aggregated-ether-options mc-ae mc-ae-id 64
+set interfaces ae63 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae63 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae63 aggregated-ether-options mc-ae mode active-active
+set interfaces ae63 aggregated-ether-options mc-ae status-control active
+set interfaces ae63 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae63 unit 0 family ethernet-switching interface-mode access
+set interfaces ae63 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae64 aggregated-ether-options lacp active
+set interfaces ae64 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae64 aggregated-ether-options lacp admin-key 64
+set interfaces ae64 aggregated-ether-options mc-ae mc-ae-id 65
+set interfaces ae64 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae64 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae64 aggregated-ether-options mc-ae mode active-active
+set interfaces ae64 aggregated-ether-options mc-ae status-control active
+set interfaces ae64 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae64 unit 0 family ethernet-switching interface-mode access
+set interfaces ae64 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae65 aggregated-ether-options lacp active
+set interfaces ae65 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae65 aggregated-ether-options lacp admin-key 65
+set interfaces ae65 aggregated-ether-options mc-ae mc-ae-id 66
+set interfaces ae65 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae65 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae65 aggregated-ether-options mc-ae mode active-active
+set interfaces ae65 aggregated-ether-options mc-ae status-control active
+set interfaces ae65 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae65 unit 0 family ethernet-switching
+set interfaces ae66 aggregated-ether-options lacp active
+set interfaces ae66 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae66 aggregated-ether-options lacp admin-key 66
+set interfaces ae66 aggregated-ether-options mc-ae mc-ae-id 67
+set interfaces ae66 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae66 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae66 aggregated-ether-options mc-ae mode active-active
+set interfaces ae66 aggregated-ether-options mc-ae status-control active
+set interfaces ae66 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae66 unit 0 family ethernet-switching interface-mode access
+set interfaces ae66 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae67 aggregated-ether-options lacp active
+set interfaces ae67 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae67 aggregated-ether-options lacp admin-key 67
+set interfaces ae67 aggregated-ether-options mc-ae mc-ae-id 68
+set interfaces ae67 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae67 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae67 aggregated-ether-options mc-ae mode active-active
+set interfaces ae67 aggregated-ether-options mc-ae status-control active
+set interfaces ae67 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae67 unit 0 family ethernet-switching interface-mode access
+set interfaces ae67 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae95 description "TO TOR201.17.22U23.LITF4:port:ae95"
+set interfaces ae95 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae95 unit 0 family ethernet-switching vlan members TOR_INTERLINK
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_BACKEND
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_PROVISIONER
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_GLUSTER_FRONTEND
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_CENTRAL_TENANT
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_CEPH_BACKEND
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_CEPH_FRONTEND
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_EXT_FLOATING
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_INTERNAL_API
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_IPVPN_EXT_PROV
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_MIAGRATION_NET
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_PUBLIC_API
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLN_EXT_PUB
+set interfaces ae96 description "TO PCOR103.17.28U25.LITF4:port:ae4"
+set interfaces ae96 aggregated-ether-options lacp active
+set interfaces ae96 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae96 aggregated-ether-options lacp admin-key 97
+set interfaces ae96 aggregated-ether-options mc-ae mc-ae-id 97
+set interfaces ae96 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae96 aggregated-ether-options mc-ae chassis-id 0
+set interfaces ae96 aggregated-ether-options mc-ae mode active-active
+set interfaces ae96 aggregated-ether-options mc-ae status-control active
+set interfaces ae96 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces irb unit 95 family inet address 192.168.81.2/31
+set interfaces irb unit 95 family inet6 address fd81::2/127
+set interfaces lo0 unit 0
+set interfaces vme unit 0 family inet address 10.189.85.82/29
+set multi-chassis multi-chassis-protection 192.168.81.3 interface ae95
+set snmp name TOR101.17.22U21.LITF4
+set snmp description "TOR101.17.22U21.LITF4is a Part of SDN/NFV Project"
+set snmp location "LITF4-700W Mineral Avenue Centennial CO 80112"
+set snmp contact "Jay Shah (303)-503-0886 jay.shah@centurylink.com"
+set snmp community a0142a2053029ca0 authorization read-only
+set snmp community a0142a2053029ca0 clients 10.189.136.42/32
+set snmp community a0142a2053029ca0 clients 10.189.136.170/32
+set snmp community a0142a2053029ca0 clients 10.189.136.11/32
+set snmp community a0142a2053029ca0 clients 10.189.136.139/32
+set snmp community a0142a2053029ca0 clients 10.189.131.108/32
+set snmp community a0142a2053029ca0 clients 10.189.134.57/32
+set forwarding-options storm-control-profiles default all
+set forwarding-options dhcp-relay overrides always-write-giaddr
+set forwarding-options dhcp-relay overrides always-write-option-82
+set forwarding-options dhcp-relay overrides trust-option-82
+set forwarding-options dhcp-relay server-group SDN_NFV_DHCP 10.189.128.203
+set forwarding-options dhcp-relay active-server-group SDN_NFV_DHCP
+set forwarding-options dhcp-relay group all interface irb.10
+set forwarding-options dhcp-relay group all interface irb.20
+set routing-options static route 10.189.64.0/18 next-hop 10.189.85.81
+set routing-options static route 10.189.128.0/18 next-hop 10.189.85.81
+set routing-options forwarding-table export ECMP
+set protocols iccp local-ip-addr 192.168.81.2
+set protocols iccp peer 192.168.81.3 session-establishment-hold-time 50
+set protocols iccp peer 192.168.81.3 redundancy-group-id-list 1
+set protocols iccp peer 192.168.81.3 liveness-detection minimum-receive-interval 300
+set protocols iccp peer 192.168.81.3 liveness-detection transmit-interval minimum-interval 300
+set protocols lldp interface all
+set policy-options prefix-list PUBLIC-ADDRESSES 65.117.240.224/27
+set policy-options prefix-list PUBLIC-ADDRESSES 204.193.210.0/23
+set policy-options prefix-list PUBLIC-ADDRESSES_IPv6 2001:428:3801:1f::/64
+set policy-options prefix-list bgp-peers apply-path "protocols bgp group <*> neighbor <*>"
+set policy-options prefix-list bgp-peers-vrf apply-path "routing-instances <*> protocols bgp group <*> allow <*>"
+set policy-options prefix-list ntp-servers apply-path "system ntp server <*>"
+set policy-options prefix-list device42-servers 10.189.136.42/32
+set policy-options prefix-list device42-servers 10.189.136.170/32
+set policy-options prefix-list device42-servers 2001:0428:3801:0020:0:1525::42/128
+set policy-options prefix-list device42-servers 2001:0428:3801:0020:0:1526::170/128
+set policy-options prefix-list snmp-servers apply-path "snmp community <*> clients <*>"
+set policy-options prefix-list radius-servers apply-path "system radius-server <*>"
+set policy-options prefix-list ansible-servers 10.189.106.0/24
+set policy-options prefix-list ansible-servers 10.189.109.0/24
+set policy-options prefix-list ansible-servers 10.189.136.35/32
+set policy-options prefix-list ansible-servers 10.189.136.163/32
+set policy-options prefix-list ansible-servers 2001:0428:3801:0020:0:1525::35/128
+set policy-options prefix-list ansible-servers 2001:0428:3801:0020:0:1526::163/128
+set policy-options prefix-list syslog-servers 10.189.136.15/32
+set policy-options prefix-list syslog-servers 10.189.136.143/32
+set policy-options prefix-list syslog-servers 2001:0428:3801:0020:0:1525::15/128
+set policy-options prefix-list syslog-servers 2001:0428:3801:0020:0:1526::143/128
+set policy-options prefix-list jump-servers 10.189.97.34/32
+set policy-options prefix-list jump-servers 10.189.97.96/32
+set policy-options prefix-list ssl-vpn-range 10.189.106.0/24
+set policy-options prefix-list ssl-vpn-range 10.189.109.0/24
+set policy-options prefix-list ssl-vpn-range 10.189.159.0/24
+set policy-options prefix-list ssl-vpn-range 2001:0428:3801:0020:159::0/96
+set policy-options prefix-list DHCP-servers 10.189.136.32/32
+set policy-options prefix-list local-networks 10.0.0.0/8
+set policy-options prefix-list local-networks 10.189.64.0/18
+set policy-options prefix-list local-networks 65.117.240.224/27
+set policy-options prefix-list local-networks 172.16.0.0/12
+set policy-options prefix-list local-networks 192.168.0.0/16
+set policy-options prefix-list local-networks 2001:428:3801:1f::/64
+set policy-options prefix-list local-networks 2001:428:3801:20::/64
+set policy-options prefix-list local-networks 204.193.210.0/23
+set policy-options prefix-list local-networks fd64::/64
+set policy-options prefix-list local-networks fd66::/128
+set policy-options prefix-list local-networks fd8f:a5a3:6ffb::/48
+set policy-options prefix-list local-networks fddb:90c9:c782::/48
+set policy-options prefix-list bgp-peers-active apply-path "protocols bgp group <*> neighbor <*>"
+set policy-options prefix-list bgp-peers-vrf-passive apply-path "routing-instances <*> protocols bgp group <*> allow <*>"
+set policy-options prefix-list ftp-servers 10.189.136.16/32
+set policy-options prefix-list ftp-servers 10.189.136.48/32
+set policy-options prefix-list ftp-servers 2001:0428:3801:0020:0:1525::16/128
+set policy-options prefix-list MGMT-POOL 10.189.64.0/18
+set policy-options prefix-list MGMT-POOL 10.189.128.0/18
+set policy-options prefix-list MGMT-POOL_IPv6 2001:0428:3801:0020:159::0/96
+set policy-options prefix-list LITF_IPSYSTEM 10.189.136.0/24
+set policy-options prefix-list LITF_IPSYSTEM_IPv6 2001:0428:3801:0020:0:1525::/96
+set policy-options prefix-list LITF_IPSYSTEM_IPv6 2001:0428:3801:0020:0:1526::/96
+set policy-options prefix-list LOOPBACK_10.189.128.X 10.189.128.0/25
+set policy-options prefix-list LOOPBACK_IPv6 2001:0428:3801:0020::/96
+set policy-options prefix-list VLAB_BLOCK 10.237.192.0/18
+set policy-options prefix-list LEGECY_MANAGEMENT_BLOCK 10.189.64.0/18
+set policy-options prefix-list SDN_NFV_LAB_MANAGEMENT_BLOCK 10.189.128.0/19
+set policy-options prefix-list SDN_NFV_LAB_MANAGEMENT_BLOCK_IPv6 2001:428:3801:20::/64
+set policy-options prefix-list NON_MANGEMENT_BLOCK 172.16.0.0/16
+set policy-options policy-statement ADVERTISE_DEFAULT term 1 from route-filter 0.0.0.0/0 exact
+set policy-options policy-statement ADVERTISE_DEFAULT term 1 then accept
+set policy-options policy-statement ADVERTISE_DEFAULT term 2 from route-filter ::0/0 exact
+set policy-options policy-statement ADVERTISE_DEFAULT term 2 then accept
+set policy-options policy-statement ADVERTISE_LEGACY_MGMT term 1 from protocol bgp
+set policy-options policy-statement ADVERTISE_LEGACY_MGMT term 1 from prefix-list LEGECY_MANAGEMENT_BLOCK
+set policy-options policy-statement ADVERTISE_LEGACY_MGMT term 1 then accept
+set policy-options policy-statement ADVERTISE_LOOPBACK term 1 from protocol direct
+set policy-options policy-statement ADVERTISE_LOOPBACK term 1 from protocol bgp
+set policy-options policy-statement ADVERTISE_LOOPBACK term 1 from prefix-list-filter LOOPBACK_10.189.128.X orlonger
+set policy-options policy-statement ADVERTISE_LOOPBACK term 1 then accept
+set policy-options policy-statement ADVERTISE_LOOPBACK term 2 from protocol direct
+set policy-options policy-statement ADVERTISE_LOOPBACK term 2 from protocol bgp
+set policy-options policy-statement ADVERTISE_LOOPBACK term 2 from prefix-list-filter LOOPBACK_IPv6 orlonger
+set policy-options policy-statement ADVERTISE_LOOPBACK term 2 then accept
+set policy-options policy-statement ADVERTISE_MANAGEMENT term 1 from prefix-list-filter MGMT-POOL orlonger
+set policy-options policy-statement ADVERTISE_MANAGEMENT term 1 then accept
+set policy-options policy-statement ADVERTISE_MANAGEMENT term 2 from prefix-list-filter MGMT-POOL_IPv6 orlonger
+set policy-options policy-statement ADVERTISE_MANAGEMENT term 2 then accept
+set policy-options policy-statement ADVERTISE_MANAGEMENT_TO_VLAB term 1 from prefix-list SDN_NFV_LAB_MANAGEMENT_BLOCK
+set policy-options policy-statement ADVERTISE_MANAGEMENT_TO_VLAB term 1 then accept
+set policy-options policy-statement ADVERTISE_MANAGEMENT_TO_VLAB term 2 from prefix-list SDN_NFV_LAB_MANAGEMENT_BLOCK_IPv6
+set policy-options policy-statement ADVERTISE_MANAGEMENT_TO_VLAB term 2 then accept
+set policy-options policy-statement ADVERTISE_NON_MANAGEMENT term 1 from protocol direct
+set policy-options policy-statement ADVERTISE_NON_MANAGEMENT term 1 from prefix-list-filter NON_MANGEMENT_BLOCK orlonger
+set policy-options policy-statement ADVERTISE_NON_MANAGEMENT term 1 then accept
+set policy-options policy-statement ADVERTISE_PUBLIC term 1 from prefix-list-filter PUBLIC-ADDRESSES orlonger
+set policy-options policy-statement ADVERTISE_PUBLIC term 1 then next-hop self
+set policy-options policy-statement ADVERTISE_PUBLIC term 1 then accept
+set policy-options policy-statement ADVERTISE_PUBLIC term 2 from prefix-list-filter PUBLIC-ADDRESSES_IPv6 orlonger
+set policy-options policy-statement ADVERTISE_PUBLIC term 2 then next-hop self
+set policy-options policy-statement ADVERTISE_PUBLIC term 2 then accept
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 1 from protocol direct
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 1 from prefix-list-filter MGMT-POOL orlonger
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 1 then next-hop self
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 1 then accept
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 2 from protocol direct
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 2 from prefix-list-filter MGMT-POOL_IPv6 orlonger
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 2 then next-hop self
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 2 then accept
+set policy-options policy-statement ECMP term 1 then load-balance per-packet
+set policy-options policy-statement NEXT_HOP_SELF term 1 then next-hop self
+set policy-options policy-statement RECEIVE_FROM_LAB term 1 from prefix-list-filter VLAB_BLOCK orlonger
+set policy-options policy-statement RECEIVE_FROM_LAB term 1 then accept
+set policy-options policy-statement REJECT_REST term 1 then reject
+set switch-options service-id 26
+set vlans TOR_INTERLINK vlan-id 95
+set vlans TOR_INTERLINK l3-interface irb.95
+set vlans VLAN_CENTRAL_TENANT vlan-id 2209
+set vlans VLAN_CEPH_BACKEND vlan-id 2211
+set vlans VLAN_CEPH_FRONTEND vlan-id 2212
+set vlans VLAN_EXT_FLOATING vlan-id 2215
+set vlans VLAN_GLUSTER_BACKEND vlan-id 1226
+set vlans VLAN_GLUSTER_FRONTEND vlan-id 1225
+set vlans VLAN_HOST_MGMT vlan-id 1223
+set vlans VLAN_INTERNAL_API vlan-id 2208
+set vlans VLAN_IPVPN_EXT_PROV vlan-id 2216
+set vlans VLAN_MIAGRATION_NET vlan-id 2213
+set vlans VLAN_PROVISIONER vlan-id 1224
+set vlans VLAN_PUBLIC_API vlan-id 2214
+set vlans VLN_EXT_PUB vlan-id 2210
