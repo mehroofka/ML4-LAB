@@ -1,0 +1,133 @@
+PCOR103.17.28U25.LITF4> show chassis hardware detail 
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                DB762             QFX10002-72Q
+Pseudo CB 0     
+Routing Engine 0          BUILTIN      BUILTIN           RE-QFX10002-72Q
+  ada0   9316 MB  QEMU                 QM00001           Virtio Block Disk
+  ada1   4096 MB  QEMU                 QM00002           Virtio Block Disk
+  ada2    512 MB  QEMU                 QM00003           Virtio Block Disk
+  ada3   1024 MB  QEMU                 QM00004           Virtio Block Disk
+  usb0 (addr 0.1) UHCI root HUB 0      Intel             uhub0
+  usb1 (addr 1.1) EHCI root HUB 0      Intel             uhub1
+  usb2 (addr 1.2) product 0x0020 32    vendor 0x8087     uhub2
+FPC 0            REV 24   750-055415   ACMZ0709          QFX10002-72Q
+  CPU                     BUILTIN      BUILTIN           FPC CPU
+  PIC 0                   BUILTIN      BUILTIN           72X40G
+    Xcvr 0       REV 01   740-032986   QF3805XD          QSFP+-40G-SR4
+    Xcvr 1       REV 01   740-032986   QF3601GS          QSFP+-40G-SR4
+    Xcvr 2       REV 01   740-032986   QF3808M0          QSFP+-40G-SR4
+    Xcvr 3       REV 01   740-032986   QF3805X1          QSFP+-40G-SR4
+    Xcvr 4       REV 01   740-032986   QF340CBY          QSFP+-40G-SR4
+    Xcvr 5       REV 01   740-032986   QF38071P          QSFP+-40G-SR4
+    Xcvr 6       REV 01   740-032986   QF40059K          QSFP+-40G-SR4
+    Xcvr 7       REV 01   740-032986   QF3503TS          QSFP+-40G-SR4
+    Xcvr 8       REV 01   740-032986   QF330APZ          QSFP+-40G-SR4
+    Xcvr 9       REV 01   740-032986   QF3706NB          QSFP+-40G-SR4
+    Xcvr 10      REV 01   740-032986   QF3805T0          QSFP+-40G-SR4
+    Xcvr 11      REV 01   740-032986   QF3703LP          QSFP+-40G-SR4
+    Xcvr 12      REV 01   740-032986   QF340187          QSFP+-40G-SR4
+    Xcvr 13      REV 01   740-032986   QF380634          QSFP+-40G-SR4
+    Xcvr 14      REV 01   740-032986   QF3807U6          QSFP+-40G-SR4
+    Xcvr 15      REV 01   740-032986   QF3503K8          QSFP+-40G-SR4
+    Xcvr 16      REV 01   740-032986   QF4006G6          QSFP+-40G-SR4
+    Xcvr 17      REV 01   740-032986   QF3601X0          QSFP+-40G-SR4
+    Xcvr 18      REV 01   740-032986   QF3805P1          QSFP+-40G-SR4
+    Xcvr 19      REV 01   740-032986   QF3706N3          QSFP+-40G-SR4
+    Xcvr 20      REV 01   740-032986   QF3703HL          QSFP+-40G-SR4
+    Xcvr 21      REV 01   740-032986   QF350AN4          QSFP+-40G-SR4
+    Xcvr 22      REV 01   740-032986   QF3709KF          QSFP+-40G-SR4
+    Xcvr 23      REV 01   740-032986   QF37010B          QSFP+-40G-SR4
+    Xcvr 33      REV 01   740-032986   QF3805X2          QSFP+-40G-SR4
+    Xcvr 35      REV 01   740-032986   QF3805VK          QSFP+-40G-SR4
+    Xcvr 39      REV 01   740-032986   QF340BH9          QSFP+-40G-SR4
+    Xcvr 55      REV 01   740-032986   XYG0C4L           QSFP+-40G-SR4
+    Xcvr 70      REV 01   740-038623   MOC15446232813    QSFP+-40G-CU1M
+    Xcvr 71      REV 01   740-038623   MOC15446230190    QSFP+-40G-CU1M
+  Mezz           REV 12   711-053333   ACMZ5448          Mezzanine Board
+Power Supply 0   REV 03   740-054405   1EDN5388105       AC AFO 1600W PSU
+Power Supply 1   REV 03   740-054405   1EDN5388106       AC AFO 1600W PSU
+Power Supply 2   REV 03   740-054405   1EDN5388122       AC AFO 1600W PSU
+Power Supply 3   REV 03   740-054405   1EDN5388121       AC AFO 1600W PSU
+Fan Tray 0                                               QFX10002 Fan Tray 0, Front to Back Airflow - AFO
+Fan Tray 1                                               QFX10002 Fan Tray 1, Front to Back Airflow - AFO
+Fan Tray 2                                               QFX10002 Fan Tray 2, Front to Back Airflow - AFO
+
+{master:0}
+mehroof@PCOR103.17.28U25.LITF4> show chassis environment 
+Class Item                           Status     Measurement
+Power FPC 0 Power Supply 0           OK         26 degrees C / 78 degrees F
+      FPC 0 Power Supply 1           OK         27 degrees C / 80 degrees F
+      FPC 0 Power Supply 2           OK         25 degrees C / 77 degrees F
+      FPC 0 Power Supply 3           OK         27 degrees C / 80 degrees F
+Temp  FPC 0 Intake Temp Sensor       OK         23 degrees C / 73 degrees F
+      FPC 0 Exhaust Temp Sensor      OK         33 degrees C / 91 degrees F
+      FPC 0 Mezz Temp Sensor 0       OK         29 degrees C / 84 degrees F
+      FPC 0 Mezz Temp Sensor 1       OK         39 degrees C / 102 degrees F
+      FPC 0 PE2 Temp Sensor          OK         32 degrees C / 89 degrees F
+      FPC 0 PE1 Temp Sensor          OK         32 degrees C / 89 degrees F
+      FPC 0 PF0 Temp Sensor          OK         41 degrees C / 105 degrees F
+      FPC 0 PE0 Temp Sensor          OK         31 degrees C / 87 degrees F
+      FPC 0 PE5 Temp Sensor          OK         36 degrees C / 96 degrees F
+      FPC 0 PE4 Temp Sensor          OK         38 degrees C / 100 degrees F
+      FPC 0 PF1 Temp Sensor          OK         47 degrees C / 116 degrees F
+      FPC 0 PE3 Temp Sensor          OK         35 degrees C / 95 degrees F
+      FPC 0 CPU Die Temp Sensor      OK         40 degrees C / 104 degrees F
+      FPC 0 OCXO Temp Sensor         OK         34 degrees C / 93 degrees F
+      FPC 0 PFE0-HMC0-DIE            OK         33 degrees C / 91 degrees F
+      FPC 0 PFE0-HMC0-TOP            OK         31 degrees C / 87 degrees F
+      FPC 0 PFE0-HMC0-BOT            OK         38 degrees C / 100 degrees F
+      FPC 0 PFE0-HMC1-DIE            OK         38 degrees C / 100 degrees F
+      FPC 0 PFE0-HMC1-TOP            OK         33 degrees C / 91 degrees F
+      FPC 0 PFE0-HMC1-BOT            OK         37 degrees C / 98 degrees F
+      FPC 0 PFE0-HMC2-DIE            OK         39 degrees C / 102 degrees F
+      FPC 0 PFE0-HMC2-TOP            OK         36 degrees C / 96 degrees F
+      FPC 0 PFE0-HMC2-BOT            OK         42 degrees C / 107 degrees F
+      FPC 0 PFE1-HMC0-DIE            OK         38 degrees C / 100 degrees F
+      FPC 0 PFE1-HMC0-TOP            OK         34 degrees C / 93 degrees F
+      FPC 0 PFE1-HMC0-BOT            OK         39 degrees C / 102 degrees F
+      FPC 0 PFE1-HMC1-DIE            OK         38 degrees C / 100 degrees F
+      FPC 0 PFE1-HMC1-TOP            OK         36 degrees C / 96 degrees F
+      FPC 0 PFE1-HMC1-BOT            OK         41 degrees C / 105 degrees F
+      FPC 0 PFE1-HMC2-DIE            OK         42 degrees C / 107 degrees F
+      FPC 0 PFE1-HMC2-TOP            OK         39 degrees C / 102 degrees F
+      FPC 0 PFE1-HMC2-BOT            OK         48 degrees C / 118 degrees F
+      FPC 0 PFE2-HMC0-DIE            OK         35 degrees C / 95 degrees F
+      FPC 0 PFE2-HMC0-TOP            OK         29 degrees C / 84 degrees F
+      FPC 0 PFE2-HMC0-BOT            OK         36 degrees C / 96 degrees F
+      FPC 0 PFE2-HMC1-DIE            OK         38 degrees C / 100 degrees F
+      FPC 0 PFE2-HMC1-TOP            OK         38 degrees C / 100 degrees F
+      FPC 0 PFE2-HMC1-BOT            OK         41 degrees C / 105 degrees F
+      FPC 0 PFE2-HMC2-DIE            OK         41 degrees C / 105 degrees F
+      FPC 0 PFE2-HMC2-TOP            OK         34 degrees C / 93 degrees F
+      FPC 0 PFE2-HMC2-BOT            OK         43 degrees C / 109 degrees F
+      FPC 0 PFE3-HMC0-DIE            OK         41 degrees C / 105 degrees F
+      FPC 0 PFE3-HMC0-TOP            OK         34 degrees C / 93 degrees F
+      FPC 0 PFE3-HMC0-BOT            OK         39 degrees C / 102 degrees F
+      FPC 0 PFE3-HMC1-DIE            OK         43 degrees C / 109 degrees F
+      FPC 0 PFE3-HMC1-TOP            OK         38 degrees C / 100 degrees F
+      FPC 0 PFE3-HMC1-BOT            OK         42 degrees C / 107 degrees F
+      FPC 0 PFE3-HMC2-DIE            OK         44 degrees C / 111 degrees F
+      FPC 0 PFE3-HMC2-TOP            OK         35 degrees C / 95 degrees F
+      FPC 0 PFE3-HMC2-BOT            OK         45 degrees C / 113 degrees F
+      FPC 0 PFE4-HMC0-DIE            OK         42 degrees C / 107 degrees F
+      FPC 0 PFE4-HMC0-TOP            OK         41 degrees C / 105 degrees F
+      FPC 0 PFE4-HMC0-BOT            OK         45 degrees C / 113 degrees F
+      FPC 0 PFE4-HMC1-DIE            OK         46 degrees C / 114 degrees F
+      FPC 0 PFE4-HMC1-TOP            OK         44 degrees C / 111 degrees F
+      FPC 0 PFE4-HMC1-BOT            OK         47 degrees C / 116 degrees F
+      FPC 0 PFE4-HMC2-DIE            OK         47 degrees C / 116 degrees F
+      FPC 0 PFE4-HMC2-TOP            OK         44 degrees C / 111 degrees F
+      FPC 0 PFE4-HMC2-BOT            OK         48 degrees C / 118 degrees F
+      FPC 0 PFE5-HMC0-DIE            OK         41 degrees C / 105 degrees F
+      FPC 0 PFE5-HMC0-TOP            OK         36 degrees C / 96 degrees F
+      FPC 0 PFE5-HMC0-BOT            OK         45 degrees C / 113 degrees F
+      FPC 0 PFE5-HMC1-DIE            OK         45 degrees C / 113 degrees F
+      FPC 0 PFE5-HMC1-TOP            OK         39 degrees C / 102 degrees F
+      FPC 0 PFE5-HMC1-BOT            OK         51 degrees C / 123 degrees F
+      FPC 0 PFE5-HMC2-DIE            OK         44 degrees C / 111 degrees F
+      FPC 0 PFE5-HMC2-TOP            OK         39 degrees C / 102 degrees F
+      FPC 0 PFE5-HMC2-BOT            OK         43 degrees C / 109 degrees F
+Fans  FPC 0 Fan Tray 0               OK         Spinning at normal speed
+      FPC 0 Fan Tray 1               OK         Spinning at normal speed
+      FPC 0 Fan Tray 2               OK         Spinning at normal speed
