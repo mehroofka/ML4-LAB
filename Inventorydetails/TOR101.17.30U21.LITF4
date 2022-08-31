@@ -1,0 +1,66 @@
+TOR101.17.30U21.LITF4> show chassis hardware 
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                TA3716150012      QFX5100-48S-6Q
+Pseudo CB 0     
+Routing Engine 0          BUILTIN      BUILTIN           QFX Routing Engine
+FPC 0            REV 06   650-064381   TA3716150012      QFX5100-48S-6Q
+  CPU                     BUILTIN      BUILTIN           FPC CPU
+  PIC 0                   BUILTIN      BUILTIN           48x10G-6x40G
+    Xcvr 0       REV 01   740-030077   APF16020027LYL    SFP+-10G-CU3M
+    Xcvr 1       REV 01   740-030077   APF16020027M9C    SFP+-10G-CU3M
+    Xcvr 2       REV 01   740-030077   APF16010026DRA    SFP+-10G-CU3M
+    Xcvr 3       REV 01   740-030077   APF155200265D8    SFP+-10G-CU3M
+    Xcvr 4       REV 01   740-030077   APF16010026DKV    SFP+-10G-CU3M
+    Xcvr 5       REV 01   740-030077   APF16020027M37    SFP+-10G-CU3M
+    Xcvr 6       REV 01   740-030077   APF16010026ECK    SFP+-10G-CU3M
+    Xcvr 7       REV 01   740-030077   APF16010026EP5    SFP+-10G-CU3M
+    Xcvr 8       REV 01   740-030077   APF16020027M8C    SFP+-10G-CU3M
+    Xcvr 9       REV 01   740-030077   APF15500024E18    SFP+-10G-CU3M
+    Xcvr 10      REV 01   740-030077   APF15500024E23    SFP+-10G-CU3M
+    Xcvr 11      REV 01   740-030077   APF15500024EFK    SFP+-10G-CU3M
+    Xcvr 12      REV 01   740-030077   APF16020027M8W    SFP+-10G-CU3M
+    Xcvr 13      REV 01   740-030077   APF15500024D27    SFP+-10G-CU3M
+    Xcvr 14      REV 01   740-030077   APF16020027M1G    SFP+-10G-CU3M
+    Xcvr 15      REV 01   740-030077   APF16010026E8G    SFP+-10G-CU3M
+    Xcvr 16      REV 01   740-030077   APF16010026F8Y    SFP+-10G-CU3M
+    Xcvr 17      REV 01   740-030077   APF16010026FCW    SFP+-10G-CU3M
+    Xcvr 18      REV 01   740-030077   APF15500024E15    SFP+-10G-CU3M
+    Xcvr 19      REV 01   740-030077   APF16010026E70    SFP+-10G-CU3M
+    Xcvr 20      REV 01   740-030077   APF16010026F7W    SFP+-10G-CU3M
+    Xcvr 21      REV 01   740-030077   APF15500024E14    SFP+-10G-CU3M
+    Xcvr 22      REV 01   740-030077   APF16020027M2R    SFP+-10G-CU3M
+    Xcvr 23      REV 01   740-030077   APF155200264WB    SFP+-10G-CU3M
+    Xcvr 24      REV 01   740-030077   APF15180022G90    SFP+-10G-CU3M
+    Xcvr 25      REV 01   740-030077   APF16010026EJ8    SFP+-10G-CU3M
+    Xcvr 26      REV 01   740-030077   APF16010026DMB    SFP+-10G-CU3M
+    Xcvr 27      REV 01   740-030077   APF160300283LA    SFP+-10G-CU3M
+    Xcvr 28      REV 01   740-030077   APF16010026ECP    SFP+-10G-CU3M
+    Xcvr 29      REV 01   740-030077   APF15500024CG4    SFP+-10G-CU3M
+    Xcvr 30      REV 01   740-030077   APF15190022JY1    SFP+-10G-CU3M
+    Xcvr 31      REV 01   740-030077   APF15500024E1Y    SFP+-10G-CU3M
+    Xcvr 32      REV 01   740-030077   APF16010026DVA    SFP+-10G-CU3M
+    Xcvr 33      REV 01   740-030077   APF16010026F83    SFP+-10G-CU3M
+    Xcvr 34      REV 01   740-030077   APF16010026EEE    SFP+-10G-CU3M
+    Xcvr 35      REV 01   740-030077   APF15500024E1R    SFP+-10G-CU3M
+    Xcvr 36      REV 01   740-030077   APF16010026EBC    SFP+-10G-CU3M
+    Xcvr 37      REV 01   740-030077   APF15500024CTH    SFP+-10G-CU3M
+    Xcvr 38      REV 01   740-030077   APF16010026DT2    SFP+-10G-CU3M
+    Xcvr 39      REV 01   740-030077   APF155200265JV    SFP+-10G-CU3M
+    Xcvr 40      REV 02   740-013111   F471910           SFP-T
+    Xcvr 41      REV 02   740-013111   F490755           SFP-T
+    Xcvr 42      REV 02   740-013111   F490380           SFP-T
+    Xcvr 43      REV 02   740-013111   F474649           SFP-T
+    Xcvr 44      REV 02   740-013111   F490533           SFP-T
+    Xcvr 46      REV 01   740-021308   AD154630V4N       SFP+-10G-SR
+    Xcvr 48      REV 01   740-032986   QF350170          QSFP+-40G-SR4
+    Xcvr 49      REV 01   740-032986   QF3505DY          QSFP+-40G-SR4
+    Xcvr 50      REV 01   740-038623   MOC13516230297    QSFP+-40G-CU1M
+    Xcvr 51      REV 01   740-038624   APF154800331U2    QSFP+-40G-CU3M
+Power Supply 0   REV 04   740-044332   1GA16020951       JPSU-650W-AC-AFI
+Power Supply 1   REV 04   740-044332   1GA16020957       JPSU-650W-AC-AFI
+Fan Tray 0                                               QFX5100 Fan Tray 0, Back to Front Airflow - AFI
+Fan Tray 1                                               QFX5100 Fan Tray 1, Back to Front Airflow - AFI
+Fan Tray 2                                               QFX5100 Fan Tray 2, Back to Front Airflow - AFI
+Fan Tray 3                                               QFX5100 Fan Tray 3, Back to Front Airflow - AFI
+Fan Tray 4                                               QFX5100 Fan Tray 4, Back to Front Airflow - AFI
