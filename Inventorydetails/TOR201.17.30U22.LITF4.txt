@@ -1,0 +1,60 @@
+TOR201.17.30U22.LITF4> show chassis hardware 
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                TA3717090460      QFX5100-48S-6Q
+Pseudo CB 0     
+Routing Engine 0          BUILTIN      BUILTIN           QFX Routing Engine
+FPC 0            REV 13   650-064381   TA3717090460      QFX5100-48S-6Q
+  CPU                     BUILTIN      BUILTIN           FPC CPU
+  PIC 0                   BUILTIN      BUILTIN           48x10G-6x40G
+    Xcvr 0       REV 01   740-030077   APF16020027M17    SFP+-10G-CU3M
+    Xcvr 1       REV 01   740-030077   APF16020027M6P    SFP+-10G-CU3M
+    Xcvr 2       REV 01   740-030077   APF15500024E1J    SFP+-10G-CU3M
+    Xcvr 3       REV 01   740-030077   APF16010026EEM    SFP+-10G-CU3M
+    Xcvr 4       REV 01   740-030077   APF16020027M4T    SFP+-10G-CU3M
+    Xcvr 5       REV 01   740-030077   APF16010026DT3    SFP+-10G-CU3M
+    Xcvr 6       REV 01   740-030077   APF15500024DFR    SFP+-10G-CU3M
+    Xcvr 7       REV 01   740-030077   APF16010026ED2    SFP+-10G-CU3M
+    Xcvr 8       REV 01   740-030077   APF16020027M84    SFP+-10G-CU3M
+    Xcvr 9       REV 01   740-030077   APF16010026EGY    SFP+-10G-CU3M
+    Xcvr 10      REV 01   740-030077   APF16010026DU8    SFP+-10G-CU3M
+    Xcvr 11      REV 01   740-030077   APF16010026DTH    SFP+-10G-CU3M
+    Xcvr 12      REV 01   740-030077   APF155200265RG    SFP+-10G-CU3M
+    Xcvr 13      REV 01   740-030077   APF15500024DF2    SFP+-10G-CU3M
+    Xcvr 14      REV 01   740-030077   APF1603002842V    SFP+-10G-CU3M
+    Xcvr 15      REV 01   740-030077   APF15500024DR9    SFP+-10G-CU3M
+    Xcvr 16      REV 01   740-030077   APF16020027M9F    SFP+-10G-CU3M
+    Xcvr 17      REV 01   740-030077   APF16020027M1Y    SFP+-10G-CU3M
+    Xcvr 18      REV 01   740-030077   APF16020027M4B    SFP+-10G-CU3M
+    Xcvr 19      REV 01   740-030077   APF160300283TK    SFP+-10G-CU3M
+    Xcvr 20      REV 01   740-030077   APF16020027M0B    SFP+-10G-CU3M
+    Xcvr 21      REV 01   740-030077   APF15180022FVD    SFP+-10G-CU3M
+    Xcvr 22      REV 01   740-030077   APF16010026DMG    SFP+-10G-CU3M
+    Xcvr 23      REV 01   740-030077   APF15500024E0K    SFP+-10G-CU3M
+    Xcvr 24      REV 01   740-030077   APF16020027M8A    SFP+-10G-CU3M
+    Xcvr 26      REV 01   740-030077   APF15500024DHN    SFP+-10G-CU3M
+    Xcvr 27      REV 01   740-030077   APF16010026FBJ    SFP+-10G-CU3M
+    Xcvr 28      REV 01   740-030077   APF16030028498    SFP+-10G-CU3M
+    Xcvr 29      REV 01   740-030077   APF16020027M40    SFP+-10G-CU3M
+    Xcvr 30      REV 01   740-030077   APF16010026EDL    SFP+-10G-CU3M
+    Xcvr 31      REV 01   740-030077   APF16010026DTE    SFP+-10G-CU3M
+    Xcvr 32      REV 01   740-030077   APF155200265TV    SFP+-10G-CU3M
+    Xcvr 33      REV 01   740-030077   APF16010026EF0    SFP+-10G-CU3M
+    Xcvr 34      REV 01   740-030077   APF16020027M8J    SFP+-10G-CU3M
+    Xcvr 35      REV 01   740-030077   APF16010026E09    SFP+-10G-CU3M
+    Xcvr 36      REV 01   740-030077   APF16020027M2A    SFP+-10G-CU3M
+    Xcvr 37      REV 01   740-030077   APF16010026EC1    SFP+-10G-CU3M
+    Xcvr 38      REV 01   740-030077   APF16010026ECE    SFP+-10G-CU3M
+    Xcvr 39      REV 01   740-030077   APF1603002849B    SFP+-10G-CU3M
+    Xcvr 46      REV 01   740-031980   AA15053MDYK       SFP+-10G-SR
+    Xcvr 48      REV 01   740-032986   QF3805TC          QSFP+-40G-SR4
+    Xcvr 49      REV 01   740-032986   QB440456          QSFP+-40G-SR4
+    Xcvr 50      REV 01   740-038623   MOC13516230297    QSFP+-40G-CU1M
+    Xcvr 51      REV 01   740-038624   APF154800331U2    QSFP+-40G-CU3M
+Power Supply 0   REV 04   740-044332   1GA17010935       JPSU-650W-AC-AFI
+Power Supply 1   REV 04   740-044332   1GA17010934       JPSU-650W-AC-AFI
+Fan Tray 0                                               QFX5100 Fan Tray 0, Back to Front Airflow - AFI
+Fan Tray 1                                               QFX5100 Fan Tray 1, Back to Front Airflow - AFI
+Fan Tray 2                                               QFX5100 Fan Tray 2, Back to Front Airflow - AFI
+Fan Tray 3                                               QFX5100 Fan Tray 3, Back to Front Airflow - AFI
+Fan Tray 4                                               QFX5100 Fan Tray 4, Back to Front Airflow - AFI
