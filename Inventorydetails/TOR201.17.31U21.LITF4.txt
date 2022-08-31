@@ -1,0 +1,98 @@
+@TOR101.17.31U21.LITF4> show chassis environment 
+Class Item                           Status     Measurement
+Power FPC 0 Power Supply 0           OK        
+      FPC 0 Power Supply 1           OK        
+Temp  FPC 0 Sensor TopMiddle E       OK         19 degrees C / 66 degrees F
+      FPC 0 Sensor TopRight C        OK         18 degrees C / 64 degrees F
+      FPC 0 Sensor TopLeft C         OK         40 degrees C / 104 degrees F
+      FPC 0 Sensor TopRight E        OK         18 degrees C / 64 degrees F
+      FPC 0 Sensor CPURight C        OK         22 degrees C / 71 degrees F
+      FPC 0 Sensor CPULeft E         OK         19 degrees C / 66 degrees F
+      FPC 0 Sensor CPU Die Temp      OK         31 degrees C / 87 degrees F
+Fans  FPC 0 Fan Tray 0               OK         Spinning at normal speed
+      FPC 0 Fan Tray 1               OK         Spinning at normal speed
+      FPC 0 Fan Tray 2               OK         Spinning at normal speed
+      FPC 0 Fan Tray 3               OK         Spinning at normal speed
+      FPC 0 Fan Tray 4               OK         Spinning at normal speed
+
+{master:0}
+mehroof@TOR101.17.31U21.LITF4> show chassis hardware ?     
+Possible completions:
+  <[Enter]>            Execute this command
+  clei-models          Display CLEI barcode and model number for orderable FRUs
+  detail               Include RAM and disk information in output
+  extensive            Display ID EEPROM information
+  |                    Pipe through a command
+{master:0}
+TOR101.17.31U21.LITF4> show chassis hardware detail 
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                TA3716150038      QFX5100-48S-6Q
+Pseudo CB 0     
+Routing Engine 0          BUILTIN      BUILTIN           QFX Routing Engine
+  ad0    1843 MB  QEMU HARDDISK        QM00001           Hard Disk
+  ad1    4095 MB  QEMU HARDDISK        QM00002           Hard Disk
+  ad2     511 MB  QEMU HARDDISK        QM00003           Hard Disk
+  ad3    1023 MB  QEMU HARDDISK        QM00004           Hard Disk
+  usb1 (addr 1)  product 0x0000 0      vendor 0x0000     uhub1
+  usb1 (addr 2)  product 0x0020 32     vendor 0x8087     uhub2
+FPC 0            REV 06   650-064381   TA3716150038      QFX5100-48S-6Q
+  CPU                     BUILTIN      BUILTIN           FPC CPU
+  PIC 0                   BUILTIN      BUILTIN           48x10G-6x40G
+    Xcvr 0       REV 01   740-030077   APF155200264WR    SFP+-10G-CU3M
+    Xcvr 1       REV 01   740-030077   APF155200265ME    SFP+-10G-CU3M
+    Xcvr 2       REV 01   740-030077   APF16010026EAA    SFP+-10G-CU3M
+    Xcvr 3       REV 01   740-030077   APF15520026561    SFP+-10G-CU3M
+    Xcvr 4       REV 01   740-030077   APF16010026DWF    SFP+-10G-CU3M
+    Xcvr 5       REV 01   740-030077   APF16010026DN1    SFP+-10G-CU3M
+    Xcvr 6       REV 01   740-030077   APF15520026560    SFP+-10G-CU3M
+    Xcvr 7       REV 01   740-030077   APF16020027M7R    SFP+-10G-CU3M
+    Xcvr 8       REV 01   740-030077   APF1552002659N    SFP+-10G-CU3M
+    Xcvr 9       REV 01   740-030077   APF155200265AH    SFP+-10G-CU3M
+    Xcvr 10      REV 01   740-030077   APF16010026F8L    SFP+-10G-CU3M
+    Xcvr 11      REV 01   740-030077   APF155200265NY    SFP+-10G-CU3M
+    Xcvr 12      REV 01   740-030077   APF16010026DT5    SFP+-10G-CU3M
+    Xcvr 13      REV 01   740-030077   APF155200265YW    SFP+-10G-CU3M
+    Xcvr 14      REV 01   740-030077   APF16010026EYF    SFP+-10G-CU3M
+    Xcvr 16      REV 01   740-030077   APF16010026DUR    SFP+-10G-CU3M
+    Xcvr 17      REV 01   740-030077   APF155200265M3    SFP+-10G-CU3M
+    Xcvr 18      REV 01   740-030077   APF16010026DPV    SFP+-10G-CU3M
+    Xcvr 19      REV 01   740-030077   APF16010026EP2    SFP+-10G-CU3M
+    Xcvr 20      REV 01   740-030077   APF155200265GU    SFP+-10G-CU3M
+    Xcvr 21      REV 01   740-030077   APF16010026F40    SFP+-10G-CU3M
+    Xcvr 22      REV 01   740-030077   APF16010026ECM    SFP+-10G-CU3M
+    Xcvr 23      REV 01   740-030077   APF16010026DTC    SFP+-10G-CU3M
+    Xcvr 24      REV 01   740-030077   APF1603002845M    SFP+-10G-CU3M
+    Xcvr 25      REV 01   740-030077   APF160300284CN    SFP+-10G-CU3M
+    Xcvr 26      REV 01   740-030077   APF16020027M6G    SFP+-10G-CU3M
+    Xcvr 27      REV 01   740-030077   APF16010026E1E    SFP+-10G-CU3M
+    Xcvr 28      REV 01   740-030077   APF155200265D4    SFP+-10G-CU3M
+    Xcvr 29      REV 01   740-030077   APF16010026DV4    SFP+-10G-CU3M
+    Xcvr 30      REV 01   740-030077   APF155200265NF    SFP+-10G-CU3M
+    Xcvr 31      REV 01   740-030077   APF16010026EL5    SFP+-10G-CU3M
+    Xcvr 32      REV 01   740-030077   APF16010026EMJ    SFP+-10G-CU3M
+    Xcvr 33      REV 01   740-030077   APF155200265F8    SFP+-10G-CU3M
+    Xcvr 34      REV 01   740-030077   APF155200265CF    SFP+-10G-CU3M
+    Xcvr 35      REV 01   740-030077   APF15520026584    SFP+-10G-CU3M
+    Xcvr 36      REV 01   740-030077   APF150700250HY    SFP+-10G-CU3M
+    Xcvr 37      REV 01   740-030077   APF155200265AF    SFP+-10G-CU3M
+    Xcvr 38      REV 01   740-030077   APF15500024DY7    SFP+-10G-CU3M
+    Xcvr 39      REV 01   740-030077   APF16010026F44    SFP+-10G-CU3M
+    Xcvr 40      REV 02   740-013111   F471289           SFP-T
+    Xcvr 41      REV 02   740-013111   F490562           SFP-T
+    Xcvr 42      REV 02   740-013111   F490574           SFP-T
+    Xcvr 43      REV 02   740-013111   F490394           SFP-T
+    Xcvr 44      REV 02   740-013111   F470972           SFP-T
+    Xcvr 45      REV 01   740-021308   AD154630D5T       SFP+-10G-SR
+    Xcvr 46      REV 01   740-021308   ANQ1AEY           SFP+-10G-SR
+    Xcvr 48      REV 01   740-032986   QF3808RA          QSFP+-40G-SR4
+    Xcvr 49      REV 01   740-032986   QF3805WZ          QSFP+-40G-SR4
+    Xcvr 50      REV 01   740-038624   APF154800331TR    QSFP+-40G-CU3M
+    Xcvr 51      REV 01   740-038624   APF154800332D6    QSFP+-40G-CU3M
+Power Supply 0   REV 04   740-044332   1GA16020909       JPSU-650W-AC-AFI
+Power Supply 1   REV 04   740-044332   1GA16020905       JPSU-650W-AC-AFI
+Fan Tray 0                                               QFX5100 Fan Tray 0, Back to Front Airflow - AFI
+Fan Tray 1                                               QFX5100 Fan Tray 1, Back to Front Airflow - AFI
+Fan Tray 2                                               QFX5100 Fan Tray 2, Back to Front Airflow - AFI
+Fan Tray 3                                               QFX5100 Fan Tray 3, Back to Front Airflow - AFI
+Fan Tray 4                                               QFX5100 Fan Tray 4, Back to Front Airflow - AFI
