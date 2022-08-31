@@ -1,0 +1,30 @@
+MTOR101.17.29U44.LITF4> show chassis hardware detail    
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                GA0215380374      EX3300-48T
+Routing Engine 0 REV 17   750-034247   GA0215380374      EX3300 48-Port
+Routing Engine 0                       GA0215380374      EX3300 48-Port
+FPC 0            REV 17   750-034247   GA0215380374      EX3300 48-Port
+  CPU                     BUILTIN      BUILTIN           FPC CPU
+  PIC 0                   BUILTIN      BUILTIN           48x 10/100/1000 Base-T
+  PIC 1          REV 17   750-034247   GA0215380374      4x GE/XE SFP+
+    Xcvr 0       REV 01   740-021308   MWC023Y           SFP+-10G-SR
+    Xcvr 1       REV 01   740-031980   AJ70SV7           SFP+-10G-SR
+Power Supply 0                                           PS 100W AC
+Fan Tray                                                 Fan Tray
+
+{master:0}
+mehroof@MTOR101.17.29U44.LITF4> show chassis environment 
+Class Item                           Status     Measurement
+Power FPC 0 Power Supply 0           OK        
+Temp  FPC 0 CPU                      OK         38 degrees C / 100 degrees F
+      FPC 0 EX-PFE1                  OK         50 degrees C / 122 degrees F
+      FPC 0 EX-PFE2                  OK         47 degrees C / 116 degrees F
+      FPC 0 GEPHY1                   OK         35 degrees C / 95 degrees F
+      FPC 0 Fan Exhaust              OK         37 degrees C / 98 degrees F
+      FPC 0 SFP+ PHY                 OK         33 degrees C / 91 degrees F
+      FPC 0 Local Sensor             OK         37 degrees C / 98 degrees F
+Fans  FPC 0 Fan 1                    OK         Spinning at normal speed
+      FPC 0 Fan 2                    OK         Spinning at normal speed
+
+{master:0}
