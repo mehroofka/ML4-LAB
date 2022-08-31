@@ -1,0 +1,92 @@
+mehroof@TOR201.17.31U21.LITF4> show chassis hardware detail 
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                TA3716150042      QFX5100-48S-6Q
+Pseudo CB 0     
+Routing Engine 0          BUILTIN      BUILTIN           QFX Routing Engine
+  ad0    1843 MB  QEMU HARDDISK        QM00001           Hard Disk
+  ad1    4095 MB  QEMU HARDDISK        QM00002           Hard Disk
+  ad2     511 MB  QEMU HARDDISK        QM00003           Hard Disk
+  ad3    1023 MB  QEMU HARDDISK        QM00004           Hard Disk
+  usb1 (addr 1)  product 0x0000 0      vendor 0x0000     uhub1
+  usb1 (addr 2)  product 0x0020 32     vendor 0x8087     uhub2
+FPC 0            REV 06   650-064381   TA3716150042      QFX5100-48S-6Q
+  CPU                     BUILTIN      BUILTIN           FPC CPU
+  PIC 0                   BUILTIN      BUILTIN           48x10G-6x40G
+    Xcvr 0       REV 01   740-030077   APF151000268E8    SFP+-10G-CU3M
+    Xcvr 1       REV 01   740-030077   APF16010026EE6    SFP+-10G-CU3M
+    Xcvr 2       REV 01   740-030077   APF16010026EF1    SFP+-10G-CU3M
+    Xcvr 3       REV 01   740-030077   APF16010026E3Y    SFP+-10G-CU3M
+    Xcvr 4       REV 01   740-030077   APF16010026EDF    SFP+-10G-CU3M
+    Xcvr 5       REV 01   740-030077   APF16010026ENG    SFP+-10G-CU3M
+    Xcvr 6       REV 01   740-030077   APF16020027M7M    SFP+-10G-CU3M
+    Xcvr 7       REV 01   740-030077   APF16010026EDA    SFP+-10G-CU3M
+    Xcvr 8       REV 01   740-030077   APF155200265VD    SFP+-10G-CU3M
+    Xcvr 9       REV 01   740-030077   APF16020027M4F    SFP+-10G-CU3M
+    Xcvr 10      REV 01   740-030077   APF16020027M80    SFP+-10G-CU3M
+    Xcvr 11      REV 01   740-030077   APF155200265WN    SFP+-10G-CU3M
+    Xcvr 12      REV 01   740-030077   APF16010026EE2    SFP+-10G-CU3M
+    Xcvr 13      REV 01   740-030077   APF16020027M5E    SFP+-10G-CU3M
+    Xcvr 14      REV 01   740-030077   APF16010026DU3    SFP+-10G-CU3M
+    Xcvr 15      REV 01   740-030077   APF16010026DT8    SFP+-10G-CU3M
+    Xcvr 16      REV 01   740-030077   APF155200265JF    SFP+-10G-CU3M
+    Xcvr 17      REV 01   740-030077   APF15190022KTW    SFP+-10G-CU3M
+    Xcvr 18      REV 01   740-030077   APF16010026EAK    SFP+-10G-CU3M
+    Xcvr 19      REV 01   740-030077   APF16010026ECT    SFP+-10G-CU3M
+    Xcvr 20      REV 01   740-030077   APF16010026F7M    SFP+-10G-CU3M
+    Xcvr 21      REV 01   740-030077   APF15500024E9R    SFP+-10G-CU3M
+    Xcvr 22      REV 01   740-030077   APF15190022K7H    SFP+-10G-CU3M
+    Xcvr 23      REV 01   740-030077   APF16010026DLL    SFP+-10G-CU3M
+    Xcvr 24      REV 01   740-030077   APF16020027M27    SFP+-10G-CU3M
+    Xcvr 25      REV 01   740-030077   APF16020027M2Y    SFP+-10G-CU3M
+    Xcvr 26      REV 01   740-030077   APF15500024D17    SFP+-10G-CU3M
+    Xcvr 27      REV 01   740-030077   APF15180022FA2    SFP+-10G-CU3M
+    Xcvr 28      REV 01   740-030077   APF15500024DB3    SFP+-10G-CU3M
+    Xcvr 29      REV 01   740-030077   APF15500024E70    SFP+-10G-CU3M
+    Xcvr 30      REV 01   740-030077   APF16020027M4R    SFP+-10G-CU3M
+    Xcvr 31      REV 01   740-030077   APF155200265TC    SFP+-10G-CU3M
+    Xcvr 32      REV 01   740-030077   APF16020027M1E    SFP+-10G-CU3M
+    Xcvr 33      REV 01   740-030077   APF16010026DL2    SFP+-10G-CU3M
+    Xcvr 34      REV 01   740-030077   APF15500024E53    SFP+-10G-CU3M
+    Xcvr 35      REV 01   740-030077   APF1603002841H    SFP+-10G-CU3M
+    Xcvr 36      REV 01   740-030077   APF16010026DW8    SFP+-10G-CU3M
+    Xcvr 37      REV 01   740-030077   APF16020027M20    SFP+-10G-CU3M
+    Xcvr 38      REV 01   740-030077   APF1603002849N    SFP+-10G-CU3M
+    Xcvr 39      REV 01   740-030077   APF16020027M47    SFP+-10G-CU3M
+    Xcvr 40      REV 02   740-013111   F490769           SFP-T
+    Xcvr 41      REV 02   740-013111   F471714           SFP-T
+    Xcvr 42      REV 02   740-013111   F490537           SFP-T
+    Xcvr 43      REV 02   740-013111   F490305           SFP-T
+    Xcvr 44      REV 02   740-013111   F473015           SFP-T
+    Xcvr 45      REV 01   740-021308   AD154630V6H       SFP+-10G-SR
+    Xcvr 46      REV 01   740-031980   AJ801HH           SFP+-10G-SR
+    Xcvr 47      REV 02   740-013111   F490743           SFP-T
+    Xcvr 48      REV 01   740-032986   QF3503F5          QSFP+-40G-SR4
+    Xcvr 49      REV 01   740-032986   QF3806KG          QSFP+-40G-SR4
+    Xcvr 50      REV 01   740-038624   APF154800331TR    QSFP+-40G-CU3M
+    Xcvr 51      REV 01   740-038624   APF154800332D6    QSFP+-40G-CU3M
+Power Supply 0   REV 04   740-044332   1GA16020897       JPSU-650W-AC-AFI
+Power Supply 1   REV 04   740-044332   1GA16020900       JPSU-650W-AC-AFI
+Fan Tray 0                                               QFX5100 Fan Tray 0, Back to Front Airflow - AFI
+Fan Tray 1                                               QFX5100 Fan Tray 1, Back to Front Airflow - AFI
+Fan Tray 2                                               QFX5100 Fan Tray 2, Back to Front Airflow - AFI
+Fan Tray 3                                               QFX5100 Fan Tray 3, Back to Front Airflow - AFI
+Fan Tray 4                                               QFX5100 Fan Tray 4, Back to Front Airflow - AFI
+
+{master:0}
+mehroof@TOR201.17.31U21.LITF4> show chassis environment 
+Class Item                           Status     Measurement
+Power FPC 0 Power Supply 0           OK        
+      FPC 0 Power Supply 1           OK        
+Temp  FPC 0 Sensor TopMiddle E       OK         19 degrees C / 66 degrees F
+      FPC 0 Sensor TopRight C        OK         19 degrees C / 66 degrees F
+      FPC 0 Sensor TopLeft C         OK         40 degrees C / 104 degrees F
+      FPC 0 Sensor TopRight E        OK         18 degrees C / 64 degrees F
+      FPC 0 Sensor CPURight C        OK         22 degrees C / 71 degrees F
+      FPC 0 Sensor CPULeft E         OK         19 degrees C / 66 degrees F
+      FPC 0 Sensor CPU Die Temp      OK         33 degrees C / 91 degrees F
+Fans  FPC 0 Fan Tray 0               OK         Spinning at normal speed
+      FPC 0 Fan Tray 1               OK         Spinning at normal speed
+      FPC 0 Fan Tray 2               OK         Spinning at normal speed
+      FPC 0 Fan Tray 3               OK         Spinning at normal speed
+      FPC 0 Fan Tray 4               OK         Spinning at normal speed
