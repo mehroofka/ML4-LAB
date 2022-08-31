@@ -1,0 +1,593 @@
+set system ntp boot-server 10.189.136.38
+set system ntp server 10.189.136.38
+set system ntp server 10.189.136.167
+set chassis aggregated-devices ethernet device-count 100
+set chassis forwarding-options l3-profile
+set interfaces xe-0/0/0 description To-COM001.17.28U02.LITF4-port:p1p1
+set interfaces xe-0/0/0 ether-options 802.3ad ae0
+set interfaces xe-0/0/1 description To-COM002.17.28U05.LITF4-port:p1p1
+set interfaces xe-0/0/1 ether-options 802.3ad ae1
+set interfaces xe-0/0/2 description To-COM003.17.28U08.LITF4-port:p1p1
+set interfaces xe-0/0/2 ether-options 802.3ad ae2
+set interfaces xe-0/0/3 description To-COM004.17.28U11.LITF4-port:p1p1
+set interfaces xe-0/0/3 ether-options 802.3ad ae3
+set interfaces xe-0/0/4 description To-COM005.17.28U14.LITF4-port:p1p1
+set interfaces xe-0/0/4 ether-options 802.3ad ae4
+set interfaces xe-0/0/5 description To-COM006.17.28U17.LITF4-port:p1p1
+set interfaces xe-0/0/5 ether-options 802.3ad ae5
+set interfaces xe-0/0/6 description To-COM007.17.28U26.LITF4-port:p1p1
+set interfaces xe-0/0/6 ether-options 802.3ad ae6
+set interfaces xe-0/0/7 description To-COM008.17.28U29.LITF4-port:p1p1
+set interfaces xe-0/0/7 ether-options 802.3ad ae7
+set interfaces xe-0/0/8 description To-COM009.17.28U32.LITF4-port:p1p1
+set interfaces xe-0/0/8 ether-options 802.3ad ae8
+set interfaces xe-0/0/9 description To-COM010.17.28U35.LITF4-port:p1p1
+set interfaces xe-0/0/9 ether-options 802.3ad ae9
+set interfaces xe-0/0/10 description To-COM001.17.28U02.LITF4-port:em49
+set interfaces xe-0/0/10 ether-options 802.3ad ae10
+set interfaces xe-0/0/11 description To-COM002.17.28U05.LITF4-port:em49
+set interfaces xe-0/0/11 ether-options 802.3ad ae11
+set interfaces xe-0/0/12 description To-COM003.17.28U08.LITF4-port:em49
+set interfaces xe-0/0/12 ether-options 802.3ad ae12
+set interfaces xe-0/0/13 description To-COM004.17.28U11.LITF4-port:em49
+set interfaces xe-0/0/13 ether-options 802.3ad ae13
+set interfaces xe-0/0/14 description To-COM005.17.28U14.LITF4-port:em49
+set interfaces xe-0/0/14 ether-options 802.3ad ae14
+set interfaces xe-0/0/15 description To-COM006.17.28U17.LITF4-port:em49
+set interfaces xe-0/0/15 ether-options 802.3ad ae15
+set interfaces xe-0/0/16 description To-COM007.17.28U26.LITF4-port:em49
+set interfaces xe-0/0/16 ether-options 802.3ad ae16
+set interfaces xe-0/0/17 description To-COM008.17.28U29.LITF4-port:em49
+set interfaces xe-0/0/17 ether-options 802.3ad ae17
+set interfaces xe-0/0/18 description To-COM009.17.28U32.LITF4-port:em49
+set interfaces xe-0/0/18 ether-options 802.3ad ae18
+set interfaces xe-0/0/19 description To-COM010.17.28U35.LITF4-port:em49
+set interfaces xe-0/0/19 ether-options 802.3ad ae19
+set interfaces xe-0/0/20 description To-COM001.17.28U02.LITF4-port:p6p1
+set interfaces xe-0/0/20 ether-options 802.3ad ae20
+set interfaces xe-0/0/21 description To-COM002.17.28U05.LITF4-port:p6p1
+set interfaces xe-0/0/21 ether-options 802.3ad ae21
+set interfaces xe-0/0/22 description To-COM003.17.28U08.LITF4-port:p6p1
+set interfaces xe-0/0/22 ether-options 802.3ad ae22
+set interfaces xe-0/0/23 description To-COM004.17.28U11.LITF4-port:p6p1
+set interfaces xe-0/0/23 ether-options 802.3ad ae23
+set interfaces xe-0/0/24 description To-COM005.17.28U14.LITF4-port:p6p1
+set interfaces xe-0/0/24 ether-options 802.3ad ae24
+set interfaces xe-0/0/25 description To-COM006.17.28U17.LITF4-port:p6p1
+set interfaces xe-0/0/25 ether-options 802.3ad ae25
+set interfaces xe-0/0/26 description To-COM007.17.28U26.LITF4-port:p6p1
+set interfaces xe-0/0/26 ether-options 802.3ad ae26
+set interfaces xe-0/0/27 description To-COM008.17.28U29.LITF4-port:p6p1
+set interfaces xe-0/0/27 ether-options 802.3ad ae27
+set interfaces xe-0/0/28 description To-COM009.17.28U32.LITF4-port:p6p1
+set interfaces xe-0/0/28 ether-options 802.3ad ae28
+set interfaces xe-0/0/29 description To-COM010.17.28U35.LITF4-port:p6p1
+set interfaces xe-0/0/29 ether-options 802.3ad ae29
+set interfaces xe-0/0/30 description To-COM001.17.28U02.LITF4-port:p5p1
+set interfaces xe-0/0/30 ether-options 802.3ad ae30
+set interfaces xe-0/0/31 description To-COM002.17.28U05.LITF4-port:p5p1
+set interfaces xe-0/0/31 ether-options 802.3ad ae31
+set interfaces xe-0/0/32 description To-COM003.17.28U08.LITF4-port:p5p1
+set interfaces xe-0/0/32 ether-options 802.3ad ae32
+set interfaces xe-0/0/33 description To-COM004.17.28U11.LITF4-port:p5p1
+set interfaces xe-0/0/33 ether-options 802.3ad ae33
+set interfaces xe-0/0/34 description To-COM005.17.28U14.LITF4-port:p5p1
+set interfaces xe-0/0/34 ether-options 802.3ad ae34
+set interfaces xe-0/0/35 description To-COM006.17.28U17.LITF4-port:p5p1
+set interfaces xe-0/0/35 ether-options 802.3ad ae35
+set interfaces xe-0/0/36 description To-COM007.17.28U26.LITF4-port:p5p1
+set interfaces xe-0/0/36 ether-options 802.3ad ae36
+set interfaces xe-0/0/37 description To-COM008.17.28U29.LITF4-port:p5p1
+set interfaces xe-0/0/37 ether-options 802.3ad ae37
+set interfaces xe-0/0/38 description To-COM009.17.28U32.LITF4-port:p5p1
+set interfaces xe-0/0/38 ether-options 802.3ad ae38
+set interfaces xe-0/0/39 description To-COM010.17.28U35.LITF4-port:p5p1
+set interfaces xe-0/0/39 ether-options 802.3ad ae39
+set interfaces xe-0/0/40 ether-options 802.3ad ae40
+set interfaces xe-0/0/41 ether-options 802.3ad ae41
+set interfaces xe-0/0/42 ether-options 802.3ad ae42
+set interfaces xe-0/0/43 ether-options 802.3ad ae43
+set interfaces xe-0/0/44 ether-options 802.3ad ae44
+set interfaces xe-0/0/45 ether-options 802.3ad ae45
+set interfaces et-0/0/48 description "TO PCOR103.17.28U25.LITF4:port:et-0/0/15"
+set interfaces et-0/0/48 ether-options 802.3ad ae96
+set interfaces et-0/0/49 description "TO PCOR203.17.28U28.LITF4:port:et-0/0/15"
+set interfaces et-0/0/49 ether-options 802.3ad ae96
+set interfaces et-0/0/50 description "TO TOR101.17.31U21.LITF4:port:et-0/0/50"
+set interfaces et-0/0/50 ether-options 802.3ad ae95
+set interfaces et-0/0/51 description "TO TOR101.17.31U21.LITF4:port:et-0/0/51"
+set interfaces et-0/0/51 ether-options 802.3ad ae95
+set interfaces et-0/0/52 description "TO TOR101.17.31U21.LITF4:port:et-0/0/51"
+set interfaces et-0/0/52 ether-options 802.3ad ae95
+set interfaces ae0 unit 0 family ethernet-switching interface-mode access
+set interfaces ae0 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae1 unit 0 family ethernet-switching interface-mode access
+set interfaces ae1 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae2 unit 0 family ethernet-switching interface-mode access
+set interfaces ae2 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae3 unit 0 family ethernet-switching interface-mode access
+set interfaces ae3 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae4 unit 0 family ethernet-switching interface-mode access
+set interfaces ae4 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae5 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae6 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae7 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae8 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae9 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae10 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae10 unit 0 family ethernet-switching vlan members VLAN_CONTROL
+set interfaces ae11 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae11 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae11 unit 0 family ethernet-switching vlan members VLAN_TANENT1_PUB
+set interfaces ae12 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae12 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae12 unit 0 family ethernet-switching vlan members VLAN_TANENT1_PUB
+set interfaces ae13 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae13 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae13 unit 0 family ethernet-switching vlan members VLAN_TANENT1_PUB
+set interfaces ae14 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae14 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae14 unit 0 family ethernet-switching vlan members VLAN_TANENT1_PUB
+set interfaces ae15 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae15 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae15 unit 0 family ethernet-switching vlan members VLAN_TANENT1_PUB
+set interfaces ae16 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae16 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae16 unit 0 family ethernet-switching vlan members VLAN_TANENT1_PUB
+set interfaces ae17 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae17 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae17 unit 0 family ethernet-switching vlan members VLAN_TANENT1_PUB
+set interfaces ae18 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae18 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae18 unit 0 family ethernet-switching vlan members VLAN_TANENT1_PUB
+set interfaces ae19 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae19 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae19 unit 0 family ethernet-switching vlan members VLAN_TANENT1_PUB
+set interfaces ae20 unit 0 family ethernet-switching interface-mode access
+set interfaces ae20 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae21 unit 0 family ethernet-switching interface-mode access
+set interfaces ae21 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae22 unit 0 family ethernet-switching interface-mode access
+set interfaces ae22 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae23 unit 0 family ethernet-switching interface-mode access
+set interfaces ae23 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae24 unit 0 family ethernet-switching interface-mode access
+set interfaces ae24 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae25 unit 0 family ethernet-switching interface-mode access
+set interfaces ae25 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae26 unit 0 family ethernet-switching interface-mode access
+set interfaces ae26 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae27 unit 0 family ethernet-switching interface-mode access
+set interfaces ae27 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae28 unit 0 family ethernet-switching interface-mode access
+set interfaces ae28 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae29 unit 0 family ethernet-switching interface-mode access
+set interfaces ae29 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae30 unit 0 family ethernet-switching interface-mode access
+set interfaces ae30 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae31 unit 0 family ethernet-switching interface-mode access
+set interfaces ae31 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae32 unit 0 family ethernet-switching interface-mode access
+set interfaces ae32 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae33 unit 0 family ethernet-switching interface-mode access
+set interfaces ae33 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae34 unit 0 family ethernet-switching interface-mode access
+set interfaces ae34 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae35 unit 0 family ethernet-switching interface-mode access
+set interfaces ae35 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae36 unit 0 family ethernet-switching interface-mode access
+set interfaces ae36 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae37 unit 0 family ethernet-switching interface-mode access
+set interfaces ae37 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae38 unit 0 family ethernet-switching interface-mode access
+set interfaces ae38 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae39 unit 0 family ethernet-switching interface-mode access
+set interfaces ae39 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae40 unit 0 family ethernet-switching interface-mode access
+set interfaces ae41 unit 0 family ethernet-switching interface-mode access
+set interfaces ae42 unit 0 family ethernet-switching interface-mode access
+set interfaces ae43 unit 0 family ethernet-switching interface-mode access
+set interfaces ae44 unit 0 family ethernet-switching interface-mode access
+set interfaces ae45 unit 0 family ethernet-switching interface-mode access
+set interfaces ae95 description "TO TOR101.17.31U21.LITF4:port:ae95"
+set interfaces ae95 aggregated-ether-options lacp active
+set interfaces ae95 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae95 unit 0 family ethernet-switching vlan members TOR_INTERLINK
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_BE_STORAGE
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_FE_STORAGE
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae95 unit 0 family ethernet-switching vlan members VLAN_CONTROL
+set interfaces ae96 description "TO PCOR103.17.28U25.LITF4:port:ae14"
+set interfaces ae96 aggregated-ether-options lacp active
+set interfaces ae96 aggregated-ether-options lacp system-id 19:21:68:06:40:00
+set interfaces ae96 aggregated-ether-options lacp admin-key 97
+set interfaces ae96 aggregated-ether-options mc-ae mc-ae-id 97
+set interfaces ae96 aggregated-ether-options mc-ae redundancy-group 1
+set interfaces ae96 aggregated-ether-options mc-ae chassis-id 1
+set interfaces ae96 aggregated-ether-options mc-ae mode active-active
+set interfaces ae96 aggregated-ether-options mc-ae status-control standby
+set interfaces ae96 aggregated-ether-options mc-ae init-delay-time 60
+set interfaces ae96 unit 0 family ethernet-switching interface-mode trunk
+set interfaces ae96 unit 0 family ethernet-switching vlan members VLAN_TANENT1
+set interfaces ae96 unit 0 family ethernet-switching vlan members VLAN_HOST_MGMT
+set interfaces ae96 unit 0 family ethernet-switching vlan members VLAN_CONTROL
+set interfaces irb unit 95 family inet address 192.168.81.17/31
+set interfaces irb unit 95 family inet6 address fd81::17/127
+set interfaces lo0 unit 0
+set interfaces vme unit 0 family inet address 10.189.85.131/29
+set multi-chassis multi-chassis-protection 192.168.81.16 interface ae95
+set snmp name TOR201.17.28U23.LITF4
+set snmp description "TOR201.17.28U23.LITF4 is a Part of SDN/NFV Project"
+set snmp location "LITF4-700W Mineral Avenue Centennial CO 80112"
+set snmp contact "Jay Shah (303)-503-0886 jay.shah@centurylink.com"
+set snmp community a0142a2053029ca0 authorization read-only
+set snmp community a0142a2053029ca0 clients 10.189.136.42/32
+set snmp community a0142a2053029ca0 clients 10.189.136.170/32
+set snmp community a0142a2053029ca0 clients 10.189.136.11/32
+set snmp community a0142a2053029ca0 clients 10.189.136.139/32
+set snmp community a0142a2053029ca0 clients 10.189.131.108/32
+set snmp community a0142a2053029ca0 clients 10.189.134.57/32
+set forwarding-options dhcp-relay overrides always-write-giaddr
+set forwarding-options dhcp-relay overrides always-write-option-82
+set forwarding-options dhcp-relay overrides trust-option-82
+set forwarding-options dhcp-relay server-group SDN_NFV_DHCP 10.189.128.203
+set forwarding-options dhcp-relay active-server-group SDN_NFV_DHCP
+set forwarding-options dhcp-relay group all interface irb.10
+set forwarding-options dhcp-relay group all interface irb.20
+set routing-options static route 10.189.64.0/18 next-hop 10.189.85.129
+set routing-options static route 10.189.128.0/18 next-hop 10.189.85.129
+set routing-options forwarding-table export ECMP
+set protocols iccp local-ip-addr 192.168.81.17
+set protocols iccp peer 192.168.81.16 session-establishment-hold-time 50
+set protocols iccp peer 192.168.81.16 redundancy-group-id-list 1
+set protocols iccp peer 192.168.81.16 liveness-detection minimum-receive-interval 300
+set protocols iccp peer 192.168.81.16 liveness-detection transmit-interval minimum-interval 300
+set protocols lldp interface all
+set protocols rstp interface ae0 mode point-to-point
+set protocols rstp interface ae0 edge
+set protocols rstp interface ae1 mode point-to-point
+set protocols rstp interface ae1 edge
+set protocols rstp interface ae2 mode point-to-point
+set protocols rstp interface ae2 edge
+set protocols rstp interface ae3 mode point-to-point
+set protocols rstp interface ae3 edge
+set protocols rstp interface ae4 mode point-to-point
+set protocols rstp interface ae4 edge   
+set protocols rstp interface ae5 mode point-to-point
+set protocols rstp interface ae5 edge
+set protocols rstp interface ae6 mode point-to-point
+set protocols rstp interface ae6 edge
+set protocols rstp interface ae7 mode point-to-point
+set protocols rstp interface ae7 edge
+set protocols rstp interface ae8 mode point-to-point
+set protocols rstp interface ae8 edge
+set protocols rstp interface ae9 mode point-to-point
+set protocols rstp interface ae9 edge
+set protocols rstp interface ae10 mode point-to-point
+set protocols rstp interface ae10 edge
+set protocols rstp interface ae11 mode point-to-point
+set protocols rstp interface ae11 edge
+set protocols rstp interface ae12 mode point-to-point
+set protocols rstp interface ae12 edge
+set protocols rstp interface ae13 mode point-to-point
+set protocols rstp interface ae13 edge
+set protocols rstp interface ae14 mode point-to-point
+set protocols rstp interface ae14 edge
+set protocols rstp interface ae15 mode point-to-point
+set protocols rstp interface ae15 edge
+set protocols rstp interface ae16 mode point-to-point
+set protocols rstp interface ae16 edge
+set protocols rstp interface ae17 mode point-to-point
+set protocols rstp interface ae17 edge
+set protocols rstp interface ae18 mode point-to-point
+set protocols rstp interface ae18 edge
+set protocols rstp interface ae19 mode point-to-point
+set protocols rstp interface ae19 edge
+set protocols rstp interface ae20 mode point-to-point
+set protocols rstp interface ae20 edge
+set protocols rstp interface ae21 mode point-to-point
+set protocols rstp interface ae21 edge
+set protocols rstp interface ae22 mode point-to-point
+set protocols rstp interface ae22 edge
+set protocols rstp interface ae23 mode point-to-point
+set protocols rstp interface ae23 edge
+set protocols rstp interface ae24 mode point-to-point
+set protocols rstp interface ae24 edge
+set protocols rstp interface ae25 mode point-to-point
+set protocols rstp interface ae25 edge
+set protocols rstp interface ae26 mode point-to-point
+set protocols rstp interface ae26 edge
+set protocols rstp interface ae27 mode point-to-point
+set protocols rstp interface ae27 edge
+set protocols rstp interface ae28 mode point-to-point
+set protocols rstp interface ae28 edge
+set protocols rstp interface ae29 mode point-to-point
+set protocols rstp interface ae29 edge
+set protocols rstp interface ae30 mode point-to-point
+set protocols rstp interface ae30 edge
+set protocols rstp interface ae31 mode point-to-point
+set protocols rstp interface ae31 edge
+set protocols rstp interface ae32 mode point-to-point
+set protocols rstp interface ae32 edge
+set protocols rstp interface ae33 mode point-to-point
+set protocols rstp interface ae33 edge
+set protocols rstp interface ae34 mode point-to-point
+set protocols rstp interface ae34 edge
+set protocols rstp interface ae35 mode point-to-point
+set protocols rstp interface ae35 edge
+set protocols rstp interface ae36 mode point-to-point
+set protocols rstp interface ae36 edge
+set protocols rstp interface ae37 mode point-to-point
+set protocols rstp interface ae37 edge
+set protocols rstp interface ae38 mode point-to-point
+set protocols rstp interface ae38 edge
+set protocols rstp interface ae39 mode point-to-point
+set protocols rstp interface ae39 edge
+set protocols rstp interface ae40 mode point-to-point
+set protocols rstp interface ae40 edge
+set protocols rstp interface ae41 mode point-to-point
+set protocols rstp interface ae41 edge
+set protocols rstp interface ae42 mode point-to-point
+set protocols rstp interface ae42 edge
+set protocols rstp interface ae43 mode point-to-point
+set protocols rstp interface ae43 edge
+set protocols rstp interface ae44 mode point-to-point
+set protocols rstp interface ae44 edge
+set protocols rstp interface ae45 mode point-to-point
+set protocols rstp interface ae45 edge
+set protocols rstp bpdu-block-on-edge
+set policy-options prefix-list PUBLIC-ADDRESSES 65.117.240.224/27
+set policy-options prefix-list PUBLIC-ADDRESSES 204.193.210.0/23
+set policy-options prefix-list PUBLIC-ADDRESSES_IPv6 2001:428:3801:1f::/64
+set policy-options prefix-list bgp-peers apply-path "protocols bgp group <*> neighbor <*>"
+set policy-options prefix-list bgp-peers-vrf apply-path "routing-instances <*> protocols bgp group <*> allow <*>"
+set policy-options prefix-list ntp-servers apply-path "system ntp server <*>"
+set policy-options prefix-list device42-servers 10.189.136.42/32
+set policy-options prefix-list device42-servers 10.189.136.170/32
+set policy-options prefix-list device42-servers 2001:0428:3801:0020:0:1525::42/128
+set policy-options prefix-list device42-servers 2001:0428:3801:0020:0:1526::170/128
+set policy-options prefix-list snmp-servers apply-path "snmp community <*> clients <*>"
+set policy-options prefix-list radius-servers apply-path "system radius-server <*>"
+set policy-options prefix-list ansible-servers 10.189.106.0/24
+set policy-options prefix-list ansible-servers 10.189.109.0/24
+set policy-options prefix-list ansible-servers 10.189.136.35/32
+set policy-options prefix-list ansible-servers 10.189.136.163/32
+set policy-options prefix-list ansible-servers 2001:0428:3801:0020:0:1525::35/128
+set policy-options prefix-list ansible-servers 2001:0428:3801:0020:0:1526::163/128
+set policy-options prefix-list syslog-servers 10.189.136.15/32
+set policy-options prefix-list syslog-servers 10.189.136.143/32
+set policy-options prefix-list syslog-servers 2001:0428:3801:0020:0:1525::15/128
+set policy-options prefix-list syslog-servers 2001:0428:3801:0020:0:1526::143/128
+set policy-options prefix-list jump-servers 10.189.97.34/32
+set policy-options prefix-list jump-servers 10.189.97.96/32
+set policy-options prefix-list ssl-vpn-range 10.189.106.0/24
+set policy-options prefix-list ssl-vpn-range 10.189.109.0/24
+set policy-options prefix-list ssl-vpn-range 10.189.159.0/24
+set policy-options prefix-list ssl-vpn-range 2001:0428:3801:0020:159::0/96
+set policy-options prefix-list DHCP-servers 10.189.136.32/32
+set policy-options prefix-list local-networks 10.0.0.0/8
+set policy-options prefix-list local-networks 10.189.64.0/18
+set policy-options prefix-list local-networks 65.117.240.224/27
+set policy-options prefix-list local-networks 100.70.0.0/16
+set policy-options prefix-list local-networks 172.16.0.0/12
+set policy-options prefix-list local-networks 192.168.0.0/16
+set policy-options prefix-list local-networks 2001:428:3801:1f::/64
+set policy-options prefix-list local-networks 2001:428:3801:20::/64
+set policy-options prefix-list local-networks 204.193.210.0/23
+set policy-options prefix-list local-networks fd64::/64
+set policy-options prefix-list local-networks fd66::/128
+set policy-options prefix-list local-networks fd8f:a5a3:6ffb::/48
+set policy-options prefix-list local-networks fddb:90c9:c782::/48
+set policy-options prefix-list bgp-peers-active apply-path "protocols bgp group <*> neighbor <*>"
+set policy-options prefix-list bgp-peers-vrf-active apply-path "routing-instances <*> protocols bgp group <*> neighbor <*>"
+set policy-options prefix-list bgp-peers-passive apply-path "protocols bgp group <*> allow <*>"
+set policy-options prefix-list bgp-peers-vrf-passive apply-path "routing-instances <*> protocols bgp group <*> allow <*>"
+set policy-options prefix-list ftp-servers 10.189.136.16/32
+set policy-options prefix-list ftp-servers 10.189.136.48/32
+set policy-options prefix-list ftp-servers 2001:0428:3801:0020:0:1525::16/128
+set policy-options prefix-list MGMT-POOL 10.189.64.0/18
+set policy-options prefix-list MGMT-POOL 10.189.128.0/18
+set policy-options prefix-list MGMT-POOL_IPv6 2001:0428:3801:0020:159::0/96
+set policy-options prefix-list LITF_IPSYSTEM 10.189.136.0/24
+set policy-options prefix-list LITF_IPSYSTEM_IPv6 2001:0428:3801:0020:0:1525::/96
+set policy-options prefix-list LITF_IPSYSTEM_IPv6 2001:0428:3801:0020:0:1526::/96
+set policy-options prefix-list LOOPBACK_10.189.128.X 10.189.128.0/25
+set policy-options prefix-list LOOPBACK_IPv6 2001:0428:3801:0020::/96
+set policy-options prefix-list VLAB_BLOCK 10.237.192.0/18
+set policy-options prefix-list LEGECY_MANAGEMENT_BLOCK 10.189.64.0/18
+set policy-options prefix-list SDN_NFV_LAB_MANAGEMENT_BLOCK 10.189.128.0/19
+set policy-options prefix-list SDN_NFV_LAB_MANAGEMENT_BLOCK_IPv6 2001:428:3801:20::/64
+set policy-options prefix-list NON_MANGEMENT_BLOCK 172.16.0.0/16
+set policy-options policy-statement ADVERTISE_DEFAULT term 1 from route-filter 0.0.0.0/0 exact
+set policy-options policy-statement ADVERTISE_DEFAULT term 1 then accept
+set policy-options policy-statement ADVERTISE_DEFAULT term 2 from route-filter ::0/0 exact
+set policy-options policy-statement ADVERTISE_DEFAULT term 2 then accept
+set policy-options policy-statement ADVERTISE_LEGACY_MGMT term 1 from protocol bgp
+set policy-options policy-statement ADVERTISE_LEGACY_MGMT term 1 from prefix-list LEGECY_MANAGEMENT_BLOCK
+set policy-options policy-statement ADVERTISE_LEGACY_MGMT term 1 then accept
+set policy-options policy-statement ADVERTISE_LOOPBACK term 1 from protocol direct
+set policy-options policy-statement ADVERTISE_LOOPBACK term 1 from protocol bgp
+set policy-options policy-statement ADVERTISE_LOOPBACK term 1 from prefix-list-filter LOOPBACK_10.189.128.X orlonger
+set policy-options policy-statement ADVERTISE_LOOPBACK term 1 then accept
+set policy-options policy-statement ADVERTISE_LOOPBACK term 2 from protocol direct
+set policy-options policy-statement ADVERTISE_LOOPBACK term 2 from protocol bgp
+set policy-options policy-statement ADVERTISE_LOOPBACK term 2 from prefix-list-filter LOOPBACK_IPv6 orlonger
+set policy-options policy-statement ADVERTISE_LOOPBACK term 2 then accept
+set policy-options policy-statement ADVERTISE_MANAGEMENT term 1 from prefix-list-filter MGMT-POOL orlonger
+set policy-options policy-statement ADVERTISE_MANAGEMENT term 1 then accept
+set policy-options policy-statement ADVERTISE_MANAGEMENT term 2 from prefix-list-filter MGMT-POOL_IPv6 orlonger
+set policy-options policy-statement ADVERTISE_MANAGEMENT term 2 then accept
+set policy-options policy-statement ADVERTISE_MANAGEMENT_TO_VLAB term 1 from prefix-list SDN_NFV_LAB_MANAGEMENT_BLOCK
+set policy-options policy-statement ADVERTISE_MANAGEMENT_TO_VLAB term 1 then accept
+set policy-options policy-statement ADVERTISE_MANAGEMENT_TO_VLAB term 2 from prefix-list SDN_NFV_LAB_MANAGEMENT_BLOCK_IPv6
+set policy-options policy-statement ADVERTISE_MANAGEMENT_TO_VLAB term 2 then accept
+set policy-options policy-statement ADVERTISE_NON_MANAGEMENT term 1 from protocol direct
+set policy-options policy-statement ADVERTISE_NON_MANAGEMENT term 1 from prefix-list-filter NON_MANGEMENT_BLOCK orlonger
+set policy-options policy-statement ADVERTISE_NON_MANAGEMENT term 1 then accept
+set policy-options policy-statement ADVERTISE_PUBLIC term 1 from prefix-list-filter PUBLIC-ADDRESSES orlonger
+set policy-options policy-statement ADVERTISE_PUBLIC term 1 then next-hop self
+set policy-options policy-statement ADVERTISE_PUBLIC term 1 then accept
+set policy-options policy-statement ADVERTISE_PUBLIC term 2 from prefix-list-filter PUBLIC-ADDRESSES_IPv6 orlonger
+set policy-options policy-statement ADVERTISE_PUBLIC term 2 then next-hop self
+set policy-options policy-statement ADVERTISE_PUBLIC term 2 then accept
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 1 from protocol direct
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 1 from prefix-list-filter MGMT-POOL orlonger
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 1 then next-hop self
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 1 then accept
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 2 from protocol direct
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 2 from prefix-list-filter MGMT-POOL_IPv6 orlonger
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 2 then next-hop self
+set policy-options policy-statement ADVERTISE_RACK_LOCAL_MGMT_ADDRESSES term 2 then accept
+set policy-options policy-statement ECMP term 1 then load-balance per-packet
+set policy-options policy-statement NEXT_HOP_SELF term 1 then next-hop self
+set policy-options policy-statement RECEIVE_FROM_LAB term 1 from prefix-list-filter VLAB_BLOCK orlonger
+set policy-options policy-statement RECEIVE_FROM_LAB term 1 then accept
+set policy-options policy-statement REJECT_REST term 1 then reject
+set firewall family inet filter COPP term netconf from source-prefix-list ansible-servers
+set firewall family inet filter COPP term netconf from protocol tcp
+set firewall family inet filter COPP term netconf from destination-port 830
+set firewall family inet filter COPP term netconf then accept
+set firewall family inet filter COPP term remote-access from source-prefix-list jump-servers
+set firewall family inet filter COPP term remote-access from source-prefix-list ssl-vpn-range
+set firewall family inet filter COPP term remote-access from protocol tcp
+set firewall family inet filter COPP term remote-access from destination-port ssh
+set firewall family inet filter COPP term remote-access then accept
+set firewall family inet filter COPP term ntp from source-prefix-list ntp-servers
+set firewall family inet filter COPP term ntp from protocol udp
+set firewall family inet filter COPP term ntp from destination-port ntp
+set firewall family inet filter COPP term ntp then accept
+set firewall family inet filter COPP term FTP-data from source-prefix-list ansible-servers
+set firewall family inet filter COPP term FTP-data from source-prefix-list ftp-servers
+set firewall family inet filter COPP term FTP-data from protocol tcp
+set firewall family inet filter COPP term FTP-data from source-port ftp
+set firewall family inet filter COPP term FTP-data from source-port ftp-data
+set firewall family inet filter COPP term FTP-data then accept
+set firewall family inet filter COPP term SNMP from source-prefix-list snmp-servers
+set firewall family inet filter COPP term SNMP from source-prefix-list device42-servers
+set firewall family inet filter COPP term SNMP from protocol udp
+set firewall family inet filter COPP term SNMP from destination-port snmp
+set firewall family inet filter COPP term SNMP then accept
+set firewall family inet filter COPP term syslog from source-prefix-list syslog-servers
+set firewall family inet filter COPP term syslog from protocol udp
+set firewall family inet filter COPP term syslog from destination-port syslog
+set firewall family inet filter COPP term syslog then accept
+set firewall family inet filter COPP term radius-allow from source-prefix-list radius-servers
+set firewall family inet filter COPP term radius-allow from source-port 1812
+set firewall family inet filter COPP term radius-allow from source-port 1813
+set firewall family inet filter COPP term radius-allow then accept
+set firewall family inet filter COPP term BGP from source-prefix-list bgp-peers-passive
+set firewall family inet filter COPP term BGP from source-prefix-list bgp-peers-active
+set firewall family inet filter COPP term BGP from source-prefix-list bgp-peers-vrf-passive
+set firewall family inet filter COPP term BGP from source-prefix-list bgp-peers-vrf-active
+set firewall family inet filter COPP term BGP from protocol tcp
+set firewall family inet filter COPP term BGP from source-port bgp
+set firewall family inet filter COPP term BGP then accept
+set firewall family inet filter COPP term BGP2 from source-prefix-list bgp-peers-passive
+set firewall family inet filter COPP term BGP2 from source-prefix-list bgp-peers-active
+set firewall family inet filter COPP term BGP2 from source-prefix-list bgp-peers-vrf-passive
+set firewall family inet filter COPP term BGP2 from source-prefix-list bgp-peers-vrf-active
+set firewall family inet filter COPP term BGP2 from protocol tcp
+set firewall family inet filter COPP term BGP2 from destination-port bgp
+set firewall family inet filter COPP term BGP2 then accept
+set firewall family inet filter COPP term BFD from protocol udp
+set firewall family inet filter COPP term BFD from destination-port 3784
+set firewall family inet filter COPP term BFD from destination-port 3785
+set firewall family inet filter COPP term BFD then accept
+set firewall family inet filter COPP term vrrp from source-prefix-list local-networks
+set firewall family inet filter COPP term vrrp from protocol vrrp
+set firewall family inet filter COPP term vrrp then accept
+set firewall family inet filter COPP term iccp from source-prefix-list local-networks
+set firewall family inet filter COPP term iccp from protocol tcp
+set firewall family inet filter COPP term iccp from source-port 33012
+set firewall family inet filter COPP term iccp then accept
+set firewall family inet filter COPP term iccp2 from source-prefix-list local-networks
+set firewall family inet filter COPP term iccp2 from protocol tcp
+set firewall family inet filter COPP term iccp2 from destination-port 33012
+set firewall family inet filter COPP term iccp2 then accept
+set firewall family inet filter COPP term ICL-peer from source-prefix-list local-networks
+set firewall family inet filter COPP term ICL-peer from protocol udp
+set firewall family inet filter COPP term ICL-peer from source-port 4784
+set firewall family inet filter COPP term ICL-peer then accept
+set firewall family inet filter COPP term ICL-peer2 from source-prefix-list local-networks
+set firewall family inet filter COPP term ICL-peer2 from protocol udp
+set firewall family inet filter COPP term ICL-peer2 from destination-port 4784
+set firewall family inet filter COPP term ICL-peer2 then accept
+set firewall family inet filter COPP term traceroute-udp-range from source-prefix-list local-networks
+set firewall family inet filter COPP term traceroute-udp-range from protocol udp
+set firewall family inet filter COPP term traceroute-udp-range from destination-port 32768-32959
+set firewall family inet filter COPP term traceroute-udp-range then accept
+set firewall family inet filter COPP term icmp from source-prefix-list local-networks
+set firewall family inet filter COPP term icmp from protocol icmp
+set firewall family inet filter COPP term icmp then accept
+set firewall family inet filter COPP term dhcp-client-accept from source-address 0.0.0.0/32
+set firewall family inet filter COPP term dhcp-client-accept from destination-address 255.255.255.255/32
+set firewall family inet filter COPP term dhcp-client-accept from protocol udp
+set firewall family inet filter COPP term dhcp-client-accept from source-port 68
+set firewall family inet filter COPP term dhcp-client-accept from destination-port 67
+set firewall family inet filter COPP term dhcp-client-accept then accept
+set firewall family inet filter COPP term dhcp-server-accept from source-prefix-list DHCP-servers
+set firewall family inet filter COPP term dhcp-server-accept from protocol udp
+set firewall family inet filter COPP term dhcp-server-accept from protocol tcp
+set firewall family inet filter COPP term dhcp-server-accept from source-port 67
+set firewall family inet filter COPP term dhcp-server-accept from source-port 68
+set firewall family inet filter COPP term dhcp-server-accept from destination-port 67
+set firewall family inet filter COPP term dhcp-server-accept from destination-port 68
+set firewall family inet filter COPP term dhcp-server-accept then accept
+set firewall family inet6 filter COPPv6 term BGP from source-prefix-list bgp-peers-passive
+set firewall family inet6 filter COPPv6 term BGP from source-prefix-list bgp-peers-active
+set firewall family inet6 filter COPPv6 term BGP from source-prefix-list bgp-peers-vrf-passive
+set firewall family inet6 filter COPPv6 term BGP from source-prefix-list bgp-peers-vrf-active
+set firewall family inet6 filter COPPv6 term BGP from next-header tcp
+set firewall family inet6 filter COPPv6 term BGP from source-port bgp
+set firewall family inet6 filter COPPv6 term BGP then accept
+set firewall family inet6 filter COPPv6 term BGP2 from source-prefix-list bgp-peers-passive
+set firewall family inet6 filter COPPv6 term BGP2 from source-prefix-list bgp-peers-active
+set firewall family inet6 filter COPPv6 term BGP2 from source-prefix-list bgp-peers-vrf-passive
+set firewall family inet6 filter COPPv6 term BGP2 from source-prefix-list bgp-peers-vrf-active
+set firewall family inet6 filter COPPv6 term BGP2 from next-header tcp
+set firewall family inet6 filter COPPv6 term BGP2 from destination-port bgp
+set firewall family inet6 filter COPPv6 term BGP2 then accept
+set firewall family inet6 filter COPPv6 term BFD from next-header udp
+set firewall family inet6 filter COPPv6 term BFD from destination-port 3784
+set firewall family inet6 filter COPPv6 term BFD from destination-port 3785
+set firewall family inet6 filter COPPv6 term BFD then accept
+set firewall family inet6 filter COPPv6 term BGP_ICMP from source-prefix-list bgp-peers-passive
+set firewall family inet6 filter COPPv6 term BGP_ICMP from source-prefix-list bgp-peers-active
+set firewall family inet6 filter COPPv6 term BGP_ICMP from source-prefix-list bgp-peers-vrf-passive
+set firewall family inet6 filter COPPv6 term BGP_ICMP from source-prefix-list bgp-peers-vrf-active
+set firewall family inet6 filter COPPv6 term BGP_ICMP from next-header icmp6
+set firewall family inet6 filter COPPv6 term BGP_ICMP then accept
+set firewall family inet6 filter COPPv6 term vrrp from next-header vrrp
+set firewall family inet6 filter COPPv6 term vrrp then accept
+set firewall family inet6 filter COPPv6 term traceroute-udp-range from source-prefix-list local-networks
+set firewall family inet6 filter COPPv6 term traceroute-udp-range from next-header udp
+set firewall family inet6 filter COPPv6 term traceroute-udp-range from destination-port 32768-32959
+set firewall family inet6 filter COPPv6 term traceroute-udp-range then accept
+set firewall family inet6 filter COPPv6 term icmp6 from source-prefix-list local-networks
+set firewall family inet6 filter COPPv6 term icmp6 from next-header icmp6
+set firewall family inet6 filter COPPv6 term icmp6 then accept
+set firewall family inet6 filter COPPv6 term dhcp-client-accept from source-address ::/128
+set firewall family inet6 filter COPPv6 term dhcp-client-accept from destination-address ff05::1:3/128
+set firewall family inet6 filter COPPv6 term dhcp-client-accept from destination-address ff02::1:2/128
+set firewall family inet6 filter COPPv6 term dhcp-client-accept from next-header udp
+set firewall family inet6 filter COPPv6 term dhcp-client-accept from source-port 68
+set firewall family inet6 filter COPPv6 term dhcp-client-accept from destination-port 67
+set firewall family inet6 filter COPPv6 term dhcp-client-accept then accept
+set firewall family inet6 filter COPPv6 term dhcp-server-accept from source-prefix-list DHCP-servers
+set firewall family inet6 filter COPPv6 term dhcp-server-accept from next-header udp
+set firewall family inet6 filter COPPv6 term dhcp-server-accept from next-header tcp
+set firewall family inet6 filter COPPv6 term dhcp-server-accept from source-port 67
+set firewall family inet6 filter COPPv6 term dhcp-server-accept from source-port 68
+set firewall family inet6 filter COPPv6 term dhcp-server-accept from destination-port 67
+set firewall family inet6 filter COPPv6 term dhcp-server-accept from destination-port 68
+set firewall family inet6 filter COPPv6 term dhcp-server-accept then accept
+set switch-options service-id 26
+set vlans TOR_INTERLINK vlan-id 95
+set vlans TOR_INTERLINK l3-interface irb.95
+set vlans VLAN_BE_STORAGE vlan-id 1286
+set vlans VLAN_CONTROL vlan-id 1288
+set vlans VLAN_FE_STORAGE vlan-id 1285
+set vlans VLAN_HOST_MGMT vlan-id 1283
+set vlans VLAN_TANENT1 vlan-id 1284
+set vlans VLAN_TANENT1_PUB vlan-id 1287
