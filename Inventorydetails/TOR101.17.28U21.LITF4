@@ -1,0 +1,60 @@
+TOR101.17.28U21.LITF4> show chassis hardware 
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                TA3716150015      QFX5100-48S-6Q
+Pseudo CB 0     
+Routing Engine 0          BUILTIN      BUILTIN           QFX Routing Engine
+FPC 0            REV 06   650-064381   TA3716150015      QFX5100-48S-6Q
+  CPU                     BUILTIN      BUILTIN           FPC CPU
+  PIC 0                   BUILTIN      BUILTIN           48x10G-6x40G
+    Xcvr 0       REV 01   740-030077   APF16020027M79    SFP+-10G-CU3M
+    Xcvr 1       REV 01   740-030077   APF160300283LC    SFP+-10G-CU3M
+    Xcvr 2       REV 01   740-030077   APF16010026EEA    SFP+-10G-CU3M
+    Xcvr 3       REV 01   740-030077   APF15500024E77    SFP+-10G-CU3M
+    Xcvr 4       REV 01   740-030077   APF16010026DUT    SFP+-10G-CU3M
+    Xcvr 10      REV 01   740-030077   APF160300283JM    SFP+-10G-CU3M
+    Xcvr 11      REV 01   740-030077   APF16020027M11    SFP+-10G-CU3M
+    Xcvr 12      REV 01   740-030077   APF16020027M5V    SFP+-10G-CU3M
+    Xcvr 13      REV 01   740-030077   APF16020027M5P    SFP+-10G-CU3M
+    Xcvr 14      REV 01   740-030077   APF16010026DUU    SFP+-10G-CU3M
+    Xcvr 20      REV 01   740-030077   APF16010026EAL    SFP+-10G-CU3M
+    Xcvr 21      REV 01   740-030077   APF15500024CGU    SFP+-10G-CU3M
+    Xcvr 22      REV 01   740-030077   APF16020027M5W    SFP+-10G-CU3M
+    Xcvr 23      REV 01   740-030077   APF15500024E0H    SFP+-10G-CU3M
+    Xcvr 24      REV 01   740-030077   APF1603002848P    SFP+-10G-CU3M
+    Xcvr 30      REV 01   740-030077   APF11210023CAJ    SFP+-10G-CU3M
+    Xcvr 31      REV 01   740-030077   APF15180022G62    SFP+-10G-CU3M
+    Xcvr 32      REV 01   740-030077   APF160300284EV    SFP+-10G-CU3M
+    Xcvr 33      REV 01   740-030077   APF16020027M03    SFP+-10G-CU3M
+    Xcvr 34      REV 01   740-030077   APF16020027M9H    SFP+-10G-CU3M
+    Xcvr 48      REV 01   740-032986   QF35077N          QSFP+-40G-SR4
+    Xcvr 49      REV 01   740-032986   QF3707N0          QSFP+-40G-SR4
+    Xcvr 52               NON-JNPR     ADD446044768      UNKNOWN
+    Xcvr 53               NON-JNPR     ADD446044779      UNKNOWN
+Power Supply 0   REV 04   740-044332   1GA16020941       JPSU-650W-AC-AFI
+Power Supply 1   REV 04   740-044332   1GA16020932       JPSU-650W-AC-AFI
+Fan Tray 0                                               QFX5100 Fan Tray 0, Back to Front Airflow - AFI
+Fan Tray 1                                               QFX5100 Fan Tray 1, Back to Front Airflow - AFI
+Fan Tray 2                                               QFX5100 Fan Tray 2, Back to Front Airflow - AFI
+Fan Tray 3                                               QFX5100 Fan Tray 3, Back to Front Airflow - AFI
+Fan Tray 4                                               QFX5100 Fan Tray 4, Back to Front Airflow - AFI
+
+{master:0}
+mehroof@TOR101.17.28U21.LITF4> show chassis environment 
+Class Item                           Status     Measurement
+Power FPC 0 Power Supply 0           OK        
+      FPC 0 Power Supply 1           OK        
+Temp  FPC 0 Sensor TopMiddle E       OK         16 degrees C / 60 degrees F
+      FPC 0 Sensor TopRight C        OK         16 degrees C / 60 degrees F
+      FPC 0 Sensor TopLeft C         OK         32 degrees C / 89 degrees F
+      FPC 0 Sensor TopRight E        OK         16 degrees C / 60 degrees F
+      FPC 0 Sensor CPURight C        OK         18 degrees C / 64 degrees F
+      FPC 0 Sensor CPULeft E         OK         17 degrees C / 62 degrees F
+      FPC 0 Sensor CPU Die Temp      OK         34 degrees C / 93 degrees F
+Fans  FPC 0 Fan Tray 0               OK         Spinning at normal speed
+      FPC 0 Fan Tray 1               OK         Spinning at normal speed
+      FPC 0 Fan Tray 2               OK         Spinning at normal speed
+      FPC 0 Fan Tray 3               OK         Spinning at normal speed
+      FPC 0 Fan Tray 4               OK         Spinning at normal speed
+
+{master:0}
