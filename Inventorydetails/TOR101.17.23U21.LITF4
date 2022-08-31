@@ -1,0 +1,104 @@
+TOR101.17.23U21.LITF4> show chassis hardware detail 
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                VB3715500020      QFX5100-96S-8Q
+Pseudo CB 0     
+Routing Engine 0          BUILTIN      BUILTIN           QFX Routing Engine
+  ad0    1498 MB  QEMU HARDDISK        QM00001           Hard Disk
+  ad1    4095 MB  QEMU HARDDISK        QM00002           Hard Disk
+  ad2     511 MB  QEMU HARDDISK        QM00003           Hard Disk
+  ad3    1023 MB  QEMU HARDDISK        QM00004           Hard Disk
+  usb1 (addr 1)  product 0x0000 0      vendor 0x0000     uhub1
+  usb1 (addr 2)  product 0x0020 32     vendor 0x8087     uhub2
+FPC 0            REV 05   650-064340   VB3715500020      QFX5100-96S-8Q
+  CPU                     BUILTIN      BUILTIN           FPC CPU
+  PIC 0                   BUILTIN      BUILTIN           96x10G-8x40G
+    Xcvr 0       REV 01   740-030077   APF16010026DWL    SFP+-10G-CU3M
+    Xcvr 1       REV 01   740-030077   APF16020027M9G    SFP+-10G-CU3M
+    Xcvr 2       REV 01   740-030077   APF16020027M32    SFP+-10G-CU3M
+    Xcvr 3       REV 01   740-030077   APF15500024E00    SFP+-10G-CU3M
+    Xcvr 4       REV 01   740-030077   APF16020027M7J    SFP+-10G-CU3M
+    Xcvr 5       REV 01   740-030077   APF16020027M73    SFP+-10G-CU3M
+    Xcvr 6       REV 01   740-030077   APF15500024DWW    SFP+-10G-CU3M
+    Xcvr 7       REV 01   740-030077   APF16010026ECY    SFP+-10G-CU3M
+    Xcvr 8       REV 01   740-030077   APF16010026DKJ    SFP+-10G-CU3M
+    Xcvr 9       REV 01   740-030077   APF16010026DUG    SFP+-10G-CU3M
+    Xcvr 10      REV 01   740-030077   APF16020027M8L    SFP+-10G-CU3M
+    Xcvr 11      REV 01   740-030077   APF16020027M14    SFP+-10G-CU3M
+    Xcvr 12      REV 01   740-030077   APF155200265YH    SFP+-10G-CU3M
+    Xcvr 13      REV 01   740-030077   APF16010026F8F    SFP+-10G-CU3M
+    Xcvr 14      REV 01   740-030077   APF15180022F1F    SFP+-10G-CU3M
+    Xcvr 15      REV 01   740-030077   APF16020027M6M    SFP+-10G-CU3M
+    Xcvr 16      REV 01   740-030077   APF15500024E5N    SFP+-10G-CU3M
+    Xcvr 17      REV 01   740-030077   APF160300283NT    SFP+-10G-CU3M
+    Xcvr 18      REV 01   740-030077   APF16020027M69    SFP+-10G-CU3M
+    Xcvr 19      REV 01   740-030077   APF16010026DLU    SFP+-10G-CU3M
+    Xcvr 20               NON-JNPR     ARN3518           DUAL-SFP+-SR/SFP-SX
+    Xcvr 24               NON-JNPR     APF14510038P7V    SFP+-10G-CU3M
+    Xcvr 25               NON-JNPR     APF16110031JFP    SFP+-10G-CU3M
+    Xcvr 26               NON-JNPR     APF16110031VUC    SFP+-10G-CU3M
+    Xcvr 27               NON-JNPR     APF14510038P87    SFP+-10G-CU3M
+    Xcvr 28               NON-JNPR     APF1538003739B    SFP+-10G-CU3M
+    Xcvr 29               NON-JNPR     APF16350030LRT    SFP+-10G-CU3M
+    Xcvr 30               NON-JNPR     APF1538003739U    SFP+-10G-CU3M
+    Xcvr 31               NON-JNPR     APF1538003739F    SFP+-10G-CU3M
+    Xcvr 32               NON-JNPR     APF16110031JFY    SFP+-10G-CU3M
+    Xcvr 33               NON-JNPR     APF16350030LTH    SFP+-10G-CU3M
+    Xcvr 34               NON-JNPR     APF153800373AJ    SFP+-10G-CU3M
+    Xcvr 35               NON-JNPR     APF16110031VUV    SFP+-10G-CU3M
+    Xcvr 36               NON-JNPR     APF16110031VUU    SFP+-10G-CU3M
+    Xcvr 37               NON-JNPR     APF16110031JG4    SFP+-10G-CU3M
+    Xcvr 38               NON-JNPR     APF153800373AM    SFP+-10G-CU3M
+    Xcvr 39               NON-JNPR     APF16110031JGB    SFP+-10G-CU3M
+    Xcvr 40               NON-JNPR     APF15380037398    SFP+-10G-CU3M
+    Xcvr 41               NON-JNPR     APF16110031VUE    SFP+-10G-CU3M
+    Xcvr 42               NON-JNPR     APF14510038P9G    SFP+-10G-CU3M
+    Xcvr 43               NON-JNPR     APF153800373A3    SFP+-10G-CU3M
+    Xcvr 48               NON-JNPR     APF14510038P7V    SFP+-10G-CU3M
+    Xcvr 49               NON-JNPR     APF16110031JFP    SFP+-10G-CU3M
+    Xcvr 50               NON-JNPR     APF16110031VUC    SFP+-10G-CU3M
+    Xcvr 51               NON-JNPR     APF14510038P87    SFP+-10G-CU3M
+    Xcvr 52               NON-JNPR     APF1538003739B    SFP+-10G-CU3M
+    Xcvr 53               NON-JNPR     APF16350030LRT    SFP+-10G-CU3M
+    Xcvr 54               NON-JNPR     APF1538003739U    SFP+-10G-CU3M
+    Xcvr 55               NON-JNPR     APF1538003739F    SFP+-10G-CU3M
+    Xcvr 56               NON-JNPR     APF16110031JFY    SFP+-10G-CU3M
+    Xcvr 57               NON-JNPR     APF16350030LTH    SFP+-10G-CU3M
+    Xcvr 58               NON-JNPR     APF153800373AJ    SFP+-10G-CU3M
+    Xcvr 59               NON-JNPR     APF16110031VUV    SFP+-10G-CU3M
+    Xcvr 60               NON-JNPR     APF16110031VUU    SFP+-10G-CU3M
+    Xcvr 61               NON-JNPR     APF16110031JG4    SFP+-10G-CU3M
+    Xcvr 62               NON-JNPR     APF153800373AM    SFP+-10G-CU3M
+    Xcvr 63               NON-JNPR     APF16110031JGB    SFP+-10G-CU3M
+    Xcvr 64               NON-JNPR     APF15380037398    SFP+-10G-CU3M
+    Xcvr 65               NON-JNPR     APF16110031VUE    SFP+-10G-CU3M
+    Xcvr 66               NON-JNPR     APF14510038P9G    SFP+-10G-CU3M
+    Xcvr 67               NON-JNPR     APF153800373A3    SFP+-10G-CU3M
+    Xcvr 96      REV 01   740-032986   QF370608          QSFP+-40G-SR4
+    Xcvr 97      REV 01   740-032986   QF380121          QSFP+-40G-SR4
+    Xcvr 98               NON-JNPR     ADD446044778      UNKNOWN
+    Xcvr 99               NON-JNPR     ADD446044773      UNKNOWN
+Power Supply 0   REV 03   740-053352   1GD15341269       JPSU-850W-AC-AFO
+Power Supply 1   REV 03   740-053352   1GD15341270       JPSU-850W-AC-AFO
+Fan Tray 0                                               QFX5100 Fan Tray 0, Front to Back Airflow - AFO
+Fan Tray 1                                               QFX5100 Fan Tray 1, Front to Back Airflow - AFO
+Fan Tray 2                                               QFX5100 Fan Tray 2, Front to Back Airflow - AFO
+
+{master:0}
+mehroof@TOR101.17.23U21.LITF4> show chassis environment 
+Class Item                           Status     Measurement
+Power FPC 0 Power Supply 0           OK        
+      FPC 0 Power Supply 1           OK        
+Temp  FPC 0 Sensor TopMiddle E       OK         29 degrees C / 84 degrees F
+      FPC 0 Sensor TopRight I        OK         27 degrees C / 80 degrees F
+      FPC 0 Sensor TopLeft I         OK         24 degrees C / 75 degrees F
+      FPC 0 Sensor TopRight E        OK         25 degrees C / 77 degrees F
+      FPC 0 Sensor CPURight I        OK         27 degrees C / 80 degrees F
+      FPC 0 Sensor CPULeft I         OK         26 degrees C / 78 degrees F
+      FPC 0 Sensor Die Temp          OK         37 degrees C / 98 degrees F
+      FPC 0 Mezz Temp                OK         21 degrees C / 69 degrees F
+Fans  FPC 0 Fan Tray 0               OK         Spinning at normal speed
+      FPC 0 Fan Tray 1               OK         Spinning at normal speed
+      FPC 0 Fan Tray 2               OK         Spinning at normal speed
+
+{master:0}
